@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Flexbox Centering",
+    "description": "Perfectly center content horizontally and vertically.",
+    "code": ".container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 1,
+    "tags": [
+      "flexbox",
+      "layout"
+    ],
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container."
+  },
+  {
+    "title": "CSS Grid Holy Grail",
+    "description": "Classic 3-column layout with header and footer.",
+    "code": ".layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "tags": [
+      "grid",
+      "layout"
+    ],
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts."
+  },
+  {
+    "title": "Custom Scrollbar",
+    "description": "Styling scrollbars in Webkit browsers.",
+    "code": "::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #888;\n  border-radius: 5px;\n}",
+    "difficulty": 2,
+    "tags": [
+      "ui",
+      "customization"
+    ],
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars."
+  },
+  {
+    "title": "CSS Variables (Custom Properties)",
+    "description": "Defining and using reusable values.",
+    "code": ":root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 1,
+    "tags": [
+      "variables",
+      "theming"
+    ],
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet."
+  },
+  {
+    "title": "Truncate Text with Ellipsis",
+    "description": "Handle long text by cutting it off and adding dots.",
+    "code": ".truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 1,
+    "tags": [
+      "typography",
+      "utility"
+    ],
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Join with Group By",
+    "description": "Aggregating data across multiple tables.",
+    "code": "SELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 2,
+    "tags": [
+      "joins",
+      "aggregation"
+    ],
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made."
+  },
+  {
+    "title": "Common Table Expression (CTE)",
+    "description": "Creating temporary result sets for complex queries.",
+    "code": "WITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 2,
+    "tags": [
+      "cte",
+      "advanced"
+    ],
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks."
+  },
+  {
+    "title": "Window Function (Row Number)",
+    "description": "Ranking rows within a partition.",
+    "code": "SELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 3,
+    "tags": [
+      "window-functions",
+      "advanced"
+    ],
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row."
+  },
+  {
+    "title": "UPSERT Pattern",
+    "description": "Inserting or updating a record if it already exists.",
+    "code": "INSERT INTO settings (key, value)\nVALUES ('theme', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 2,
+    "tags": [
+      "insert",
+      "update"
+    ],
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert."
+  },
+  {
+    "title": "Subquery in WHERE Clause",
+    "description": "Filtering based on the results of another query.",
+    "code": "SELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics');",
+    "difficulty": 1,
+    "tags": [
+      "subquery",
+      "basics"
+    ],
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables."
+  }
+]

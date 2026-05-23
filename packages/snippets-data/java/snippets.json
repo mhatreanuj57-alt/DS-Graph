@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Stream API: Filter and Map",
+    "description": "Functional-style operations on collections.",
+    "code": "List<String> names = Arrays.asList(\"Alice\", \"Bob\", \"Charlie\");\nList<String> filteredNames = names.stream()\n    .filter(n -> n.startsWith(\"A\"))\n    .map(String::toUpperCase)\n    .collect(Collectors.toList());",
+    "difficulty": 2,
+    "tags": [
+      "streams",
+      "functional"
+    ],
+    "category": "Utility",
+    "explanation_md": "Java Streams provide a declarative way to process collections of objects."
+  },
+  {
+    "title": "Optional for Null Safety",
+    "description": "Avoiding NullPointerException.",
+    "code": "Optional<String> name = Optional.ofNullable(getName());\nname.ifPresent(System.out::println);\nString value = name.orElse(\"Default\");",
+    "difficulty": 1,
+    "tags": [
+      "utility",
+      "null-safety"
+    ],
+    "category": "Basic",
+    "explanation_md": "`Optional` is a container object which may or may not contain a non-null value."
+  },
+  {
+    "title": "Try-With-Resources",
+    "description": "Automatic resource management.",
+    "code": "try (BufferedReader br = new BufferedReader(new FileReader(\"test.txt\"))) {\n    System.out.println(br.readLine());\n} catch (IOException e) {\n    e.printStackTrace();\n}",
+    "difficulty": 1,
+    "tags": [
+      "io",
+      "basics"
+    ],
+    "category": "Basic",
+    "explanation_md": "The `try-with-resources` statement ensures that each resource is closed at the end of the statement."
+  },
+  {
+    "title": "Lambda Expressions",
+    "description": "Compact way to represent functional interfaces.",
+    "code": "Runnable r = () -> System.out.println(\"Running in a lambda!\");\nnew Thread(r).start();",
+    "difficulty": 1,
+    "tags": [
+      "lambdas",
+      "concurrency"
+    ],
+    "category": "Basic",
+    "explanation_md": "Lambdas provide a concise syntax for implementing single-method interfaces (Functional Interfaces)."
+  },
+  {
+    "title": "Singleton Pattern",
+    "description": "Ensuring a class has only one instance.",
+    "code": "public class DatabaseConnection {\n    private static DatabaseConnection instance;\n    private DatabaseConnection() {}\n    public static synchronized DatabaseConnection getInstance() {\n        if (instance == null) {\n            instance = new DatabaseConnection();\n        }\n        return instance;\n    }\n}",
+    "difficulty": 2,
+    "tags": [
+      "patterns",
+      "design"
+    ],
+    "category": "Advanced",
+    "explanation_md": "The Singleton pattern restricts the instantiation of a class to one \"single\" instance."
+  }
+]

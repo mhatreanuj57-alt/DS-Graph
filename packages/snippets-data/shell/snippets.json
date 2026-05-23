@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Find and Replace in Files",
+    "description": "Using sed to replace text across multiple files.",
+    "code": "find . -type f -name \"*.txt\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 2,
+    "tags": [
+      "automation",
+      "sed"
+    ],
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement."
+  },
+  {
+    "title": "Check if Command Exists",
+    "description": "Scripting logic to verify dependencies.",
+    "code": "if command -v git >/dev/null 2>&1; then\n  echo \"Git is installed\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 1,
+    "tags": [
+      "scripting",
+      "basics"
+    ],
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH."
+  },
+  {
+    "title": "Loop Through Files",
+    "description": "Performing an action on every file in a directory.",
+    "code": "for file in *.jpg; do\n  mv \"$file\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 2,
+    "tags": [
+      "looping",
+      "basics"
+    ],
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files."
+  },
+  {
+    "title": "Process List and Filter",
+    "description": "Finding specific running processes.",
+    "code": "ps aux | grep \"node\" | grep -v \"grep\"",
+    "difficulty": 1,
+    "tags": [
+      "system",
+      "monitoring"
+    ],
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself."
+  },
+  {
+    "title": "Redirecting Output",
+    "description": "Capturing stdout and stderr.",
+    "code": "./myscript.sh > output.log 2>&1",
+    "difficulty": 1,
+    "tags": [
+      "basics",
+      "io"
+    ],
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1)."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Pattern Matching with Option",
+    "description": "Safely handling optional values.",
+    "code": "fn find_word(text: &str, word: &str) -> Option<usize> {\n    text.find(word)\n}\n\nfn main() {\n    let result = find_word(\"hello rust\", \"rust\");\n    match result {\n        Some(index) => println!(\"Found at index: {}\", index),\n        None => println!(\"Not found\"),\n    }\n}",
+    "difficulty": 1,
+    "tags": [
+      "matching",
+      "option"
+    ],
+    "category": "Basic",
+    "explanation_md": "The `Option` type represents an optional value. Pattern matching is the idiomatic way to handle `Some` and `None` cases."
+  },
+  {
+    "title": "Struct with Implementation",
+    "description": "Defining a data structure and its associated methods.",
+    "code": "struct Rectangle {\n    width: u32,\n    height: u32,\n}\n\nimpl Rectangle {\n    fn area(&self) -> u32 {\n        self.width * self.height\n    }\n}",
+    "difficulty": 1,
+    "tags": [
+      "structs",
+      "methods"
+    ],
+    "category": "Basic",
+    "explanation_md": "Structs are used to create custom types. Methods are defined within an `impl` block."
+  },
+  {
+    "title": "Error Handling with Result",
+    "description": "Using Result for functions that can fail.",
+    "code": "use std::fs::File;\nuse std::io::{self, Read};\n\nfn read_username_from_file() -> Result<String, io::Error> {\n    let mut f = File::open(\"hello.txt\")?;\n    let mut s = String::new();\n    f.read_to_string(&mut s)?;\n    Ok(s)\n}",
+    "difficulty": 2,
+    "tags": [
+      "errors",
+      "io"
+    ],
+    "category": "Advanced",
+    "explanation_md": "The `?` operator is a shorthand for returning errors early if a operation fails."
+  },
+  {
+    "title": "Smart Pointer: Box",
+    "description": "Storing data on the heap.",
+    "code": "fn main() {\n    let b = Box::new(5);\n    println!(\"b = {}\", b);\n}",
+    "difficulty": 2,
+    "tags": [
+      "memory",
+      "pointers"
+    ],
+    "category": "Utility",
+    "explanation_md": "`Box<T>` is a smart pointer that allows you to store data on the heap rather than the stack."
+  },
+  {
+    "title": "Iterating with Closures",
+    "description": "Using functional programming patterns in Rust.",
+    "code": "fn main() {\n    let v1 = vec![1, 2, 3];\n    let v2: Vec<_> = v1.iter().map(|x| x + 1).collect();\n    assert_eq!(v2, vec![2, 3, 4]);\n}",
+    "difficulty": 2,
+    "tags": [
+      "functional",
+      "iterators"
+    ],
+    "category": "Utility",
+    "explanation_md": "Iterators allow you to perform operations on sequences of items. `map` and `collect` are common iterator methods."
+  }
+]

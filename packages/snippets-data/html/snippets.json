@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Semantic HTML Skeleton",
+    "description": "Proper document structure using semantic elements.",
+    "code": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 1,
+    "tags": [
+      "semantics",
+      "basics"
+    ],
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer."
+  },
+  {
+    "title": "Responsive Video Embed",
+    "description": "Embedding a video that scales with the container.",
+    "code": "<div style=\"position:relative; padding-bottom:56.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 2,
+    "tags": [
+      "media",
+      "responsive"
+    ],
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive."
+  },
+  {
+    "title": "Form with Validation",
+    "description": "Using native HTML5 validation attributes.",
+    "code": "<form>\n  <label for=\"email\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[0-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 1,
+    "tags": [
+      "forms",
+      "validation"
+    ],
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`."
+  },
+  {
+    "title": "Data Attributes",
+    "description": "Storing custom data on elements.",
+    "code": "<div id=\"user\" data-id=\"123\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 1,
+    "tags": [
+      "data",
+      "custom"
+    ],
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements."
+  },
+  {
+    "title": "SVG Icon",
+    "description": "Embedding an inline SVG icon.",
+    "code": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 1,
+    "tags": [
+      "graphics",
+      "svg"
+    ],
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests."
+  }
+]

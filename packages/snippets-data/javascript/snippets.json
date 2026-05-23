@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Debounce Function",
+    "description": "Limits the rate at which a function can fire.",
+    "code": "function debounce(func, wait) {\n  let timeout;\n  return function executedFunction(...args) {\n    const later = () => {\n      clearTimeout(timeout);\n      func(...args);\n    };\n    clearTimeout(timeout);\n    timeout = setTimeout(later, wait);\n  };\n}",
+    "difficulty": 2,
+    "tags": [
+      "utility",
+      "performance"
+    ],
+    "category": "Utility",
+    "explanation_md": "Debouncing ensures that a function is not called too frequently. It waits for a specified period of inactivity before executing the function."
+  },
+  {
+    "title": "Deep Clone Object",
+    "description": "Creates a deep copy of an object using structuredClone.",
+    "code": "const deepClone = (obj) => {\n  return structuredClone(obj);\n};",
+    "difficulty": 1,
+    "tags": [
+      "object",
+      "utility"
+    ],
+    "category": "Basic",
+    "explanation_md": "The `structuredClone()` method creates a deep copy of a given value using the structured clone algorithm."
+  },
+  {
+    "title": "Array Unique Values",
+    "description": "Removes duplicates from an array.",
+    "code": "const uniqueArray = (arr) => [...new Set(arr)];",
+    "difficulty": 1,
+    "tags": [
+      "array",
+      "utility"
+    ],
+    "category": "Basic",
+    "explanation_md": "Uses the `Set` object to store unique values and then spreads it back into an array."
+  },
+  {
+    "title": "Fetch with Timeout",
+    "description": "Adds a timeout to a fetch request.",
+    "code": "async function fetchWithTimeout(resource, options = {}) {\n  const { timeout = 8000 } = options;\n  const controller = new AbortController();\n  const id = setTimeout(() => controller.abort(), timeout);\n  const response = await fetch(resource, {\n    ...options,\n    signal: controller.signal\n  });\n  clearTimeout(id);\n  return response;\n}",
+    "difficulty": 2,
+    "tags": [
+      "network",
+      "async"
+    ],
+    "category": "Advanced",
+    "explanation_md": "Uses `AbortController` to cancel a fetch request if it takes longer than the specified timeout."
+  },
+  {
+    "title": "Promisify Callback",
+    "description": "Converts a callback-based function to return a promise.",
+    "code": "const promisify = (fn) => (...args) =>\n  new Promise((resolve, reject) =>\n    fn(...args, (err, result) => (err ? reject(err) : resolve(result)))\n  );",
+    "difficulty": 2,
+    "tags": [
+      "async",
+      "utility"
+    ],
+    "category": "Utility",
+    "explanation_md": "Wraps a traditional callback-style function in a Promise constructor."
+  }
+]

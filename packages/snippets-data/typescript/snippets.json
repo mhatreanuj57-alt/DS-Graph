@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Generic Identity Function",
+    "description": "A function that returns whatever type is passed in.",
+    "code": "function identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 1,
+    "tags": [
+      "generics",
+      "basics"
+    ],
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one."
+  },
+  {
+    "title": "Interface with Optional Properties",
+    "description": "Defines the shape of an object with some non-mandatory fields.",
+    "code": "interface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 1,
+    "tags": [
+      "interface",
+      "types"
+    ],
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`."
+  },
+  {
+    "title": "Discriminated Unions",
+    "description": "Pattern for handling multiple types with a common literal property.",
+    "code": "interface Circle { kind: \"circle\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 2;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 2,
+    "tags": [
+      "types",
+      "advanced"
+    ],
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type."
+  },
+  {
+    "title": "Utility Type: Partial",
+    "description": "Makes all properties of a type optional.",
+    "code": "interface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 2,
+    "tags": [
+      "utility-types",
+      "types"
+    ],
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional."
+  },
+  {
+    "title": "Readonly Array",
+    "description": "Prevents mutation of an array.",
+    "code": "const list: readonly number[] = [1, 2, 3];\n// list.push(4); // Error: Property 'push' does not exist on type 'readonly number[]'.",
+    "difficulty": 1,
+    "tags": [
+      "array",
+      "immutability"
+    ],
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation."
+  }
+]
