@@ -148,6 +148,78 @@ export const appRouter = t.router({
         },
       });
     }),
+
+  getModulesByLanguage: t.procedure
+    .input(z.string())
+    .query(async ({ input }) => {
+      return prisma.module.findMany({
+        where: { language: { slug: input } },
+        include: { lessons: { orderBy: { order: 'asc' } } },
+        orderBy: { order: 'asc' },
+      });
+    }),
+
+  getLessonById: t.procedure
+    .input(z.string())
+    .query(async ({ input }) => {
+      return prisma.lesson.findUnique({
+        where: { id: input },
+        include: { module: { include: { language: true } } },
+      });
+    }),
+
+  getNotesByLanguage: t.procedure
+    .input(z.string())
+    .query(async ({ input }) => {
+      return prisma.note.findMany({
+        where: { language: { slug: input } },
+      });
+    }),
+
+  getQuizSetsByLanguage: t.procedure
+    .input(z.string())
+    .query(async ({ input }) => {
+      return prisma.quizSet.findMany({
+        where: { language: { slug: input } },
+        include: { _count: { select: { questions: true } } },
+        orderBy: [{ type: 'asc' }, { setNumber: 'asc' }],
+      });
+    }),
+
+  getQuizWithQuestions: t.procedure
+    .input(z.string())
+    .query(async ({ input }) => {
+      return prisma.quizSet.findUnique({
+        where: { id: input },
+        include: { questions: true },
+      });
+    }),
+
+  submitQuizResult: t.procedure
+    .input(z.object({
+      userId: z.string(),
+      quizSetId: z.string(),
+      score: z.number(),
+      total: z.number(),
+    }))
+    .mutation(async ({ input }) => {
+      return prisma.userQuizResult.create({
+        data: input,
+      });
+    }),
+
+  markLessonComplete: t.procedure
+    .input(z.object({
+      userId: z.string(),
+      lessonId: z.string(),
+    }))
+    .mutation(async ({ input }) => {
+      return prisma.userProgress.upsert({
+        where: { userId_lessonId: input },
+        update: { completed: true },
+        create: { ...input, completed: true },
+      });
+    }),
 });
 
 export type AppRouter = typeof appRouter;

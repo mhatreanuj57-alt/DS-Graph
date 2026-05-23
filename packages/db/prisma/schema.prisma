@@ -16,6 +16,8 @@ model User {
   lastActive    DateTime  @default(now())
   bookmarks     Snippet[] @relation("UserBookmarks")
   snippets      Snippet[] @relation("UserSnippets")
+  progress      UserProgress[]
+  quizResults   UserQuizResult[]
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
 }
@@ -26,6 +28,82 @@ model Language {
   slug        String    @unique
   iconUrl     String?
   snippets    Snippet[]
+  modules     Module[]
+  notes       Note[]
+  quizSets    QuizSet[]
+}
+
+model Module {
+  id          String    @id @default(cuid())
+  title       String
+  order       Int
+  languageId  String
+  language    Language  @relation(fields: [languageId], references: [id])
+  lessons     Lesson[]
+}
+
+model Lesson {
+  id          String    @id @default(cuid())
+  title       String
+  content     String    @db.Text
+  order       Int
+  moduleId    String
+  module      Module    @relation(fields: [moduleId], references: [id])
+  progress    UserProgress[]
+}
+
+model Note {
+  id          String    @id @default(cuid())
+  title       String
+  content     String    @db.Text
+  languageId  String
+  language    Language  @relation(fields: [languageId], references: [id])
+}
+
+model QuizSet {
+  id          String    @id @default(cuid())
+  title       String
+  setNumber   Int       // 1, 2, or 3
+  type        String    // MCQ, THEORETICAL, PRACTICAL
+  languageId  String
+  language    Language  @relation(fields: [languageId], references: [id])
+  questions   Question[]
+  results     UserQuizResult[]
+}
+
+model Question {
+  id            String    @id @default(cuid())
+  type          String    // MCQ, THEORETICAL, PRACTICAL
+  text          String    @db.Text
+  options       String?   // JSON string for MCQs
+  correctOption Int?      // For MCQs
+  expectedOut   String?   // For Practical
+  explanation   String?   @db.Text
+  quizSetId     String
+  quizSet       QuizSet   @relation(fields: [quizSetId], references: [id])
+}
+
+model UserProgress {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  lessonId  String
+  lesson    Lesson   @relation(fields: [lessonId], references: [id])
+  completed Boolean  @default(false)
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, lessonId])
+}
+
+model UserQuizResult {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  quizSetId String
+  quizSet   QuizSet  @relation(fields: [quizSetId], references: [id])
+  score     Int
+  total     Int
+  completedAt DateTime @default(now())
 }
 
 model Snippet {

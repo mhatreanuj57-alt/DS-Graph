@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Hoisting",
+    "content": "# Hoisting\n\nHoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compilation phase.\n\n- **Function declarations** are fully hoisted.\n- **`var`** is hoisted and initialized with `undefined`.\n- **`let`** and **`const`** are hoisted but not initialized (Temporal Dead Zone)."
+  },
+  {
+    "title": "Prototypal Inheritance",
+    "content": "# Prototypal Inheritance\n\nJavaScript objects inherit properties and methods from other objects via the prototype chain.\n\n- Every object has a private property which holds a link to another object called its **prototype**.\n- When trying to access a property, JS looks at the object itself, then its prototype, until it reaches `null`."
+  },
+  {
+    "title": "The 'this' Keyword",
+    "content": "# The 'this' Keyword\n\nThe value of `this` depends on how a function is called:\n\n1. **Global context**: Window (in browser) or global (in Node).\n2. **Method call**: The object the method belongs to.\n3. **Constructor call**: The newly created instance.\n4. **Arrow functions**: Lexical `this` (from parent scope).\n5. **Explicit binding**: `call`, `apply`, `bind`."
+  },
+  {
+    "title": "Closures",
+    "content": "# Closures\n\nA closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.\n\n**Use cases**:\n- Data privacy (private variables).\n- Function factories.\n- Event handlers and callbacks."
+  },
+  {
+    "title": "Strict Mode",
+    "content": "# Strict Mode\n\nActivated by writing `\"use strict\";` at the top of a script or function. It makes several changes to normal JS semantics:\n\n- Eliminates some silent errors by throwing them.\n- Fixes mistakes that make it difficult for engines to perform optimizations.\n- Prohibits some syntax likely to be defined in future versions of ECMAScript."
+  }
+]
