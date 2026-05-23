@@ -16,7 +16,15 @@
 body {
   background-color: var(--bg-base);
   color: var(--text-hi);
-  font-family: var(--font-geist);
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+code, kbd, .font-mono {
+  font-family: var(--font-geist-mono), monospace;
+}
+
+.editor-font {
+  font-family: 'JetBrains Mono', monospace;
 }
 
 @theme {
