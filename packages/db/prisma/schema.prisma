@@ -1,0 +1,58 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  handle        String?   @unique
+  avatarUrl     String?
+  streak        Int       @default(0)
+  lastActive    DateTime  @default(now())
+  bookmarks     Snippet[] @relation("UserBookmarks")
+  snippets      Snippet[] @relation("UserSnippets")
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Language {
+  id          String    @id @default(cuid())
+  name        String    @unique
+  slug        String    @unique
+  iconUrl     String?
+  snippets    Snippet[]
+}
+
+model Snippet {
+  id              String    @id @default(cuid())
+  title           String
+  description     String?
+  code            String    @db.Text
+  languageId      String
+  language        Language  @relation(fields: [languageId], references: [id])
+  difficulty      Int       @default(1) // 1=beginner, 2=intermediate, 3=advanced
+  tags            Tag[]
+  category        String?
+  outputPreview   String?
+  explanationMd   String?   @db.Text
+  isVerified      Boolean   @default(false)
+  views           Int       @default(0)
+  upvotes         Int       @default(0)
+  version         Int       @default(1)
+  createdBy       String
+  author          User      @relation("UserSnippets", fields: [createdBy], references: [id])
+  bookmarkedBy    User[]    @relation("UserBookmarks")
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+model Tag {
+  id        String    @id @default(cuid())
+  name      String    @unique
+  snippets  Snippet[]
+}

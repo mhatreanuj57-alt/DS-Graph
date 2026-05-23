@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --bg-base: #0A0A0A;
+  --bg-surface: #111111;
+  --bg-raised: #181818;
+  --border: #1E1E1E;
+  --accent: #E8FF00;
+  --text-hi: #F0F0F0;
+  --text-lo: #666666;
+  --success: #22C55E;
+  --error: #EF4444;
+  --warning: #F59E0B;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-hi);
+  font-family: var(--font-geist);
+}
+
+@theme {
+  --color-bg-base: var(--bg-base);
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-raised: var(--bg-raised);
+  --color-border-dim: var(--border);
+  --color-accent: var(--accent);
+  --color-text-hi: var(--text-hi);
+  --color-text-lo: var(--text-lo);
+}
