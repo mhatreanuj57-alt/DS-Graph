@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Basic Scene Setup",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer.",
+    "code": "import * as THREE from 'three';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 1,
+    "tags": ["setup", "scene"],
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen)."
+  },
+  {
+    "title": "Animated Rotating Cube",
+    "description": "Creating a mesh and animating its rotation in a loop.",
+    "code": "const geometry = new THREE.BoxGeometry(1, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 1,
+    "tags": ["animation", "mesh"],
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop."
+  },
+  {
+    "title": "Responsive Window Resize",
+    "description": "Adjusting the renderer and camera when the window size changes.",
+    "code": "window.addEventListener('resize', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));\n});",
+    "difficulty": 2,
+    "tags": ["responsive", "utility"],
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window."
+  },
+  {
+    "title": "Load GLTF Model",
+    "description": "Using GLTFLoader to import external 3D models.",
+    "code": "import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 2,
+    "tags": ["loader", "gltf"],
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js."
+  },
+  {
+    "title": "Custom Shader Material",
+    "description": "Creating a material with custom Vertex and Fragment shaders.",
+    "code": "const material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 1.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 3,
+    "tags": ["advanced", "shaders", "glsl"],
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level."
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Vector Sorting with Lambda",
+    "description": "Sorts a vector of objects using a custom lambda comparator.",
+    "code": "#include <vector>\n#include <algorithm>\n\nstruct Person {\n    std::string name;\n    int age;\n};\n\nvoid sortPeople(std::vector<Person>& people) {\n    std::sort(people.begin(), people.end(), [](const Person& a, const Person& b) {\n        return a.age < b.age;\n    });\n}",
+    "difficulty": 1,
+    "tags": ["vector", "lambda", "algorithm"],
+    "category": "Basic",
+    "explanation_md": "Demonstrates the use of `std::sort` with a lambda function to sort a collection of custom structures by a specific member."
+  },
+  {
+    "title": "Unique Pointer Usage",
+    "description": "Safe memory management using std::unique_ptr.",
+    "code": "#include <memory>\n\nclass Resource {\npublic:\n    void doSomething() {}\n};\n\nvoid useResource() {\n    std::unique_ptr<Resource> res = std::make_unique<Resource>();\n    res->doSomething();\n    // Automatically deleted when 'res' goes out of scope\n}",
+    "difficulty": 2,
+    "tags": ["smart-pointers", "memory"],
+    "category": "Utility",
+    "explanation_md": "`std::unique_ptr` is a smart pointer that owns and manages another object through a pointer and disposes of that object when the unique_ptr goes out of scope."
+  },
+  {
+    "title": "Template Singleton Class",
+    "description": "A reusable thread-safe Singleton pattern using templates.",
+    "code": "template <typename T>\nclass Singleton {\npublic:\n    static T& getInstance() {\n        static T instance;\n        return instance;\n    }\nprotected:\n    Singleton() = default;\n    ~Singleton() = default;\nprivate:\n    Singleton(const Singleton&) = delete;\n    Singleton& operator=(const Singleton&) = delete;\n};",
+    "difficulty": 3,
+    "tags": ["templates", "design-patterns"],
+    "category": "Advanced",
+    "explanation_md": "Uses C++11 static local variable initialization (which is thread-safe) and templates to create a reusable Singleton base class."
+  },
+  {
+    "title": "RAII File Handler",
+    "description": "Ensures files are closed automatically when the handler is destroyed.",
+    "code": "#include <fstream>\n#include <string>\n\nclass FileHandler {\n    std::fstream file;\npublic:\n    FileHandler(const std::string& filename) : file(filename, std::ios::in | std::ios::out) {}\n    ~FileHandler() {\n        if (file.is_open()) file.close();\n    }\n    std::fstream& get() { return file; }\n};",
+    "difficulty": 2,
+    "tags": ["raii", "file-io"],
+    "category": "Advanced",
+    "explanation_md": "Implements Resource Acquisition Is Initialization (RAII) to ensure file resources are properly released, preventing file descriptor leaks."
+  },
+  {
+    "title": "String Splitting Utility",
+    "description": "Splits a string into a vector using a delimiter.",
+    "code": "#include <sstream>\n#include <vector>\n#include <string>\n\nstd::vector<std::string> split(const std::string& s, char delimiter) {\n    std::vector<std::string> tokens;\n    std::string token;\n    std::istringstream tokenStream(s);\n    while (std::getline(tokenStream, token, delimiter)) {\n        tokens.push_back(token);\n    }\n    return tokens;\n}",
+    "difficulty": 2,
+    "tags": ["string", "utility"],
+    "category": "Utility",
+    "explanation_md": "Uses `std::stringstream` and `std::getline` to parse a string into segments based on a specified character delimiter."
+  }
+]

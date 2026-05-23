@@ -1,0 +1,47 @@
+[
+  {
+    "title": "PDO Database Connection",
+    "description": "Securely connecting to a MySQL database using PDO.",
+    "code": "<?php\n$host = '127.0.0.1';\n$db   = 'test_db';\n$user = 'root';\n$pass = '';\n$charset = 'utf8mb4';\n\n$dsn = \"mysql:host=$host;dbname=$db;charset=$charset\";\n$options = [\n    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,\n    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,\n    PDO::ATTR_EMULATE_PREPARES   => false,\n];\n\ntry {\n     $pdo = new PDO($dsn, $user, $pass, $options);\n} catch (\\PDOException $e) {\n     throw new \\PDOException($e->getMessage(), (int)$e->getCode());\n}",
+    "difficulty": 1,
+    "tags": ["database", "pdo"],
+    "category": "Basic",
+    "explanation_md": "PDO (PHP Data Objects) provides a consistent interface for accessing many different databases and encourages secure practices like prepared statements."
+  },
+  {
+    "title": "Password Hashing",
+    "description": "Securely hashing and verifying passwords.",
+    "code": "<?php\n// Hashing\n$password = 'user_secret_password';\n$hash = password_hash($password, PASSWORD_DEFAULT);\n\n// Verification\nif (password_verify($password, $hash)) {\n    echo 'Password is valid!';\n} else {\n    echo 'Invalid password.';\n}",
+    "difficulty": 1,
+    "tags": ["security", "auth"],
+    "category": "Utility",
+    "explanation_md": "Uses PHP's built-in `password_hash` and `password_verify` functions, which implement industry-standard hashing algorithms (currently bcrypt)."
+  },
+  {
+    "title": "Simple File Upload",
+    "description": "Handling a single file upload with basic validation.",
+    "code": "<?php\nif ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['my_file'])) {\n    $targetDir = \"uploads/\";\n    $targetFile = $targetDir . basename($_FILES[\"my_file\"][\"name\"]);\n    $fileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));\n\n    if ($_FILES[\"my_file\"][\"size\"] < 500000 && $fileType == \"jpg\") {\n        if (move_uploaded_file($_FILES[\"my_file\"][\"tmp_name\"], $targetFile)) {\n            echo \"File uploaded successfully.\";\n        }\n    }\n}",
+    "difficulty": 2,
+    "tags": ["file-upload", "utility"],
+    "category": "Utility",
+    "explanation_md": "Demonstrates the basic process of handling the `$_FILES` superglobal to move a file from a temporary location to a permanent one."
+  },
+  {
+    "title": "JSON API Response Helper",
+    "description": "A reusable function to send JSON responses.",
+    "code": "<?php\nfunction sendJsonResponse($data, $status = 200) {\n    header(\"Content-Type: application/json\");\n    http_response_code($status);\n    echo json_encode($data);\n    exit;\n}\n\n// Usage:\nsendJsonResponse(['status' => 'success', 'message' => 'Data found'], 200);",
+    "difficulty": 1,
+    "tags": ["api", "utility"],
+    "category": "Utility",
+    "explanation_md": "Sets the correct headers and status code before encoding and echoing the data as a JSON string."
+  },
+  {
+    "title": "Singleton Pattern in PHP",
+    "description": "Ensuring a class has only one instance.",
+    "code": "<?php\nclass Database {\n    private static $instance = null;\n\n    private function __construct() { /* Private constructor */ }\n\n    public static function getInstance() {\n        if (self::$instance === null) {\n            self::$instance = new self();\n        }\n        return self::$instance;\n    }\n\n    private function __clone() { /* Disable cloning */ }\n}",
+    "difficulty": 3,
+    "tags": ["design-patterns", "oop"],
+    "category": "Advanced",
+    "explanation_md": "The Singleton pattern restricts the instantiation of a class to one 'single' instance. This is useful for shared resources like database connections."
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "title": "useLocalStorage Hook",
+    "description": "A custom hook for syncing state with localStorage.",
+    "code": "import { useState, useEffect } from 'react';\n\nfunction useLocalStorage(key, initialValue) {\n  const [value, setValue] = useState(() => {\n    const saved = localStorage.getItem(key);\n    return saved ? JSON.parse(saved) : initialValue;\n  });\n\n  useEffect(() => {\n    localStorage.setItem(key, JSON.stringify(value));\n  }, [key, value]);\n\n  return [value, setValue];\n}",
+    "difficulty": 2,
+    "tags": ["hooks", "storage"],
+    "category": "Utility",
+    "explanation_md": "This hook provides a simple interface to persist state in the browser's local storage, handling serialization and deserialization automatically."
+  },
+  {
+    "title": "usePrevious Hook",
+    "description": "Tracks the previous value of a prop or state.",
+    "code": "import { useRef, useEffect } from 'react';\n\nfunction usePrevious(value) {\n  const ref = useRef();\n  useEffect(() => {\n    ref.current = value;\n  }, [value]);\n  return ref.current;\n}",
+    "difficulty": 2,
+    "tags": ["hooks", "lifecycle"],
+    "category": "Utility",
+    "explanation_md": "Uses `useRef` to store the value from the previous render. The `useEffect` updates the ref after the render is committed."
+  },
+  {
+    "title": "Render Props Pattern",
+    "description": "A component that shares state via a function prop.",
+    "code": "import React, { useState } from 'react';\n\nconst MouseTracker = ({ render }) => {\n  const [position, setPosition] = useState({ x: 0, y: 0 });\n\n  const handleMouseMove = (event) => {\n    setPosition({ x: event.clientX, y: event.clientY });\n  };\n\n  return (\n    <div style={{ height: '100vh' }} onMouseMove={handleMouseMove}>\n      {render(position)}\n    </div>\n  );\n};",
+    "difficulty": 3,
+    "tags": ["patterns", "render-props"],
+    "category": "Advanced",
+    "explanation_md": "Render props is a technique for sharing code between React components using a prop whose value is a function."
+  },
+  {
+    "title": "Basic Counter Component",
+    "description": "A simple functional component with state management.",
+    "code": "import React, { useState } from 'react';\n\nexport const Counter = () => {\n  const [count, setCount] = useState(0);\n\n  return (\n    <div>\n      <p>Count: {count}</p>\n      <button onClick={() => setCount(count + 1)}>Increment</button>\n      <button onClick={() => setCount(count - 1)}>Decrement</button>\n    </div>\n  );\n};",
+    "difficulty": 1,
+    "tags": ["basic", "state"],
+    "category": "Basic",
+    "explanation_md": "Demonstrates the most basic use of the `useState` hook to manage a numerical counter in a functional component."
+  },
+  {
+    "title": "ErrorBoundary Component",
+    "description": "Catches JavaScript errors in child component trees.",
+    "code": "import React from 'react';\n\nclass ErrorBoundary extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = { hasError: false };\n  }\n\n  static getDerivedStateFromError(error) {\n    return { hasError: true };\n  }\n\n  componentDidCatch(error, errorInfo) {\n    console.error('Error caught:', error, errorInfo);\n  }\n\n  render() {\n    if (this.state.hasError) {\n      return <h1>Something went wrong.</h1>;\n    }\n    return this.props.children;\n  }\n}",
+    "difficulty": 3,
+    "tags": ["advanced", "error-handling"],
+    "category": "Advanced",
+    "explanation_md": "Error boundaries are class components that catch errors anywhere in their child component tree, log those errors, and display a fallback UI."
+  }
+]

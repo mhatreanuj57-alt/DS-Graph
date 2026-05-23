@@ -6,7 +6,9 @@ const prisma = new PrismaClient();
 
 const languages = [
   'javascript', 'python', 'typescript', 'rust', 'go', 
-  'java', 'html', 'css', 'sql', 'shell'
+  'java', 'html', 'css', 'sql', 'shell',
+  'c', 'cpp', 'react', 'nextjs', 'node',
+  'php', 'firebase', 'supabase', 'threejs', 'wordpress'
 ];
 
 async function main() {

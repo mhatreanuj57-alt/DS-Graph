@@ -1,0 +1,47 @@
+[
+  {
+    "title": "API Route Handler",
+    "description": "A basic API route in Next.js 13+ App Router.",
+    "code": "import { NextResponse } from 'next/server';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 1,
+    "tags": ["api", "app-router"],
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object."
+  },
+  {
+    "title": "getStaticProps with Revalidation",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router).",
+    "code": "export async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 60, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 2,
+    "tags": ["isr", "pages-router"],
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site."
+  },
+  {
+    "title": "Middleware for Authentication",
+    "description": "Protecting routes using Next.js Middleware.",
+    "code": "import { NextResponse } from 'next/server';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 3,
+    "tags": ["middleware", "auth"],
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status."
+  },
+  {
+    "title": "Custom Document (Pages Router)",
+    "description": "Customizing the <html> and <body> tags.",
+    "code": "import { Html, Head, Main, NextScript } from 'next/document';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-100\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 2,
+    "tags": ["document", "seo"],
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling."
+  },
+  {
+    "title": "Dynamic Route Parameters",
+    "description": "Accessing route segments in the App Router.",
+    "code": "// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 1,
+    "tags": ["routing", "dynamic-routes"],
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component."
+  }
+]

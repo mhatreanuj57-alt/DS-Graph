@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Basic HTTP Server",
+    "description": "Creates a simple server using the built-in http module.",
+    "code": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  res.statusCode = 200;\n  res.setHeader('Content-Type', 'text/plain');\n  res.end('Hello World\\n');\n});\n\nserver.listen(3000, () => {\n  console.log('Server running at http://localhost:3000/');\n});",
+    "difficulty": 1,
+    "tags": ["http", "server"],
+    "category": "Basic",
+    "explanation_md": "Uses the core `http` module to create a server that listens on port 3000 and responds with 'Hello World'."
+  },
+  {
+    "title": "Stream File Download",
+    "description": "Streams a file from the filesystem to an HTTP response.",
+    "code": "const http = require('http');\nconst fs = require('fs');\nconst path = require('path');\n\nhttp.createServer((req, res) => {\n  const filePath = path.join(__dirname, 'large-file.zip');\n  const stat = fs.statSync(filePath);\n\n  res.writeHead(200, {\n    'Content-Type': 'application/zip',\n    'Content-Length': stat.size\n  });\n\n  const readStream = fs.createReadStream(filePath);\n  readStream.pipe(res);\n}).listen(3000);",
+    "difficulty": 2,
+    "tags": ["streams", "fs"],
+    "category": "Utility",
+    "explanation_md": "Streaming files is more memory-efficient than reading the entire file into memory before sending it to the client."
+  },
+  {
+    "title": "Event Emitter Example",
+    "description": "Creating and handling custom events.",
+    "code": "const EventEmitter = require('events');\n\nclass MyEmitter extends EventEmitter {}\n\nconst myEmitter = new MyEmitter();\n\nmyEmitter.on('event', (data) => {\n  console.log('An event occurred with data:', data);\n});\n\nmyEmitter.emit('event', { id: 1, name: 'Test' });",
+    "difficulty": 2,
+    "tags": ["events", "design-patterns"],
+    "category": "Basic",
+    "explanation_md": "Node.js's event-driven architecture uses the `EventEmitter` class to facilitate communication between different parts of an application."
+  },
+  {
+    "title": "Promisified fs.readFile",
+    "description": "Reading a file using async/await with the promises API.",
+    "code": "const fs = require('fs').promises;\n\nasync function readFile(path) {\n  try {\n    const data = await fs.readFile(path, 'utf8');\n    console.log(data);\n  } catch (err) {\n    console.error('Error reading file:', err);\n  }\n}\n\nreadFile('./example.txt');",
+    "difficulty": 1,
+    "tags": ["async", "fs"],
+    "category": "Utility",
+    "explanation_md": "Uses the newer `fs.promises` API to perform asynchronous file operations with a cleaner syntax than callbacks."
+  },
+  {
+    "title": "Worker Threads for Heavy Tasks",
+    "description": "Offloading CPU-intensive tasks to a worker thread.",
+    "code": "const { Worker, isMainThread, parentPort, workerData } = require('worker_threads');\n\nif (isMainThread) {\n  const worker = new Worker(__filename, { workerData: 42 });\n  worker.on('message', (msg) => console.log('Result from worker:', msg));\n} else {\n  const result = workerData * workerData;\n  parentPort.postMessage(result);\n}",
+    "difficulty": 3,
+    "tags": ["performance", "multi-threading"],
+    "category": "Advanced",
+    "explanation_md": "Worker threads allow Node.js to perform multi-threaded execution, which is useful for CPU-bound tasks like image processing or complex calculations."
+  }
+]

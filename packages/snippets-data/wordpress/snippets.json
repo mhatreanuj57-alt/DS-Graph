@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Register Custom Post Type",
+    "description": "Creating a new post type for things like 'Movies' or 'Products'.",
+    "code": "function create_movie_post_type() {\n    register_post_type('movies',\n        array(\n            'labels' => array(\n                'name' => __('Movies'),\n                'singular_name' => __('Movie')\n            ),\n            'public' => true,\n            'has_archive' => true,\n            'supports' => array('title', 'editor', 'thumbnail'),\n            'menu_icon' => 'dashicons-video-alt3',\n        )\n    );\n}\nadd_action('init', 'create_movie_post_type');",
+    "difficulty": 1,
+    "tags": ["cpt", "setup"],
+    "category": "Basic",
+    "explanation_md": "Registers a new 'movies' post type in the WordPress admin, enabling custom content structures beyond just Posts and Pages."
+  },
+  {
+    "title": "Enqueue Scripts and Styles",
+    "description": "Properly adding CSS and JS files to your theme.",
+    "code": "function theme_enqueue_assets() {\n    wp_enqueue_style('main-style', get_stylesheet_uri());\n    wp_enqueue_script('custom-js', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0', true);\n}\nadd_action('wp_enqueue_scripts', 'theme_enqueue_assets');",
+    "difficulty": 1,
+    "tags": ["assets", "frontend"],
+    "category": "Basic",
+    "explanation_md": "The standard way to load stylesheets and scripts in WordPress. Using `wp_enqueue` ensures dependencies (like jQuery) are handled correctly."
+  },
+  {
+    "title": "Create a Custom Shortcode",
+    "description": "A reusable shortcode for displaying dynamic content.",
+    "code": "function greeting_shortcode($atts) {\n    $a = shortcode_atts(array(\n        'name' => 'Friend'\n    ), $atts);\n    return \"Hello, \" . esc_html($a['name']) . \"!\";\n}\nadd_shortcode('greet', 'greeting_shortcode');\n\n// Usage: [greet name=\"John\"]",
+    "difficulty": 2,
+    "tags": ["shortcode", "utility"],
+    "category": "Utility",
+    "explanation_md": "Shortcodes allow users to insert dynamic content or complex UI elements into posts/pages using simple bracketed tags."
+  },
+  {
+    "title": "Custom REST API Endpoint",
+    "description": "Registering a new route in the WordPress REST API.",
+    "code": "add_action('rest_api_init', function () {\n  register_rest_route('mytheme/v1', '/latest-posts', array(\n    'methods' => 'GET',\n    'callback' => 'get_latest_posts_custom',\n  ));\n});\n\nfunction get_latest_posts_custom($data) {\n  $posts = get_posts(array('numberposts' => 5));\n  return $posts;\n}",
+    "difficulty": 3,
+    "tags": ["rest-api", "advanced"],
+    "category": "Advanced",
+    "explanation_md": "Extends the WordPress REST API with a custom endpoint, useful for building headless WordPress sites or custom integrations."
+  },
+  {
+    "title": "Modify Main Query via Pre_get_posts",
+    "description": "Changing the global query before it runs.",
+    "code": "function exclude_category_from_home($query) {\n    if ($query->is_home() && $query->is_main_query()) {\n        $query->set('cat', '-5');\n    }\n}\nadd_action('pre_get_posts', 'exclude_category_from_home');",
+    "difficulty": 2,
+    "tags": ["query", "hooks"],
+    "category": "Advanced",
+    "explanation_md": "The `pre_get_posts` hook is the most efficient way to alter the main WordPress query (e.g., hiding certain posts or changing order) before the database is even queried."
+  }
+]

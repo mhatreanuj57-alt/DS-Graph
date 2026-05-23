@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Linked List Node Structure",
+    "description": "Defines a basic structure for a singly linked list node.",
+    "code": "struct Node {\n    int data;\n    struct Node* next;\n};\n\nstruct Node* createNode(int data) {\n    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));\n    newNode->data = data;\n    newNode->next = NULL;\n    return newNode;\n}",
+    "difficulty": 1,
+    "tags": ["data-structure", "linked-list"],
+    "category": "Basic",
+    "explanation_md": "This snippet defines a simple structure for a linked list node and a helper function to allocate and initialize a new node."
+  },
+  {
+    "title": "String Reverse",
+    "description": "Reverses a string in-place.",
+    "code": "void reverseString(char* str) {\n    int length = strlen(str);\n    for (int i = 0; i < length / 2; i++) {\n        char temp = str[i];\n        str[i] = str[length - i - 1];\n        str[length - i - 1] = temp;\n    }\n}",
+    "difficulty": 1,
+    "tags": ["string", "algorithm"],
+    "category": "Basic",
+    "explanation_md": "Uses a two-pointer approach (conceptualized here via index) to swap characters from the beginning and end of the string moving inwards."
+  },
+  {
+    "title": "Read File Line by Line",
+    "description": "Uses fgets to read a file sequentially.",
+    "code": "void readFile(const char* filename) {\n    FILE* file = fopen(filename, \"r\");\n    if (file == NULL) return;\n    char line[256];\n    while (fgets(line, sizeof(line), file)) {\n        printf(\"%s\", line);\n    }\n    fclose(file);\n}",
+    "difficulty": 2,
+    "tags": ["file-io", "utility"],
+    "category": "Utility",
+    "explanation_md": "Opens a file in read mode and uses `fgets` to read content line by line into a buffer until the end of the file is reached."
+  },
+  {
+    "title": "Function Pointer Callback",
+    "description": "Demonstrates how to use function pointers for callbacks.",
+    "code": "void processArray(int* arr, int size, void (*callback)(int)) {\n    for (int i = 0; i < size; i++) {\n        callback(arr[i]);\n    }\n}\n\nvoid printItem(int n) {\n    printf(\"Item: %d\\n\", n);\n}",
+    "difficulty": 3,
+    "tags": ["advanced", "pointers"],
+    "category": "Advanced",
+    "explanation_md": "Function pointers allow passing functions as arguments to other functions, enabling flexible and modular code patterns like callbacks."
+  },
+  {
+    "title": "Safe Free Wrapper",
+    "description": "A macro to safely free memory and set the pointer to NULL.",
+    "code": "#define SAFE_FREE(ptr) do { free(ptr); (ptr) = NULL; } while(0)\n\n// Usage:\n// int* arr = malloc(10 * sizeof(int));\n// SAFE_FREE(arr);",
+    "difficulty": 2,
+    "tags": ["memory", "macro"],
+    "category": "Utility",
+    "explanation_md": "Prevents double-free and dangling pointer issues by setting the pointer to NULL immediately after freeing the allocated memory."
+  }
+]

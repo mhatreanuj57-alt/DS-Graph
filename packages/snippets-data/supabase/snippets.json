@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Initialize Supabase Client",
+    "description": "Setting up the Supabase client in your application.",
+    "code": "import { createClient } from '@supabase/supabase-js';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 1,
+    "tags": ["setup", "client"],
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security."
+  },
+  {
+    "title": "Fetch Data with Filters",
+    "description": "Querying a table with multiple conditions.",
+    "code": "const { data, error } = await supabase\n  .from('countries')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 1,
+    "tags": ["query", "select"],
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`)."
+  },
+  {
+    "title": "Auth: Sign Up with Email",
+    "description": "Registering a new user using email and password.",
+    "code": "const { data, error } = await supabase.auth.signUp({\n  email: 'example@email.com',\n  password: 'secure-password',\n});",
+    "difficulty": 1,
+    "tags": ["auth", "sign-up"],
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured."
+  },
+  {
+    "title": "Realtime Subscriptions",
+    "description": "Listen for database changes in real-time.",
+    "code": "const channels = supabase.channel('custom-all-channel')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 2,
+    "tags": ["realtime", "postgres"],
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table."
+  },
+  {
+    "title": "Upload to Storage",
+    "description": "Uploading a file to a Supabase Storage bucket.",
+    "code": "const { data, error } = await supabase\n  .storage\n  .from('avatars')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3600',\n    upsert: false\n  });",
+    "difficulty": 2,
+    "tags": ["storage", "upload"],
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files."
+  }
+]
