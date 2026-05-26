@@ -4,59 +4,1569 @@
     "description": "Aggregating data across multiple tables.",
     "code": "SELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
     "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.",
     "tags": [
       "joins",
-      "aggregation"
-    ],
+      "aggregation",
+      "sql-snippet",
+      "seed-1"
+    ]
+  },
+  {
+    "title": "Join with Group By (Quick Start)",
+    "description": "Aggregating data across multiple tables. Focus: the smallest useful version.",
+    "code": "-- Quick Start focus: the smallest useful version\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 1,
     "category": "Basic",
-    "explanation_md": "Combines users and their orders, counting how many orders each user has made."
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "quick-start",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Validation)",
+    "description": "Aggregating data across multiple tables. Focus: guarding inputs before work begins.",
+    "code": "-- Validation focus: guarding inputs before work begins\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "validation",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Practical Example)",
+    "description": "Aggregating data across multiple tables. Focus: a realistic day-to-day use case.",
+    "code": "-- Practical Example focus: a realistic day-to-day use case\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "practical",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Reusable Utility)",
+    "description": "Aggregating data across multiple tables. Focus: extracting logic into a helper.",
+    "code": "-- Reusable Utility focus: extracting logic into a helper\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "utility",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Edge Cases)",
+    "description": "Aggregating data across multiple tables. Focus: behavior around empty or unexpected values.",
+    "code": "-- Edge Cases focus: behavior around empty or unexpected values\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "edge-cases",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Debug Friendly)",
+    "description": "Aggregating data across multiple tables. Focus: visibility while troubleshooting.",
+    "code": "-- Debug Friendly focus: visibility while troubleshooting\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "debugging",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Performance Pass)",
+    "description": "Aggregating data across multiple tables. Focus: reducing extra work and repeated operations.",
+    "code": "-- Performance Pass focus: reducing extra work and repeated operations\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "performance",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Refactor Pass)",
+    "description": "Aggregating data across multiple tables. Focus: cleaner naming and separation of concerns.",
+    "code": "-- Refactor Pass focus: cleaner naming and separation of concerns\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "refactor",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Interview Style)",
+    "description": "Aggregating data across multiple tables. Focus: a compact explanation-friendly version.",
+    "code": "-- Interview Style focus: a compact explanation-friendly version\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "interview",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Production Hint)",
+    "description": "Aggregating data across multiple tables. Focus: a safer version to build on in production.",
+    "code": "-- Production Hint focus: a safer version to build on in production\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "production",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Test Ready)",
+    "description": "Aggregating data across multiple tables. Focus: making the behavior easier to verify.",
+    "code": "-- Test Ready focus: making the behavior easier to verify\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "testing",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Data Cleanup)",
+    "description": "Aggregating data across multiple tables. Focus: normalizing and cleaning source values.",
+    "code": "-- Data Cleanup focus: normalizing and cleaning source values\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "cleanup",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Batch Mode)",
+    "description": "Aggregating data across multiple tables. Focus: handling multiple values in one pass.",
+    "code": "-- Batch Mode focus: handling multiple values in one pass\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "batch",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Error Aware)",
+    "description": "Aggregating data across multiple tables. Focus: failing clearly when assumptions break.",
+    "code": "-- Error Aware focus: failing clearly when assumptions break\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "error-handling",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Team Style)",
+    "description": "Aggregating data across multiple tables. Focus: readable code that other developers can extend.",
+    "code": "-- Team Style focus: readable code that other developers can extend\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "team-style",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Extended Example)",
+    "description": "Aggregating data across multiple tables. Focus: one extra step beyond the original sample.",
+    "code": "-- Extended Example focus: one extra step beyond the original sample\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "extended",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Checklist Version)",
+    "description": "Aggregating data across multiple tables. Focus: the moving parts you should review before shipping.",
+    "code": "-- Checklist Version focus: the moving parts you should review before shipping\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "checklist",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (API Friendly)",
+    "description": "Aggregating data across multiple tables. Focus: shaping output for an endpoint or integration.",
+    "code": "-- API Friendly focus: shaping output for an endpoint or integration\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "api",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Reporting)",
+    "description": "Aggregating data across multiple tables. Focus: turning output into a concise summary.",
+    "code": "-- Reporting focus: turning output into a concise summary\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "reporting",
+      "seed-1",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Join with Group By (Practice Prompt)",
+    "description": "Aggregating data across multiple tables. Focus: a version that is easy to modify in exercises.",
+    "code": "-- Practice Prompt focus: a version that is easy to modify in exercises\nSELECT u.username, COUNT(o.id) as order_count\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nGROUP BY u.id, u.username;",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Combines users and their orders, counting how many orders each user has made.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "joins",
+      "aggregation",
+      "practice",
+      "seed-1",
+      "sql-snippet"
+    ]
   },
   {
     "title": "Common Table Expression (CTE)",
     "description": "Creating temporary result sets for complex queries.",
     "code": "WITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
     "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.",
     "tags": [
       "cte",
-      "advanced"
-    ],
+      "advanced",
+      "sql-snippet",
+      "seed-2"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Quick Start)",
+    "description": "Creating temporary result sets for complex queries. Focus: the smallest useful version.",
+    "code": "-- Quick Start focus: the smallest useful version\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 1,
     "category": "Advanced",
-    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks."
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "quick-start",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Validation)",
+    "description": "Creating temporary result sets for complex queries. Focus: guarding inputs before work begins.",
+    "code": "-- Validation focus: guarding inputs before work begins\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "validation",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Practical Example)",
+    "description": "Creating temporary result sets for complex queries. Focus: a realistic day-to-day use case.",
+    "code": "-- Practical Example focus: a realistic day-to-day use case\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "practical",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Reusable Utility)",
+    "description": "Creating temporary result sets for complex queries. Focus: extracting logic into a helper.",
+    "code": "-- Reusable Utility focus: extracting logic into a helper\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "utility",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Edge Cases)",
+    "description": "Creating temporary result sets for complex queries. Focus: behavior around empty or unexpected values.",
+    "code": "-- Edge Cases focus: behavior around empty or unexpected values\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "edge-cases",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Debug Friendly)",
+    "description": "Creating temporary result sets for complex queries. Focus: visibility while troubleshooting.",
+    "code": "-- Debug Friendly focus: visibility while troubleshooting\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "debugging",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Performance Pass)",
+    "description": "Creating temporary result sets for complex queries. Focus: reducing extra work and repeated operations.",
+    "code": "-- Performance Pass focus: reducing extra work and repeated operations\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "performance",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Refactor Pass)",
+    "description": "Creating temporary result sets for complex queries. Focus: cleaner naming and separation of concerns.",
+    "code": "-- Refactor Pass focus: cleaner naming and separation of concerns\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "refactor",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Interview Style)",
+    "description": "Creating temporary result sets for complex queries. Focus: a compact explanation-friendly version.",
+    "code": "-- Interview Style focus: a compact explanation-friendly version\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "interview",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Production Hint)",
+    "description": "Creating temporary result sets for complex queries. Focus: a safer version to build on in production.",
+    "code": "-- Production Hint focus: a safer version to build on in production\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "production",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Test Ready)",
+    "description": "Creating temporary result sets for complex queries. Focus: making the behavior easier to verify.",
+    "code": "-- Test Ready focus: making the behavior easier to verify\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "testing",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Data Cleanup)",
+    "description": "Creating temporary result sets for complex queries. Focus: normalizing and cleaning source values.",
+    "code": "-- Data Cleanup focus: normalizing and cleaning source values\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "cleanup",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Batch Mode)",
+    "description": "Creating temporary result sets for complex queries. Focus: handling multiple values in one pass.",
+    "code": "-- Batch Mode focus: handling multiple values in one pass\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "batch",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Error Aware)",
+    "description": "Creating temporary result sets for complex queries. Focus: failing clearly when assumptions break.",
+    "code": "-- Error Aware focus: failing clearly when assumptions break\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "error-handling",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Team Style)",
+    "description": "Creating temporary result sets for complex queries. Focus: readable code that other developers can extend.",
+    "code": "-- Team Style focus: readable code that other developers can extend\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "team-style",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Extended Example)",
+    "description": "Creating temporary result sets for complex queries. Focus: one extra step beyond the original sample.",
+    "code": "-- Extended Example focus: one extra step beyond the original sample\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "extended",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Checklist Version)",
+    "description": "Creating temporary result sets for complex queries. Focus: the moving parts you should review before shipping.",
+    "code": "-- Checklist Version focus: the moving parts you should review before shipping\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "checklist",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (API Friendly)",
+    "description": "Creating temporary result sets for complex queries. Focus: shaping output for an endpoint or integration.",
+    "code": "-- API Friendly focus: shaping output for an endpoint or integration\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "api",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Reporting)",
+    "description": "Creating temporary result sets for complex queries. Focus: turning output into a concise summary.",
+    "code": "-- Reporting focus: turning output into a concise summary\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "reporting",
+      "seed-2",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Common Table Expression (CTE) (Practice Prompt)",
+    "description": "Creating temporary result sets for complex queries. Focus: a version that is easy to modify in exercises.",
+    "code": "-- Practice Prompt focus: a version that is easy to modify in exercises\nWITH MonthlySales AS (\n    SELECT month, SUM(amount) as total\n    FROM sales\n    GROUP BY month\n)\nSELECT * FROM MonthlySales WHERE total > 10000;",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "CTEs improve readability by breaking down complex queries into logical blocks.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "cte",
+      "advanced",
+      "practice",
+      "seed-2",
+      "sql-snippet"
+    ]
   },
   {
     "title": "Window Function (Row Number)",
     "description": "Ranking rows within a partition.",
     "code": "SELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
     "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.",
     "tags": [
       "window-functions",
-      "advanced"
-    ],
+      "advanced",
+      "sql-snippet",
+      "seed-3"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Quick Start)",
+    "description": "Ranking rows within a partition. Focus: the smallest useful version.",
+    "code": "-- Quick Start focus: the smallest useful version\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 1,
     "category": "Advanced",
-    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row."
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "quick-start",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Validation)",
+    "description": "Ranking rows within a partition. Focus: guarding inputs before work begins.",
+    "code": "-- Validation focus: guarding inputs before work begins\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "validation",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Practical Example)",
+    "description": "Ranking rows within a partition. Focus: a realistic day-to-day use case.",
+    "code": "-- Practical Example focus: a realistic day-to-day use case\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "practical",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Reusable Utility)",
+    "description": "Ranking rows within a partition. Focus: extracting logic into a helper.",
+    "code": "-- Reusable Utility focus: extracting logic into a helper\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "utility",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Edge Cases)",
+    "description": "Ranking rows within a partition. Focus: behavior around empty or unexpected values.",
+    "code": "-- Edge Cases focus: behavior around empty or unexpected values\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "edge-cases",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Debug Friendly)",
+    "description": "Ranking rows within a partition. Focus: visibility while troubleshooting.",
+    "code": "-- Debug Friendly focus: visibility while troubleshooting\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "debugging",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Performance Pass)",
+    "description": "Ranking rows within a partition. Focus: reducing extra work and repeated operations.",
+    "code": "-- Performance Pass focus: reducing extra work and repeated operations\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "performance",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Refactor Pass)",
+    "description": "Ranking rows within a partition. Focus: cleaner naming and separation of concerns.",
+    "code": "-- Refactor Pass focus: cleaner naming and separation of concerns\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "refactor",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Interview Style)",
+    "description": "Ranking rows within a partition. Focus: a compact explanation-friendly version.",
+    "code": "-- Interview Style focus: a compact explanation-friendly version\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "interview",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Production Hint)",
+    "description": "Ranking rows within a partition. Focus: a safer version to build on in production.",
+    "code": "-- Production Hint focus: a safer version to build on in production\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "production",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Test Ready)",
+    "description": "Ranking rows within a partition. Focus: making the behavior easier to verify.",
+    "code": "-- Test Ready focus: making the behavior easier to verify\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "testing",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Data Cleanup)",
+    "description": "Ranking rows within a partition. Focus: normalizing and cleaning source values.",
+    "code": "-- Data Cleanup focus: normalizing and cleaning source values\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "cleanup",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Batch Mode)",
+    "description": "Ranking rows within a partition. Focus: handling multiple values in one pass.",
+    "code": "-- Batch Mode focus: handling multiple values in one pass\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "batch",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Error Aware)",
+    "description": "Ranking rows within a partition. Focus: failing clearly when assumptions break.",
+    "code": "-- Error Aware focus: failing clearly when assumptions break\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "error-handling",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Team Style)",
+    "description": "Ranking rows within a partition. Focus: readable code that other developers can extend.",
+    "code": "-- Team Style focus: readable code that other developers can extend\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "team-style",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Extended Example)",
+    "description": "Ranking rows within a partition. Focus: one extra step beyond the original sample.",
+    "code": "-- Extended Example focus: one extra step beyond the original sample\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "extended",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Checklist Version)",
+    "description": "Ranking rows within a partition. Focus: the moving parts you should review before shipping.",
+    "code": "-- Checklist Version focus: the moving parts you should review before shipping\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "checklist",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (API Friendly)",
+    "description": "Ranking rows within a partition. Focus: shaping output for an endpoint or integration.",
+    "code": "-- API Friendly focus: shaping output for an endpoint or integration\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "api",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Reporting)",
+    "description": "Ranking rows within a partition. Focus: turning output into a concise summary.",
+    "code": "-- Reporting focus: turning output into a concise summary\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "reporting",
+      "seed-3",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Window Function (Row Number) (Practice Prompt)",
+    "description": "Ranking rows within a partition. Focus: a version that is easy to modify in exercises.",
+    "code": "-- Practice Prompt focus: a version that is easy to modify in exercises\nSELECT name, department, salary,\n       ROW_NUMBER() OVER(PARTITION BY department ORDER BY salary DESC) as rank\nFROM employees;",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Window functions perform calculations across a set of table rows that are related to the current row.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "window-functions",
+      "advanced",
+      "practice",
+      "seed-3",
+      "sql-snippet"
+    ]
   },
   {
     "title": "UPSERT Pattern",
     "description": "Inserting or updating a record if it already exists.",
     "code": "INSERT INTO settings (key, value)\nVALUES ('theme', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
     "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.",
     "tags": [
       "insert",
-      "update"
-    ],
+      "update",
+      "sql-snippet",
+      "seed-4"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Quick Start)",
+    "description": "Inserting or updating a record if it already exists. Focus: the smallest useful version.",
+    "code": "-- Quick Start focus: the smallest useful version\nINSERT INTO settings (key, value)\nVALUES ('theme-starter', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 1,
     "category": "Utility",
-    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert."
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "quick-start",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Validation)",
+    "description": "Inserting or updating a record if it already exists. Focus: guarding inputs before work begins.",
+    "code": "-- Validation focus: guarding inputs before work begins\nINSERT INTO settings (key, value)\nVALUES ('theme-safe-input', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "validation",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Practical Example)",
+    "description": "Inserting or updating a record if it already exists. Focus: a realistic day-to-day use case.",
+    "code": "-- Practical Example focus: a realistic day-to-day use case\nINSERT INTO settings (key, value)\nVALUES ('theme-real-world', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "practical",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Reusable Utility)",
+    "description": "Inserting or updating a record if it already exists. Focus: extracting logic into a helper.",
+    "code": "-- Reusable Utility focus: extracting logic into a helper\nINSERT INTO settings (key, value)\nVALUES ('theme-helper', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "utility",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Edge Cases)",
+    "description": "Inserting or updating a record if it already exists. Focus: behavior around empty or unexpected values.",
+    "code": "-- Edge Cases focus: behavior around empty or unexpected values\nINSERT INTO settings (key, value)\nVALUES ('theme-fallback', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "edge-cases",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Debug Friendly)",
+    "description": "Inserting or updating a record if it already exists. Focus: visibility while troubleshooting.",
+    "code": "-- Debug Friendly focus: visibility while troubleshooting\nINSERT INTO settings (key, value)\nVALUES ('theme-debug-run', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "debugging",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Performance Pass)",
+    "description": "Inserting or updating a record if it already exists. Focus: reducing extra work and repeated operations.",
+    "code": "-- Performance Pass focus: reducing extra work and repeated operations\nINSERT INTO settings (key, value)\nVALUES ('theme-fast-path', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "performance",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Refactor Pass)",
+    "description": "Inserting or updating a record if it already exists. Focus: cleaner naming and separation of concerns.",
+    "code": "-- Refactor Pass focus: cleaner naming and separation of concerns\nINSERT INTO settings (key, value)\nVALUES ('theme-cleanup', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "refactor",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Interview Style)",
+    "description": "Inserting or updating a record if it already exists. Focus: a compact explanation-friendly version.",
+    "code": "-- Interview Style focus: a compact explanation-friendly version\nINSERT INTO settings (key, value)\nVALUES ('theme-whiteboard', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "interview",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Production Hint)",
+    "description": "Inserting or updating a record if it already exists. Focus: a safer version to build on in production.",
+    "code": "-- Production Hint focus: a safer version to build on in production\nINSERT INTO settings (key, value)\nVALUES ('theme-production', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "production",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Test Ready)",
+    "description": "Inserting or updating a record if it already exists. Focus: making the behavior easier to verify.",
+    "code": "-- Test Ready focus: making the behavior easier to verify\nINSERT INTO settings (key, value)\nVALUES ('theme-test-case', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "testing",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Data Cleanup)",
+    "description": "Inserting or updating a record if it already exists. Focus: normalizing and cleaning source values.",
+    "code": "-- Data Cleanup focus: normalizing and cleaning source values\nINSERT INTO settings (key, value)\nVALUES ('theme-normalized', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "cleanup",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Batch Mode)",
+    "description": "Inserting or updating a record if it already exists. Focus: handling multiple values in one pass.",
+    "code": "-- Batch Mode focus: handling multiple values in one pass\nINSERT INTO settings (key, value)\nVALUES ('theme-batch-run', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "batch",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Error Aware)",
+    "description": "Inserting or updating a record if it already exists. Focus: failing clearly when assumptions break.",
+    "code": "-- Error Aware focus: failing clearly when assumptions break\nINSERT INTO settings (key, value)\nVALUES ('theme-guarded', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "error-handling",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Team Style)",
+    "description": "Inserting or updating a record if it already exists. Focus: readable code that other developers can extend.",
+    "code": "-- Team Style focus: readable code that other developers can extend\nINSERT INTO settings (key, value)\nVALUES ('theme-shared', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "team-style",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Extended Example)",
+    "description": "Inserting or updating a record if it already exists. Focus: one extra step beyond the original sample.",
+    "code": "-- Extended Example focus: one extra step beyond the original sample\nINSERT INTO settings (key, value)\nVALUES ('theme-extended', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "extended",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Checklist Version)",
+    "description": "Inserting or updating a record if it already exists. Focus: the moving parts you should review before shipping.",
+    "code": "-- Checklist Version focus: the moving parts you should review before shipping\nINSERT INTO settings (key, value)\nVALUES ('theme-review', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "checklist",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (API Friendly)",
+    "description": "Inserting or updating a record if it already exists. Focus: shaping output for an endpoint or integration.",
+    "code": "-- API Friendly focus: shaping output for an endpoint or integration\nINSERT INTO settings (key, value)\nVALUES ('theme-api-ready', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "api",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Reporting)",
+    "description": "Inserting or updating a record if it already exists. Focus: turning output into a concise summary.",
+    "code": "-- Reporting focus: turning output into a concise summary\nINSERT INTO settings (key, value)\nVALUES ('theme-summary', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "reporting",
+      "seed-4",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "UPSERT Pattern (Practice Prompt)",
+    "description": "Inserting or updating a record if it already exists. Focus: a version that is easy to modify in exercises.",
+    "code": "-- Practice Prompt focus: a version that is easy to modify in exercises\nINSERT INTO settings (key, value)\nVALUES ('theme-practice', 'dark')\nON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Standard PostgreSQL syntax for handling duplicate keys during an insert.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "insert",
+      "update",
+      "practice",
+      "seed-4",
+      "sql-snippet"
+    ]
   },
   {
     "title": "Subquery in WHERE Clause",
     "description": "Filtering based on the results of another query.",
     "code": "SELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics');",
     "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.",
     "tags": [
       "subquery",
-      "basics"
-    ],
+      "basics",
+      "sql-snippet",
+      "seed-5"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Quick Start)",
+    "description": "Filtering based on the results of another query. Focus: the smallest useful version.",
+    "code": "-- Quick Start focus: the smallest useful version\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-starter');",
+    "difficulty": 1,
     "category": "Basic",
-    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables."
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "quick-start",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Validation)",
+    "description": "Filtering based on the results of another query. Focus: guarding inputs before work begins.",
+    "code": "-- Validation focus: guarding inputs before work begins\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-safe-input');",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "validation",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Practical Example)",
+    "description": "Filtering based on the results of another query. Focus: a realistic day-to-day use case.",
+    "code": "-- Practical Example focus: a realistic day-to-day use case\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-real-world');",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "practical",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Reusable Utility)",
+    "description": "Filtering based on the results of another query. Focus: extracting logic into a helper.",
+    "code": "-- Reusable Utility focus: extracting logic into a helper\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-helper');",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "utility",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Edge Cases)",
+    "description": "Filtering based on the results of another query. Focus: behavior around empty or unexpected values.",
+    "code": "-- Edge Cases focus: behavior around empty or unexpected values\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-fallback');",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "edge-cases",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Debug Friendly)",
+    "description": "Filtering based on the results of another query. Focus: visibility while troubleshooting.",
+    "code": "-- Debug Friendly focus: visibility while troubleshooting\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-debug-run');",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "debugging",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Performance Pass)",
+    "description": "Filtering based on the results of another query. Focus: reducing extra work and repeated operations.",
+    "code": "-- Performance Pass focus: reducing extra work and repeated operations\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-fast-path');",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "performance",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Refactor Pass)",
+    "description": "Filtering based on the results of another query. Focus: cleaner naming and separation of concerns.",
+    "code": "-- Refactor Pass focus: cleaner naming and separation of concerns\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-cleanup');",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "refactor",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Interview Style)",
+    "description": "Filtering based on the results of another query. Focus: a compact explanation-friendly version.",
+    "code": "-- Interview Style focus: a compact explanation-friendly version\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-whiteboard');",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "interview",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Production Hint)",
+    "description": "Filtering based on the results of another query. Focus: a safer version to build on in production.",
+    "code": "-- Production Hint focus: a safer version to build on in production\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-production');",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "production",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Test Ready)",
+    "description": "Filtering based on the results of another query. Focus: making the behavior easier to verify.",
+    "code": "-- Test Ready focus: making the behavior easier to verify\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-test-case');",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "testing",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Data Cleanup)",
+    "description": "Filtering based on the results of another query. Focus: normalizing and cleaning source values.",
+    "code": "-- Data Cleanup focus: normalizing and cleaning source values\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-normalized');",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "cleanup",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Batch Mode)",
+    "description": "Filtering based on the results of another query. Focus: handling multiple values in one pass.",
+    "code": "-- Batch Mode focus: handling multiple values in one pass\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-batch-run');",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "batch",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Error Aware)",
+    "description": "Filtering based on the results of another query. Focus: failing clearly when assumptions break.",
+    "code": "-- Error Aware focus: failing clearly when assumptions break\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-guarded');",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "error-handling",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Team Style)",
+    "description": "Filtering based on the results of another query. Focus: readable code that other developers can extend.",
+    "code": "-- Team Style focus: readable code that other developers can extend\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-shared');",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "team-style",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Extended Example)",
+    "description": "Filtering based on the results of another query. Focus: one extra step beyond the original sample.",
+    "code": "-- Extended Example focus: one extra step beyond the original sample\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-extended');",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "extended",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Checklist Version)",
+    "description": "Filtering based on the results of another query. Focus: the moving parts you should review before shipping.",
+    "code": "-- Checklist Version focus: the moving parts you should review before shipping\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-review');",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "checklist",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (API Friendly)",
+    "description": "Filtering based on the results of another query. Focus: shaping output for an endpoint or integration.",
+    "code": "-- API Friendly focus: shaping output for an endpoint or integration\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-api-ready');",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "api",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Reporting)",
+    "description": "Filtering based on the results of another query. Focus: turning output into a concise summary.",
+    "code": "-- Reporting focus: turning output into a concise summary\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-summary');",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "reporting",
+      "seed-5",
+      "sql-snippet"
+    ]
+  },
+  {
+    "title": "Subquery in WHERE Clause (Practice Prompt)",
+    "description": "Filtering based on the results of another query. Focus: a version that is easy to modify in exercises.",
+    "code": "-- Practice Prompt focus: a version that is easy to modify in exercises\nSELECT name FROM products\nWHERE category_id IN (SELECT id FROM categories WHERE name = 'Electronics-practice');",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Subqueries allow for dynamic filtering based on data in other tables.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "subquery",
+      "basics",
+      "practice",
+      "seed-5",
+      "sql-snippet"
+    ]
   }
 ]

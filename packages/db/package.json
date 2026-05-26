@@ -6,12 +6,13 @@
   "scripts": {
     "db:push": "prisma db push",
     "db:generate": "prisma generate",
-    "db:studio": "prisma studio"
+    "db:studio": "prisma studio",
+    "generate-data": "npx tsx scripts/generate-content.ts"
   },
   "dependencies": {
-    "@prisma/client": "latest"
+    "@prisma/client": "^5.0.0"
   },
   "devDependencies": {
-    "prisma": "latest"
+    "prisma": "^5.0.0"
   }
 }

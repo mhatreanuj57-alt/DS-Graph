@@ -4,44 +4,1589 @@
     "description": "Minimal code to create a Three.js scene, camera, and renderer.",
     "code": "import * as THREE from 'three';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
     "difficulty": 1,
-    "tags": ["setup", "scene"],
     "category": "Basic",
-    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen)."
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).",
+    "tags": [
+      "setup",
+      "scene",
+      "threejs-snippet",
+      "seed-1"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Quick Start)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\nimport * as THREE from 'three-starter';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(78, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "quick-start",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Validation)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\nimport * as THREE from 'three-safe-input';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(83, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "validation",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Practical Example)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\nimport * as THREE from 'three-real-world';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(89, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "practical",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Reusable Utility)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\nimport * as THREE from 'three-helper';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(94, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "utility",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Edge Cases)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\nimport * as THREE from 'three-fallback';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "edge-cases",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Debug Friendly)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\nimport * as THREE from 'three-debug-run';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(104, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "debugging",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Performance Pass)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\nimport * as THREE from 'three-fast-path';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(113, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "performance",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Refactor Pass)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\nimport * as THREE from 'three-cleanup';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(118, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "refactor",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Interview Style)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\nimport * as THREE from 'three-whiteboard';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(125, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "interview",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Production Hint)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\nimport * as THREE from 'three-production';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(132, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "production",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Test Ready)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\nimport * as THREE from 'three-test-case';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(139, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "testing",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Data Cleanup)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\nimport * as THREE from 'three-normalized';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(146, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "cleanup",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Batch Mode)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\nimport * as THREE from 'three-batch-run';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(153, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "batch",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Error Aware)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\nimport * as THREE from 'three-guarded';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(160, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "error-handling",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Team Style)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\nimport * as THREE from 'three-shared';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(164, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "team-style",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Extended Example)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\nimport * as THREE from 'three-extended';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(171, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "extended",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Checklist Version)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\nimport * as THREE from 'three-review';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(179, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "checklist",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (API Friendly)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\nimport * as THREE from 'three-api-ready';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(183, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "api",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Reporting)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\nimport * as THREE from 'three-summary';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(189, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "reporting",
+      "seed-1",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Basic Scene Setup (Practice Prompt)",
+    "description": "Minimal code to create a Three.js scene, camera, and renderer. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\nimport * as THREE from 'three-practice';\n\nconst scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(202, window.innerWidth / window.innerHeight, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer();\n\nrenderer.setSize(window.innerWidth, window.innerHeight);\ndocument.body.appendChild(renderer.domElement);\n\ncamera.position.z = 5;",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Every Three.js application needs a Scene (to hold objects), a Camera (to view them), and a Renderer (to draw them on screen).\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "scene",
+      "practice",
+      "seed-1",
+      "threejs-snippet"
+    ]
   },
   {
     "title": "Animated Rotating Cube",
     "description": "Creating a mesh and animating its rotation in a loop.",
     "code": "const geometry = new THREE.BoxGeometry(1, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
     "difficulty": 1,
-    "tags": ["animation", "mesh"],
     "category": "Basic",
-    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop."
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.",
+    "tags": [
+      "animation",
+      "mesh",
+      "threejs-snippet",
+      "seed-2"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Quick Start)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\nconst geometry = new THREE.BoxGeometry(5, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "quick-start",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Validation)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\nconst geometry = new THREE.BoxGeometry(10, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "validation",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Practical Example)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\nconst geometry = new THREE.BoxGeometry(16, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "practical",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Reusable Utility)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\nconst geometry = new THREE.BoxGeometry(21, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "utility",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Edge Cases)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\nconst geometry = new THREE.BoxGeometry(27, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "edge-cases",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Debug Friendly)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\nconst geometry = new THREE.BoxGeometry(31, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "debugging",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Performance Pass)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\nconst geometry = new THREE.BoxGeometry(40, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "performance",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Refactor Pass)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\nconst geometry = new THREE.BoxGeometry(45, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "refactor",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Interview Style)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\nconst geometry = new THREE.BoxGeometry(52, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "interview",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Production Hint)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\nconst geometry = new THREE.BoxGeometry(59, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "production",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Test Ready)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\nconst geometry = new THREE.BoxGeometry(66, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "testing",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Data Cleanup)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\nconst geometry = new THREE.BoxGeometry(73, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "cleanup",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Batch Mode)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\nconst geometry = new THREE.BoxGeometry(80, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "batch",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Error Aware)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\nconst geometry = new THREE.BoxGeometry(87, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "error-handling",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Team Style)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\nconst geometry = new THREE.BoxGeometry(91, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "team-style",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Extended Example)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\nconst geometry = new THREE.BoxGeometry(98, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "extended",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Checklist Version)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\nconst geometry = new THREE.BoxGeometry(106, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "checklist",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (API Friendly)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\nconst geometry = new THREE.BoxGeometry(110, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "api",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Reporting)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\nconst geometry = new THREE.BoxGeometry(116, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "reporting",
+      "seed-2",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Animated Rotating Cube (Practice Prompt)",
+    "description": "Creating a mesh and animating its rotation in a loop. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\nconst geometry = new THREE.BoxGeometry(129, 1, 1);\nconst material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nfunction animate() {\n  requestAnimationFrame(animate);\n  cube.rotation.x += 0.01;\n  cube.rotation.y += 0.01;\n  renderer.render(scene, camera);\n}\nanimate();",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a simple geometry and material, combine them into a Mesh, and update its properties within an animation loop.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "animation",
+      "mesh",
+      "practice",
+      "seed-2",
+      "threejs-snippet"
+    ]
   },
   {
     "title": "Responsive Window Resize",
     "description": "Adjusting the renderer and camera when the window size changes.",
     "code": "window.addEventListener('resize', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));\n});",
     "difficulty": 2,
-    "tags": ["responsive", "utility"],
     "category": "Utility",
-    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window."
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.",
+    "tags": [
+      "responsive",
+      "utility",
+      "threejs-snippet",
+      "seed-3"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Quick Start)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\nwindow.addEventListener('resize-starter', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 7));\n});",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "quick-start",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Validation)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\nwindow.addEventListener('resize-safe-input', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 12));\n});",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "validation",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Practical Example)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\nwindow.addEventListener('resize-real-world', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 18));\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "practical",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Reusable Utility)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\nwindow.addEventListener('resize-helper', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 23));\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Edge Cases)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\nwindow.addEventListener('resize-fallback', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 29));\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "edge-cases",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Debug Friendly)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\nwindow.addEventListener('resize-debug-run', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 33));\n});",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "debugging",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Performance Pass)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\nwindow.addEventListener('resize-fast-path', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 42));\n});",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "performance",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Refactor Pass)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\nwindow.addEventListener('resize-cleanup', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 47));\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "refactor",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Interview Style)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\nwindow.addEventListener('resize-whiteboard', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 54));\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "interview",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Production Hint)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\nwindow.addEventListener('resize-production', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 61));\n});",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "production",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Test Ready)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\nwindow.addEventListener('resize-test-case', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 68));\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "testing",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Data Cleanup)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\nwindow.addEventListener('resize-normalized', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 75));\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "cleanup",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Batch Mode)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\nwindow.addEventListener('resize-batch-run', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 82));\n});",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "batch",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Error Aware)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\nwindow.addEventListener('resize-guarded', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 89));\n});",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "error-handling",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Team Style)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\nwindow.addEventListener('resize-shared', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 93));\n});",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "team-style",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Extended Example)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\nwindow.addEventListener('resize-extended', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 100));\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "extended",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Checklist Version)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\nwindow.addEventListener('resize-review', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 108));\n});",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "checklist",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (API Friendly)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\nwindow.addEventListener('resize-api-ready', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 112));\n});",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "api",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Reporting)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\nwindow.addEventListener('resize-summary', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 118));\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "reporting",
+      "seed-3",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Window Resize (Practice Prompt)",
+    "description": "Adjusting the renderer and camera when the window size changes. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\nwindow.addEventListener('resize-practice', () => {\n  camera.aspect = window.innerWidth / window.innerHeight;\n  camera.updateProjectionMatrix();\n  renderer.setSize(window.innerWidth, window.innerHeight);\n  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 131));\n});",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Ensures that the 3D scene doesn't look stretched or pixelated when the user resizes their browser window.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "responsive",
+      "utility",
+      "practice",
+      "seed-3",
+      "threejs-snippet"
+    ]
   },
   {
     "title": "Load GLTF Model",
     "description": "Using GLTFLoader to import external 3D models.",
     "code": "import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
     "difficulty": 2,
-    "tags": ["loader", "gltf"],
     "category": "Utility",
-    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js."
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.",
+    "tags": [
+      "loader",
+      "gltf",
+      "threejs-snippet",
+      "seed-4"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Quick Start)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-starter';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "quick-start",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Validation)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-safe-input';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "validation",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Practical Example)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-real-world';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "practical",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Reusable Utility)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-helper';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "utility",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Edge Cases)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-fallback';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "edge-cases",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Debug Friendly)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-debug-run';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "debugging",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Performance Pass)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-fast-path';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "performance",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Refactor Pass)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-cleanup';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "refactor",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Interview Style)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-whiteboard';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "interview",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Production Hint)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-production';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "production",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Test Ready)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-test-case';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "testing",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Data Cleanup)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-normalized';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "cleanup",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Batch Mode)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-batch-run';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "batch",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Error Aware)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-guarded';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "error-handling",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Team Style)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-shared';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "team-style",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Extended Example)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-extended';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "extended",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Checklist Version)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-review';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "checklist",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (API Friendly)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-api-ready';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "api",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Reporting)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-summary';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "reporting",
+      "seed-4",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Load GLTF Model (Practice Prompt)",
+    "description": "Using GLTFLoader to import external 3D models. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\nimport { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader-practice';\n\nconst loader = new GLTFLoader();\nloader.load('path/to/model.gltf', (gltf) => {\n  scene.add(gltf.scene);\n}, undefined, (error) => {\n  console.error(error);\n});",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "GLTF is the standard format for 3D models on the web. The GLTFLoader handles fetching and parsing these files for use in Three.js.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "loader",
+      "gltf",
+      "practice",
+      "seed-4",
+      "threejs-snippet"
+    ]
   },
   {
     "title": "Custom Shader Material",
     "description": "Creating a material with custom Vertex and Fragment shaders.",
     "code": "const material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 1.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
     "difficulty": 3,
-    "tags": ["advanced", "shaders", "glsl"],
     "category": "Advanced",
-    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level."
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "threejs-snippet",
+      "seed-5"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Quick Start)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 8.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "quick-start",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Validation)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 13.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "validation",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Practical Example)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 19.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "practical",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Reusable Utility)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 24.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "utility",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Edge Cases)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 30.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "edge-cases",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Debug Friendly)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 34.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "debugging",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Performance Pass)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 43.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "performance",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Refactor Pass)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 48.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "refactor",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Interview Style)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 55.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "interview",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Production Hint)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 62.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "production",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Test Ready)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 69.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "testing",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Data Cleanup)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 76.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "cleanup",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Batch Mode)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 83.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "batch",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Error Aware)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 90.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "error-handling",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Team Style)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 94.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "team-style",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Extended Example)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 101.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "extended",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Checklist Version)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 109.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "checklist",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (API Friendly)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 113.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "api",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Reporting)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 119.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "reporting",
+      "seed-5",
+      "threejs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Shader Material (Practice Prompt)",
+    "description": "Creating a material with custom Vertex and Fragment shaders. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\nconst material = new THREE.ShaderMaterial({\n  uniforms: {\n    time: { value: 132.0 },\n    resolution: { value: new THREE.Vector2() }\n  },\n  vertexShader: `\n    void main() {\n      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);\n    }\n  `,\n  fragmentShader: `\n    uniform float time;\n    void main() {\n      gl_FragColor = vec4(abs(sin(time)), 0.0, 0.0, 1.0);\n    }\n  `\n});",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "ShaderMaterial allows you to write custom GLSL code to control exactly how your objects are rendered at the pixel level.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "advanced",
+      "shaders",
+      "glsl",
+      "practice",
+      "seed-5",
+      "threejs-snippet"
+    ]
   }
 ]

@@ -4,59 +4,1568 @@
     "description": "Proper document structure using semantic elements.",
     "code": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
     "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.",
     "tags": [
       "semantics",
-      "basics"
-    ],
+      "basics",
+      "html-snippet",
+      "seed-1"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Quick Start)",
+    "description": "Proper document structure using semantic elements. Focus: the smallest useful version.",
+    "code": "<!-- Quick Start focus: the smallest useful version -->\n<!DOCTYPE html>\n<html lang=\"en-starter\">\n<head>\n    <meta charset=\"UTF-11\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 1,
     "category": "Basic",
-    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer."
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "quick-start",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Validation)",
+    "description": "Proper document structure using semantic elements. Focus: guarding inputs before work begins.",
+    "code": "<!-- Validation focus: guarding inputs before work begins -->\n<!DOCTYPE html>\n<html lang=\"en-safe-input\">\n<head>\n    <meta charset=\"UTF-16\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "validation",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Practical Example)",
+    "description": "Proper document structure using semantic elements. Focus: a realistic day-to-day use case.",
+    "code": "<!-- Practical Example focus: a realistic day-to-day use case -->\n<!DOCTYPE html>\n<html lang=\"en-real-world\">\n<head>\n    <meta charset=\"UTF-22\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "practical",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Reusable Utility)",
+    "description": "Proper document structure using semantic elements. Focus: extracting logic into a helper.",
+    "code": "<!-- Reusable Utility focus: extracting logic into a helper -->\n<!DOCTYPE html>\n<html lang=\"en-helper\">\n<head>\n    <meta charset=\"UTF-27\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "utility",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Edge Cases)",
+    "description": "Proper document structure using semantic elements. Focus: behavior around empty or unexpected values.",
+    "code": "<!-- Edge Cases focus: behavior around empty or unexpected values -->\n<!DOCTYPE html>\n<html lang=\"en-fallback\">\n<head>\n    <meta charset=\"UTF-33\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "edge-cases",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Debug Friendly)",
+    "description": "Proper document structure using semantic elements. Focus: visibility while troubleshooting.",
+    "code": "<!-- Debug Friendly focus: visibility while troubleshooting -->\n<!DOCTYPE html>\n<html lang=\"en-debug-run\">\n<head>\n    <meta charset=\"UTF-37\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "debugging",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Performance Pass)",
+    "description": "Proper document structure using semantic elements. Focus: reducing extra work and repeated operations.",
+    "code": "<!-- Performance Pass focus: reducing extra work and repeated operations -->\n<!DOCTYPE html>\n<html lang=\"en-fast-path\">\n<head>\n    <meta charset=\"UTF-46\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "performance",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Refactor Pass)",
+    "description": "Proper document structure using semantic elements. Focus: cleaner naming and separation of concerns.",
+    "code": "<!-- Refactor Pass focus: cleaner naming and separation of concerns -->\n<!DOCTYPE html>\n<html lang=\"en-cleanup\">\n<head>\n    <meta charset=\"UTF-51\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "refactor",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Interview Style)",
+    "description": "Proper document structure using semantic elements. Focus: a compact explanation-friendly version.",
+    "code": "<!-- Interview Style focus: a compact explanation-friendly version -->\n<!DOCTYPE html>\n<html lang=\"en-whiteboard\">\n<head>\n    <meta charset=\"UTF-58\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "interview",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Production Hint)",
+    "description": "Proper document structure using semantic elements. Focus: a safer version to build on in production.",
+    "code": "<!-- Production Hint focus: a safer version to build on in production -->\n<!DOCTYPE html>\n<html lang=\"en-production\">\n<head>\n    <meta charset=\"UTF-65\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "production",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Test Ready)",
+    "description": "Proper document structure using semantic elements. Focus: making the behavior easier to verify.",
+    "code": "<!-- Test Ready focus: making the behavior easier to verify -->\n<!DOCTYPE html>\n<html lang=\"en-test-case\">\n<head>\n    <meta charset=\"UTF-72\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "testing",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Data Cleanup)",
+    "description": "Proper document structure using semantic elements. Focus: normalizing and cleaning source values.",
+    "code": "<!-- Data Cleanup focus: normalizing and cleaning source values -->\n<!DOCTYPE html>\n<html lang=\"en-normalized\">\n<head>\n    <meta charset=\"UTF-79\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "cleanup",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Batch Mode)",
+    "description": "Proper document structure using semantic elements. Focus: handling multiple values in one pass.",
+    "code": "<!-- Batch Mode focus: handling multiple values in one pass -->\n<!DOCTYPE html>\n<html lang=\"en-batch-run\">\n<head>\n    <meta charset=\"UTF-86\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "batch",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Error Aware)",
+    "description": "Proper document structure using semantic elements. Focus: failing clearly when assumptions break.",
+    "code": "<!-- Error Aware focus: failing clearly when assumptions break -->\n<!DOCTYPE html>\n<html lang=\"en-guarded\">\n<head>\n    <meta charset=\"UTF-93\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "error-handling",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Team Style)",
+    "description": "Proper document structure using semantic elements. Focus: readable code that other developers can extend.",
+    "code": "<!-- Team Style focus: readable code that other developers can extend -->\n<!DOCTYPE html>\n<html lang=\"en-shared\">\n<head>\n    <meta charset=\"UTF-97\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "team-style",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Extended Example)",
+    "description": "Proper document structure using semantic elements. Focus: one extra step beyond the original sample.",
+    "code": "<!-- Extended Example focus: one extra step beyond the original sample -->\n<!DOCTYPE html>\n<html lang=\"en-extended\">\n<head>\n    <meta charset=\"UTF-104\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "extended",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Checklist Version)",
+    "description": "Proper document structure using semantic elements. Focus: the moving parts you should review before shipping.",
+    "code": "<!-- Checklist Version focus: the moving parts you should review before shipping -->\n<!DOCTYPE html>\n<html lang=\"en-review\">\n<head>\n    <meta charset=\"UTF-112\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "checklist",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (API Friendly)",
+    "description": "Proper document structure using semantic elements. Focus: shaping output for an endpoint or integration.",
+    "code": "<!-- API Friendly focus: shaping output for an endpoint or integration -->\n<!DOCTYPE html>\n<html lang=\"en-api-ready\">\n<head>\n    <meta charset=\"UTF-116\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "api",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Reporting)",
+    "description": "Proper document structure using semantic elements. Focus: turning output into a concise summary.",
+    "code": "<!-- Reporting focus: turning output into a concise summary -->\n<!DOCTYPE html>\n<html lang=\"en-summary\">\n<head>\n    <meta charset=\"UTF-122\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "reporting",
+      "seed-1",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Semantic HTML Skeleton (Practice Prompt)",
+    "description": "Proper document structure using semantic elements. Focus: a version that is easy to modify in exercises.",
+    "code": "<!-- Practice Prompt focus: a version that is easy to modify in exercises -->\n<!DOCTYPE html>\n<html lang=\"en-practice\">\n<head>\n    <meta charset=\"UTF-135\">\n    <title>Semantic Page</title>\n</head>\n<body>\n    <header><nav></nav></header>\n    <main>\n        <article><h1>Title</h1><p>Content</p></article>\n    </main>\n    <footer>&copy; 2023</footer>\n</body>\n</html>",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Semantic HTML uses tags that convey the meaning of the content to both the browser and the developer.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "semantics",
+      "basics",
+      "practice",
+      "seed-1",
+      "html-snippet"
+    ]
   },
   {
     "title": "Responsive Video Embed",
     "description": "Embedding a video that scales with the container.",
     "code": "<div style=\"position:relative; padding-bottom:56.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
     "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.",
     "tags": [
       "media",
-      "responsive"
-    ],
+      "responsive",
+      "html-snippet",
+      "seed-2"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Quick Start)",
+    "description": "Embedding a video that scales with the container. Focus: the smallest useful version.",
+    "code": "<!-- Quick Start focus: the smallest useful version -->\n<div style=\"position:relative; padding-bottom:60.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 1,
     "category": "Utility",
-    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive."
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "quick-start",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Validation)",
+    "description": "Embedding a video that scales with the container. Focus: guarding inputs before work begins.",
+    "code": "<!-- Validation focus: guarding inputs before work begins -->\n<div style=\"position:relative; padding-bottom:65.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "validation",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Practical Example)",
+    "description": "Embedding a video that scales with the container. Focus: a realistic day-to-day use case.",
+    "code": "<!-- Practical Example focus: a realistic day-to-day use case -->\n<div style=\"position:relative; padding-bottom:71.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "practical",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Reusable Utility)",
+    "description": "Embedding a video that scales with the container. Focus: extracting logic into a helper.",
+    "code": "<!-- Reusable Utility focus: extracting logic into a helper -->\n<div style=\"position:relative; padding-bottom:76.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "utility",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Edge Cases)",
+    "description": "Embedding a video that scales with the container. Focus: behavior around empty or unexpected values.",
+    "code": "<!-- Edge Cases focus: behavior around empty or unexpected values -->\n<div style=\"position:relative; padding-bottom:82.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "edge-cases",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Debug Friendly)",
+    "description": "Embedding a video that scales with the container. Focus: visibility while troubleshooting.",
+    "code": "<!-- Debug Friendly focus: visibility while troubleshooting -->\n<div style=\"position:relative; padding-bottom:86.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "debugging",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Performance Pass)",
+    "description": "Embedding a video that scales with the container. Focus: reducing extra work and repeated operations.",
+    "code": "<!-- Performance Pass focus: reducing extra work and repeated operations -->\n<div style=\"position:relative; padding-bottom:95.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "performance",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Refactor Pass)",
+    "description": "Embedding a video that scales with the container. Focus: cleaner naming and separation of concerns.",
+    "code": "<!-- Refactor Pass focus: cleaner naming and separation of concerns -->\n<div style=\"position:relative; padding-bottom:100.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "refactor",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Interview Style)",
+    "description": "Embedding a video that scales with the container. Focus: a compact explanation-friendly version.",
+    "code": "<!-- Interview Style focus: a compact explanation-friendly version -->\n<div style=\"position:relative; padding-bottom:107.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "interview",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Production Hint)",
+    "description": "Embedding a video that scales with the container. Focus: a safer version to build on in production.",
+    "code": "<!-- Production Hint focus: a safer version to build on in production -->\n<div style=\"position:relative; padding-bottom:114.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "production",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Test Ready)",
+    "description": "Embedding a video that scales with the container. Focus: making the behavior easier to verify.",
+    "code": "<!-- Test Ready focus: making the behavior easier to verify -->\n<div style=\"position:relative; padding-bottom:121.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "testing",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Data Cleanup)",
+    "description": "Embedding a video that scales with the container. Focus: normalizing and cleaning source values.",
+    "code": "<!-- Data Cleanup focus: normalizing and cleaning source values -->\n<div style=\"position:relative; padding-bottom:128.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "cleanup",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Batch Mode)",
+    "description": "Embedding a video that scales with the container. Focus: handling multiple values in one pass.",
+    "code": "<!-- Batch Mode focus: handling multiple values in one pass -->\n<div style=\"position:relative; padding-bottom:135.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "batch",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Error Aware)",
+    "description": "Embedding a video that scales with the container. Focus: failing clearly when assumptions break.",
+    "code": "<!-- Error Aware focus: failing clearly when assumptions break -->\n<div style=\"position:relative; padding-bottom:142.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "error-handling",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Team Style)",
+    "description": "Embedding a video that scales with the container. Focus: readable code that other developers can extend.",
+    "code": "<!-- Team Style focus: readable code that other developers can extend -->\n<div style=\"position:relative; padding-bottom:146.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "team-style",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Extended Example)",
+    "description": "Embedding a video that scales with the container. Focus: one extra step beyond the original sample.",
+    "code": "<!-- Extended Example focus: one extra step beyond the original sample -->\n<div style=\"position:relative; padding-bottom:153.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "extended",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Checklist Version)",
+    "description": "Embedding a video that scales with the container. Focus: the moving parts you should review before shipping.",
+    "code": "<!-- Checklist Version focus: the moving parts you should review before shipping -->\n<div style=\"position:relative; padding-bottom:161.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "checklist",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (API Friendly)",
+    "description": "Embedding a video that scales with the container. Focus: shaping output for an endpoint or integration.",
+    "code": "<!-- API Friendly focus: shaping output for an endpoint or integration -->\n<div style=\"position:relative; padding-bottom:165.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "api",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Reporting)",
+    "description": "Embedding a video that scales with the container. Focus: turning output into a concise summary.",
+    "code": "<!-- Reporting focus: turning output into a concise summary -->\n<div style=\"position:relative; padding-bottom:171.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "reporting",
+      "seed-2",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Responsive Video Embed (Practice Prompt)",
+    "description": "Embedding a video that scales with the container. Focus: a version that is easy to modify in exercises.",
+    "code": "<!-- Practice Prompt focus: a version that is easy to modify in exercises -->\n<div style=\"position:relative; padding-bottom:184.25%; height:0; overflow:hidden;\">\n  <iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" \n    style=\"position:absolute; top:0; left:0; width:100%; height:100%; border:0;\" \n    allowfullscreen></iframe>\n</div>",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "This technique uses an aspect ratio box to ensure the iframe maintains a 16:9 ratio while being responsive.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "media",
+      "responsive",
+      "practice",
+      "seed-2",
+      "html-snippet"
+    ]
   },
   {
     "title": "Form with Validation",
     "description": "Using native HTML5 validation attributes.",
     "code": "<form>\n  <label for=\"email\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[0-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
     "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.",
     "tags": [
       "forms",
-      "validation"
-    ],
+      "validation",
+      "html-snippet",
+      "seed-3"
+    ]
+  },
+  {
+    "title": "Form with Validation (Quick Start)",
+    "description": "Using native HTML5 validation attributes. Focus: the smallest useful version.",
+    "code": "<!-- Quick Start focus: the smallest useful version -->\n<form>\n  <label for=\"email-starter\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[5-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 1,
     "category": "Basic",
-    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`."
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "quick-start",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Validation)",
+    "description": "Using native HTML5 validation attributes. Focus: guarding inputs before work begins.",
+    "code": "<!-- Validation focus: guarding inputs before work begins -->\n<form>\n  <label for=\"email-safe-input\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[10-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Practical Example)",
+    "description": "Using native HTML5 validation attributes. Focus: a realistic day-to-day use case.",
+    "code": "<!-- Practical Example focus: a realistic day-to-day use case -->\n<form>\n  <label for=\"email-real-world\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[16-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "practical",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Reusable Utility)",
+    "description": "Using native HTML5 validation attributes. Focus: extracting logic into a helper.",
+    "code": "<!-- Reusable Utility focus: extracting logic into a helper -->\n<form>\n  <label for=\"email-helper\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[21-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "utility",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Edge Cases)",
+    "description": "Using native HTML5 validation attributes. Focus: behavior around empty or unexpected values.",
+    "code": "<!-- Edge Cases focus: behavior around empty or unexpected values -->\n<form>\n  <label for=\"email-fallback\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[27-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "edge-cases",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Debug Friendly)",
+    "description": "Using native HTML5 validation attributes. Focus: visibility while troubleshooting.",
+    "code": "<!-- Debug Friendly focus: visibility while troubleshooting -->\n<form>\n  <label for=\"email-debug-run\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[31-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "debugging",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Performance Pass)",
+    "description": "Using native HTML5 validation attributes. Focus: reducing extra work and repeated operations.",
+    "code": "<!-- Performance Pass focus: reducing extra work and repeated operations -->\n<form>\n  <label for=\"email-fast-path\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[40-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "performance",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Refactor Pass)",
+    "description": "Using native HTML5 validation attributes. Focus: cleaner naming and separation of concerns.",
+    "code": "<!-- Refactor Pass focus: cleaner naming and separation of concerns -->\n<form>\n  <label for=\"email-cleanup\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[45-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "refactor",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Interview Style)",
+    "description": "Using native HTML5 validation attributes. Focus: a compact explanation-friendly version.",
+    "code": "<!-- Interview Style focus: a compact explanation-friendly version -->\n<form>\n  <label for=\"email-whiteboard\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[52-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "interview",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Production Hint)",
+    "description": "Using native HTML5 validation attributes. Focus: a safer version to build on in production.",
+    "code": "<!-- Production Hint focus: a safer version to build on in production -->\n<form>\n  <label for=\"email-production\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[59-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "production",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Test Ready)",
+    "description": "Using native HTML5 validation attributes. Focus: making the behavior easier to verify.",
+    "code": "<!-- Test Ready focus: making the behavior easier to verify -->\n<form>\n  <label for=\"email-test-case\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[66-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "testing",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Data Cleanup)",
+    "description": "Using native HTML5 validation attributes. Focus: normalizing and cleaning source values.",
+    "code": "<!-- Data Cleanup focus: normalizing and cleaning source values -->\n<form>\n  <label for=\"email-normalized\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[73-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "cleanup",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Batch Mode)",
+    "description": "Using native HTML5 validation attributes. Focus: handling multiple values in one pass.",
+    "code": "<!-- Batch Mode focus: handling multiple values in one pass -->\n<form>\n  <label for=\"email-batch-run\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[80-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "batch",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Error Aware)",
+    "description": "Using native HTML5 validation attributes. Focus: failing clearly when assumptions break.",
+    "code": "<!-- Error Aware focus: failing clearly when assumptions break -->\n<form>\n  <label for=\"email-guarded\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[87-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "error-handling",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Team Style)",
+    "description": "Using native HTML5 validation attributes. Focus: readable code that other developers can extend.",
+    "code": "<!-- Team Style focus: readable code that other developers can extend -->\n<form>\n  <label for=\"email-shared\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[91-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "team-style",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Extended Example)",
+    "description": "Using native HTML5 validation attributes. Focus: one extra step beyond the original sample.",
+    "code": "<!-- Extended Example focus: one extra step beyond the original sample -->\n<form>\n  <label for=\"email-extended\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[98-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "extended",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Checklist Version)",
+    "description": "Using native HTML5 validation attributes. Focus: the moving parts you should review before shipping.",
+    "code": "<!-- Checklist Version focus: the moving parts you should review before shipping -->\n<form>\n  <label for=\"email-review\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[106-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "checklist",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (API Friendly)",
+    "description": "Using native HTML5 validation attributes. Focus: shaping output for an endpoint or integration.",
+    "code": "<!-- API Friendly focus: shaping output for an endpoint or integration -->\n<form>\n  <label for=\"email-api-ready\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[110-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "api",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Reporting)",
+    "description": "Using native HTML5 validation attributes. Focus: turning output into a concise summary.",
+    "code": "<!-- Reporting focus: turning output into a concise summary -->\n<form>\n  <label for=\"email-summary\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[116-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "reporting",
+      "seed-3",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Form with Validation (Practice Prompt)",
+    "description": "Using native HTML5 validation attributes. Focus: a version that is easy to modify in exercises.",
+    "code": "<!-- Practice Prompt focus: a version that is easy to modify in exercises -->\n<form>\n  <label for=\"email-practice\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"zip\">Zip Code:</label>\n  <input type=\"text\" id=\"zip\" pattern=\"[129-9]{5}\" title=\"Five digit zip code\">\n  <button type=\"submit\">Submit</button>\n</form>",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "HTML5 provides built-in validation via attributes like `required`, `type=\"email\"`, and `pattern`.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "forms",
+      "validation",
+      "practice",
+      "seed-3",
+      "html-snippet"
+    ]
   },
   {
     "title": "Data Attributes",
     "description": "Storing custom data on elements.",
     "code": "<div id=\"user\" data-id=\"123\" data-role=\"admin\">\n  User Profile\n</div>",
     "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.",
     "tags": [
       "data",
-      "custom"
-    ],
+      "custom",
+      "html-snippet",
+      "seed-4"
+    ]
+  },
+  {
+    "title": "Data Attributes (Quick Start)",
+    "description": "Storing custom data on elements. Focus: the smallest useful version.",
+    "code": "<!-- Quick Start focus: the smallest useful version -->\n<div id=\"user1-starter\" data1-id=\"129\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 1,
     "category": "Basic",
-    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements."
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "quick-start",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Validation)",
+    "description": "Storing custom data on elements. Focus: guarding inputs before work begins.",
+    "code": "<!-- Validation focus: guarding inputs before work begins -->\n<div id=\"user2-safe-input\" data2-id=\"134\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "validation",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Practical Example)",
+    "description": "Storing custom data on elements. Focus: a realistic day-to-day use case.",
+    "code": "<!-- Practical Example focus: a realistic day-to-day use case -->\n<div id=\"user3-real-world\" data3-id=\"140\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "practical",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Reusable Utility)",
+    "description": "Storing custom data on elements. Focus: extracting logic into a helper.",
+    "code": "<!-- Reusable Utility focus: extracting logic into a helper -->\n<div id=\"user4-helper\" data4-id=\"145\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "utility",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Edge Cases)",
+    "description": "Storing custom data on elements. Focus: behavior around empty or unexpected values.",
+    "code": "<!-- Edge Cases focus: behavior around empty or unexpected values -->\n<div id=\"user5-fallback\" data5-id=\"151\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "edge-cases",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Debug Friendly)",
+    "description": "Storing custom data on elements. Focus: visibility while troubleshooting.",
+    "code": "<!-- Debug Friendly focus: visibility while troubleshooting -->\n<div id=\"user6-debug-run\" data6-id=\"155\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "debugging",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Performance Pass)",
+    "description": "Storing custom data on elements. Focus: reducing extra work and repeated operations.",
+    "code": "<!-- Performance Pass focus: reducing extra work and repeated operations -->\n<div id=\"user7-fast-path\" data7-id=\"164\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "performance",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Refactor Pass)",
+    "description": "Storing custom data on elements. Focus: cleaner naming and separation of concerns.",
+    "code": "<!-- Refactor Pass focus: cleaner naming and separation of concerns -->\n<div id=\"user8-cleanup\" data8-id=\"169\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "refactor",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Interview Style)",
+    "description": "Storing custom data on elements. Focus: a compact explanation-friendly version.",
+    "code": "<!-- Interview Style focus: a compact explanation-friendly version -->\n<div id=\"user9-whiteboard\" data9-id=\"176\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "interview",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Production Hint)",
+    "description": "Storing custom data on elements. Focus: a safer version to build on in production.",
+    "code": "<!-- Production Hint focus: a safer version to build on in production -->\n<div id=\"user10-production\" data10-id=\"183\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "production",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Test Ready)",
+    "description": "Storing custom data on elements. Focus: making the behavior easier to verify.",
+    "code": "<!-- Test Ready focus: making the behavior easier to verify -->\n<div id=\"user11-test-case\" data11-id=\"190\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "testing",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Data Cleanup)",
+    "description": "Storing custom data on elements. Focus: normalizing and cleaning source values.",
+    "code": "<!-- Data Cleanup focus: normalizing and cleaning source values -->\n<div id=\"user12-normalized\" data12-id=\"197\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "cleanup",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Batch Mode)",
+    "description": "Storing custom data on elements. Focus: handling multiple values in one pass.",
+    "code": "<!-- Batch Mode focus: handling multiple values in one pass -->\n<div id=\"user13-batch-run\" data13-id=\"204\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "batch",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Error Aware)",
+    "description": "Storing custom data on elements. Focus: failing clearly when assumptions break.",
+    "code": "<!-- Error Aware focus: failing clearly when assumptions break -->\n<div id=\"user14-guarded\" data14-id=\"211\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "error-handling",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Team Style)",
+    "description": "Storing custom data on elements. Focus: readable code that other developers can extend.",
+    "code": "<!-- Team Style focus: readable code that other developers can extend -->\n<div id=\"user15-shared\" data15-id=\"215\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "team-style",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Extended Example)",
+    "description": "Storing custom data on elements. Focus: one extra step beyond the original sample.",
+    "code": "<!-- Extended Example focus: one extra step beyond the original sample -->\n<div id=\"user16-extended\" data16-id=\"222\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "extended",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Checklist Version)",
+    "description": "Storing custom data on elements. Focus: the moving parts you should review before shipping.",
+    "code": "<!-- Checklist Version focus: the moving parts you should review before shipping -->\n<div id=\"user17-review\" data17-id=\"230\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "checklist",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (API Friendly)",
+    "description": "Storing custom data on elements. Focus: shaping output for an endpoint or integration.",
+    "code": "<!-- API Friendly focus: shaping output for an endpoint or integration -->\n<div id=\"user18-api-ready\" data18-id=\"234\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "api",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Reporting)",
+    "description": "Storing custom data on elements. Focus: turning output into a concise summary.",
+    "code": "<!-- Reporting focus: turning output into a concise summary -->\n<div id=\"user19-summary\" data19-id=\"240\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "reporting",
+      "seed-4",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "Data Attributes (Practice Prompt)",
+    "description": "Storing custom data on elements. Focus: a version that is easy to modify in exercises.",
+    "code": "<!-- Practice Prompt focus: a version that is easy to modify in exercises -->\n<div id=\"user20-practice\" data20-id=\"253\" data-role=\"admin\">\n  User Profile\n</div>",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Data attributes allow you to store extra information on standard, semantic HTML elements.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "data",
+      "custom",
+      "practice",
+      "seed-4",
+      "html-snippet"
+    ]
   },
   {
     "title": "SVG Icon",
     "description": "Embedding an inline SVG icon.",
     "code": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
     "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.",
     "tags": [
       "graphics",
-      "svg"
-    ],
+      "svg",
+      "html-snippet",
+      "seed-5"
+    ]
+  },
+  {
+    "title": "SVG Icon (Quick Start)",
+    "description": "Embedding an inline SVG icon. Focus: the smallest useful version.",
+    "code": "<!-- Quick Start focus: the smallest useful version -->\n<svg width=\"31-starter\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 1,
     "category": "Utility",
-    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests."
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "quick-start",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Validation)",
+    "description": "Embedding an inline SVG icon. Focus: guarding inputs before work begins.",
+    "code": "<!-- Validation focus: guarding inputs before work begins -->\n<svg width=\"36-safe-input\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "validation",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Practical Example)",
+    "description": "Embedding an inline SVG icon. Focus: a realistic day-to-day use case.",
+    "code": "<!-- Practical Example focus: a realistic day-to-day use case -->\n<svg width=\"42-real-world\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "practical",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Reusable Utility)",
+    "description": "Embedding an inline SVG icon. Focus: extracting logic into a helper.",
+    "code": "<!-- Reusable Utility focus: extracting logic into a helper -->\n<svg width=\"47-helper\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "utility",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Edge Cases)",
+    "description": "Embedding an inline SVG icon. Focus: behavior around empty or unexpected values.",
+    "code": "<!-- Edge Cases focus: behavior around empty or unexpected values -->\n<svg width=\"53-fallback\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "edge-cases",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Debug Friendly)",
+    "description": "Embedding an inline SVG icon. Focus: visibility while troubleshooting.",
+    "code": "<!-- Debug Friendly focus: visibility while troubleshooting -->\n<svg width=\"57-debug-run\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "debugging",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Performance Pass)",
+    "description": "Embedding an inline SVG icon. Focus: reducing extra work and repeated operations.",
+    "code": "<!-- Performance Pass focus: reducing extra work and repeated operations -->\n<svg width=\"66-fast-path\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "performance",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Refactor Pass)",
+    "description": "Embedding an inline SVG icon. Focus: cleaner naming and separation of concerns.",
+    "code": "<!-- Refactor Pass focus: cleaner naming and separation of concerns -->\n<svg width=\"71-cleanup\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "refactor",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Interview Style)",
+    "description": "Embedding an inline SVG icon. Focus: a compact explanation-friendly version.",
+    "code": "<!-- Interview Style focus: a compact explanation-friendly version -->\n<svg width=\"78-whiteboard\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "interview",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Production Hint)",
+    "description": "Embedding an inline SVG icon. Focus: a safer version to build on in production.",
+    "code": "<!-- Production Hint focus: a safer version to build on in production -->\n<svg width=\"85-production\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "production",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Test Ready)",
+    "description": "Embedding an inline SVG icon. Focus: making the behavior easier to verify.",
+    "code": "<!-- Test Ready focus: making the behavior easier to verify -->\n<svg width=\"92-test-case\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "testing",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Data Cleanup)",
+    "description": "Embedding an inline SVG icon. Focus: normalizing and cleaning source values.",
+    "code": "<!-- Data Cleanup focus: normalizing and cleaning source values -->\n<svg width=\"99-normalized\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "cleanup",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Batch Mode)",
+    "description": "Embedding an inline SVG icon. Focus: handling multiple values in one pass.",
+    "code": "<!-- Batch Mode focus: handling multiple values in one pass -->\n<svg width=\"106-batch-run\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "batch",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Error Aware)",
+    "description": "Embedding an inline SVG icon. Focus: failing clearly when assumptions break.",
+    "code": "<!-- Error Aware focus: failing clearly when assumptions break -->\n<svg width=\"113-guarded\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "error-handling",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Team Style)",
+    "description": "Embedding an inline SVG icon. Focus: readable code that other developers can extend.",
+    "code": "<!-- Team Style focus: readable code that other developers can extend -->\n<svg width=\"117-shared\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "team-style",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Extended Example)",
+    "description": "Embedding an inline SVG icon. Focus: one extra step beyond the original sample.",
+    "code": "<!-- Extended Example focus: one extra step beyond the original sample -->\n<svg width=\"124-extended\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "extended",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Checklist Version)",
+    "description": "Embedding an inline SVG icon. Focus: the moving parts you should review before shipping.",
+    "code": "<!-- Checklist Version focus: the moving parts you should review before shipping -->\n<svg width=\"132-review\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "checklist",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (API Friendly)",
+    "description": "Embedding an inline SVG icon. Focus: shaping output for an endpoint or integration.",
+    "code": "<!-- API Friendly focus: shaping output for an endpoint or integration -->\n<svg width=\"136-api-ready\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "api",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Reporting)",
+    "description": "Embedding an inline SVG icon. Focus: turning output into a concise summary.",
+    "code": "<!-- Reporting focus: turning output into a concise summary -->\n<svg width=\"142-summary\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "reporting",
+      "seed-5",
+      "html-snippet"
+    ]
+  },
+  {
+    "title": "SVG Icon (Practice Prompt)",
+    "description": "Embedding an inline SVG icon. Focus: a version that is easy to modify in exercises.",
+    "code": "<!-- Practice Prompt focus: a version that is easy to modify in exercises -->\n<svg width=\"155-practice\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n  <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>\n  <line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"16\"></line>\n  <line x1=\"8\" y1=\"12\" x2=\"16\" y2=\"12\"></line>\n</svg>",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Inline SVGs are scalable, stylable via CSS, and don't require additional HTTP requests.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "graphics",
+      "svg",
+      "practice",
+      "seed-5",
+      "html-snippet"
+    ]
   }
 ]

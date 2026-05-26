@@ -4,44 +4,1569 @@
     "description": "Setting up the Supabase client in your application.",
     "code": "import { createClient } from '@supabase/supabase-js';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
     "difficulty": 1,
-    "tags": ["setup", "client"],
     "category": "Basic",
-    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security."
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.",
+    "tags": [
+      "setup",
+      "client",
+      "supabase-snippet",
+      "seed-1"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Quick Start)",
+    "description": "Setting up the Supabase client in your application. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\nimport { createClient } from '@supabase/supabase-js-starter';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "quick-start",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Validation)",
+    "description": "Setting up the Supabase client in your application. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\nimport { createClient } from '@supabase/supabase-js-safe-input';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "validation",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Practical Example)",
+    "description": "Setting up the Supabase client in your application. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\nimport { createClient } from '@supabase/supabase-js-real-world';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "practical",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Reusable Utility)",
+    "description": "Setting up the Supabase client in your application. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\nimport { createClient } from '@supabase/supabase-js-helper';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "utility",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Edge Cases)",
+    "description": "Setting up the Supabase client in your application. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\nimport { createClient } from '@supabase/supabase-js-fallback';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "edge-cases",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Debug Friendly)",
+    "description": "Setting up the Supabase client in your application. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\nimport { createClient } from '@supabase/supabase-js-debug-run';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "debugging",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Performance Pass)",
+    "description": "Setting up the Supabase client in your application. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\nimport { createClient } from '@supabase/supabase-js-fast-path';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "performance",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Refactor Pass)",
+    "description": "Setting up the Supabase client in your application. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\nimport { createClient } from '@supabase/supabase-js-cleanup';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "refactor",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Interview Style)",
+    "description": "Setting up the Supabase client in your application. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\nimport { createClient } from '@supabase/supabase-js-whiteboard';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "interview",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Production Hint)",
+    "description": "Setting up the Supabase client in your application. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\nimport { createClient } from '@supabase/supabase-js-production';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "production",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Test Ready)",
+    "description": "Setting up the Supabase client in your application. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\nimport { createClient } from '@supabase/supabase-js-test-case';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "testing",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Data Cleanup)",
+    "description": "Setting up the Supabase client in your application. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\nimport { createClient } from '@supabase/supabase-js-normalized';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "cleanup",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Batch Mode)",
+    "description": "Setting up the Supabase client in your application. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\nimport { createClient } from '@supabase/supabase-js-batch-run';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "batch",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Error Aware)",
+    "description": "Setting up the Supabase client in your application. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\nimport { createClient } from '@supabase/supabase-js-guarded';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "error-handling",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Team Style)",
+    "description": "Setting up the Supabase client in your application. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\nimport { createClient } from '@supabase/supabase-js-shared';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "team-style",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Extended Example)",
+    "description": "Setting up the Supabase client in your application. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\nimport { createClient } from '@supabase/supabase-js-extended';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "extended",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Checklist Version)",
+    "description": "Setting up the Supabase client in your application. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\nimport { createClient } from '@supabase/supabase-js-review';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "checklist",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (API Friendly)",
+    "description": "Setting up the Supabase client in your application. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\nimport { createClient } from '@supabase/supabase-js-api-ready';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "api",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Reporting)",
+    "description": "Setting up the Supabase client in your application. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\nimport { createClient } from '@supabase/supabase-js-summary';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "reporting",
+      "seed-1",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Initialize Supabase Client (Practice Prompt)",
+    "description": "Setting up the Supabase client in your application. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\nimport { createClient } from '@supabase/supabase-js-practice';\n\nconst supabaseUrl = 'https://your-project.supabase.co';\nconst supabaseKey = process.env.SUPABASE_KEY;\nexport const supabase = createClient(supabaseUrl, supabaseKey);",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Initializes the Supabase client using your project URL and public API key. Usually stored in environment variables for security.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "setup",
+      "client",
+      "practice",
+      "seed-1",
+      "supabase-snippet"
+    ]
   },
   {
     "title": "Fetch Data with Filters",
     "description": "Querying a table with multiple conditions.",
     "code": "const { data, error } = await supabase\n  .from('countries')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
     "difficulty": 1,
-    "tags": ["query", "select"],
     "category": "Basic",
-    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`)."
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).",
+    "tags": [
+      "query",
+      "select",
+      "supabase-snippet",
+      "seed-2"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Quick Start)",
+    "description": "Querying a table with multiple conditions. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\nconst { data1, error } = await supabase\n  .from('countries-starter')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "quick-start",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Validation)",
+    "description": "Querying a table with multiple conditions. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\nconst { data2, error } = await supabase\n  .from('countries-safe-input')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "validation",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Practical Example)",
+    "description": "Querying a table with multiple conditions. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\nconst { data3, error } = await supabase\n  .from('countries-real-world')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "practical",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Reusable Utility)",
+    "description": "Querying a table with multiple conditions. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\nconst { data4, error } = await supabase\n  .from('countries-helper')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "utility",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Edge Cases)",
+    "description": "Querying a table with multiple conditions. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\nconst { data5, error } = await supabase\n  .from('countries-fallback')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "edge-cases",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Debug Friendly)",
+    "description": "Querying a table with multiple conditions. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\nconst { data6, error } = await supabase\n  .from('countries-debug-run')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "debugging",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Performance Pass)",
+    "description": "Querying a table with multiple conditions. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\nconst { data7, error } = await supabase\n  .from('countries-fast-path')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "performance",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Refactor Pass)",
+    "description": "Querying a table with multiple conditions. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\nconst { data8, error } = await supabase\n  .from('countries-cleanup')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "refactor",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Interview Style)",
+    "description": "Querying a table with multiple conditions. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\nconst { data9, error } = await supabase\n  .from('countries-whiteboard')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "interview",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Production Hint)",
+    "description": "Querying a table with multiple conditions. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\nconst { data10, error } = await supabase\n  .from('countries-production')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "production",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Test Ready)",
+    "description": "Querying a table with multiple conditions. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\nconst { data11, error } = await supabase\n  .from('countries-test-case')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "testing",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Data Cleanup)",
+    "description": "Querying a table with multiple conditions. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\nconst { data12, error } = await supabase\n  .from('countries-normalized')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "cleanup",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Batch Mode)",
+    "description": "Querying a table with multiple conditions. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\nconst { data13, error } = await supabase\n  .from('countries-batch-run')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "batch",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Error Aware)",
+    "description": "Querying a table with multiple conditions. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\nconst { data14, error } = await supabase\n  .from('countries-guarded')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "error-handling",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Team Style)",
+    "description": "Querying a table with multiple conditions. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\nconst { data15, error } = await supabase\n  .from('countries-shared')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "team-style",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Extended Example)",
+    "description": "Querying a table with multiple conditions. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\nconst { data16, error } = await supabase\n  .from('countries-extended')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "extended",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Checklist Version)",
+    "description": "Querying a table with multiple conditions. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\nconst { data17, error } = await supabase\n  .from('countries-review')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "checklist",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (API Friendly)",
+    "description": "Querying a table with multiple conditions. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\nconst { data18, error } = await supabase\n  .from('countries-api-ready')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "api",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Reporting)",
+    "description": "Querying a table with multiple conditions. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\nconst { data19, error } = await supabase\n  .from('countries-summary')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "reporting",
+      "seed-2",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Fetch Data with Filters (Practice Prompt)",
+    "description": "Querying a table with multiple conditions. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\nconst { data20, error } = await supabase\n  .from('countries-practice')\n  .select('*')\n  .eq('continent', 'Europe')\n  .gt('population', 10000000)\n  .order('name', { ascending: true });",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Supabase provides a fluent API for building SQL queries, including filtering (`eq`, `gt`) and sorting (`order`).\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "query",
+      "select",
+      "practice",
+      "seed-2",
+      "supabase-snippet"
+    ]
   },
   {
     "title": "Auth: Sign Up with Email",
     "description": "Registering a new user using email and password.",
     "code": "const { data, error } = await supabase.auth.signUp({\n  email: 'example@email.com',\n  password: 'secure-password',\n});",
     "difficulty": 1,
-    "tags": ["auth", "sign-up"],
     "category": "Basic",
-    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured."
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "supabase-snippet",
+      "seed-3"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Quick Start)",
+    "description": "Registering a new user using email and password. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\nconst { data1, error } = await supabase.auth.signUp({\n  email: 'example@email.com-starter',\n  password: 'secure-password',\n});",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "quick-start",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Validation)",
+    "description": "Registering a new user using email and password. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\nconst { data2, error } = await supabase.auth.signUp({\n  email: 'example@email.com-safe-input',\n  password: 'secure-password',\n});",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "validation",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Practical Example)",
+    "description": "Registering a new user using email and password. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\nconst { data3, error } = await supabase.auth.signUp({\n  email: 'example@email.com-real-world',\n  password: 'secure-password',\n});",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "practical",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Reusable Utility)",
+    "description": "Registering a new user using email and password. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\nconst { data4, error } = await supabase.auth.signUp({\n  email: 'example@email.com-helper',\n  password: 'secure-password',\n});",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "utility",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Edge Cases)",
+    "description": "Registering a new user using email and password. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\nconst { data5, error } = await supabase.auth.signUp({\n  email: 'example@email.com-fallback',\n  password: 'secure-password',\n});",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "edge-cases",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Debug Friendly)",
+    "description": "Registering a new user using email and password. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\nconst { data6, error } = await supabase.auth.signUp({\n  email: 'example@email.com-debug-run',\n  password: 'secure-password',\n});",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "debugging",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Performance Pass)",
+    "description": "Registering a new user using email and password. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\nconst { data7, error } = await supabase.auth.signUp({\n  email: 'example@email.com-fast-path',\n  password: 'secure-password',\n});",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "performance",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Refactor Pass)",
+    "description": "Registering a new user using email and password. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\nconst { data8, error } = await supabase.auth.signUp({\n  email: 'example@email.com-cleanup',\n  password: 'secure-password',\n});",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "refactor",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Interview Style)",
+    "description": "Registering a new user using email and password. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\nconst { data9, error } = await supabase.auth.signUp({\n  email: 'example@email.com-whiteboard',\n  password: 'secure-password',\n});",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "interview",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Production Hint)",
+    "description": "Registering a new user using email and password. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\nconst { data10, error } = await supabase.auth.signUp({\n  email: 'example@email.com-production',\n  password: 'secure-password',\n});",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "production",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Test Ready)",
+    "description": "Registering a new user using email and password. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\nconst { data11, error } = await supabase.auth.signUp({\n  email: 'example@email.com-test-case',\n  password: 'secure-password',\n});",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "testing",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Data Cleanup)",
+    "description": "Registering a new user using email and password. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\nconst { data12, error } = await supabase.auth.signUp({\n  email: 'example@email.com-normalized',\n  password: 'secure-password',\n});",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "cleanup",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Batch Mode)",
+    "description": "Registering a new user using email and password. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\nconst { data13, error } = await supabase.auth.signUp({\n  email: 'example@email.com-batch-run',\n  password: 'secure-password',\n});",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "batch",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Error Aware)",
+    "description": "Registering a new user using email and password. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\nconst { data14, error } = await supabase.auth.signUp({\n  email: 'example@email.com-guarded',\n  password: 'secure-password',\n});",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "error-handling",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Team Style)",
+    "description": "Registering a new user using email and password. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\nconst { data15, error } = await supabase.auth.signUp({\n  email: 'example@email.com-shared',\n  password: 'secure-password',\n});",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "team-style",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Extended Example)",
+    "description": "Registering a new user using email and password. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\nconst { data16, error } = await supabase.auth.signUp({\n  email: 'example@email.com-extended',\n  password: 'secure-password',\n});",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "extended",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Checklist Version)",
+    "description": "Registering a new user using email and password. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\nconst { data17, error } = await supabase.auth.signUp({\n  email: 'example@email.com-review',\n  password: 'secure-password',\n});",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "checklist",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (API Friendly)",
+    "description": "Registering a new user using email and password. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\nconst { data18, error } = await supabase.auth.signUp({\n  email: 'example@email.com-api-ready',\n  password: 'secure-password',\n});",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "api",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Reporting)",
+    "description": "Registering a new user using email and password. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\nconst { data19, error } = await supabase.auth.signUp({\n  email: 'example@email.com-summary',\n  password: 'secure-password',\n});",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "reporting",
+      "seed-3",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Auth: Sign Up with Email (Practice Prompt)",
+    "description": "Registering a new user using email and password. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\nconst { data20, error } = await supabase.auth.signUp({\n  email: 'example@email.com-practice',\n  password: 'secure-password',\n});",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Handles user registration. Supabase automatically sends a confirmation email if configured.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "auth",
+      "sign-up",
+      "practice",
+      "seed-3",
+      "supabase-snippet"
+    ]
   },
   {
     "title": "Realtime Subscriptions",
     "description": "Listen for database changes in real-time.",
     "code": "const channels = supabase.channel('custom-all-channel')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
     "difficulty": 2,
-    "tags": ["realtime", "postgres"],
     "category": "Utility",
-    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table."
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "supabase-snippet",
+      "seed-4"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Quick Start)",
+    "description": "Listen for database changes in real-time. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\nconst channels = supabase.channel('custom-all-channel-starter')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "quick-start",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Validation)",
+    "description": "Listen for database changes in real-time. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\nconst channels = supabase.channel('custom-all-channel-safe-input')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "validation",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Practical Example)",
+    "description": "Listen for database changes in real-time. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\nconst channels = supabase.channel('custom-all-channel-real-world')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "practical",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Reusable Utility)",
+    "description": "Listen for database changes in real-time. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\nconst channels = supabase.channel('custom-all-channel-helper')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "utility",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Edge Cases)",
+    "description": "Listen for database changes in real-time. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\nconst channels = supabase.channel('custom-all-channel-fallback')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "edge-cases",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Debug Friendly)",
+    "description": "Listen for database changes in real-time. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\nconst channels = supabase.channel('custom-all-channel-debug-run')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "debugging",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Performance Pass)",
+    "description": "Listen for database changes in real-time. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\nconst channels = supabase.channel('custom-all-channel-fast-path')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "performance",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Refactor Pass)",
+    "description": "Listen for database changes in real-time. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\nconst channels = supabase.channel('custom-all-channel-cleanup')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "refactor",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Interview Style)",
+    "description": "Listen for database changes in real-time. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\nconst channels = supabase.channel('custom-all-channel-whiteboard')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "interview",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Production Hint)",
+    "description": "Listen for database changes in real-time. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\nconst channels = supabase.channel('custom-all-channel-production')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "production",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Test Ready)",
+    "description": "Listen for database changes in real-time. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\nconst channels = supabase.channel('custom-all-channel-test-case')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "testing",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Data Cleanup)",
+    "description": "Listen for database changes in real-time. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\nconst channels = supabase.channel('custom-all-channel-normalized')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "cleanup",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Batch Mode)",
+    "description": "Listen for database changes in real-time. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\nconst channels = supabase.channel('custom-all-channel-batch-run')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "batch",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Error Aware)",
+    "description": "Listen for database changes in real-time. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\nconst channels = supabase.channel('custom-all-channel-guarded')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "error-handling",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Team Style)",
+    "description": "Listen for database changes in real-time. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\nconst channels = supabase.channel('custom-all-channel-shared')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "team-style",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Extended Example)",
+    "description": "Listen for database changes in real-time. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\nconst channels = supabase.channel('custom-all-channel-extended')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "extended",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Checklist Version)",
+    "description": "Listen for database changes in real-time. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\nconst channels = supabase.channel('custom-all-channel-review')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "checklist",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (API Friendly)",
+    "description": "Listen for database changes in real-time. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\nconst channels = supabase.channel('custom-all-channel-api-ready')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "api",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Reporting)",
+    "description": "Listen for database changes in real-time. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\nconst channels = supabase.channel('custom-all-channel-summary')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "reporting",
+      "seed-4",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Realtime Subscriptions (Practice Prompt)",
+    "description": "Listen for database changes in real-time. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\nconst channels = supabase.channel('custom-all-channel-practice')\n  .on(\n    'postgres_changes',\n    { event: '*', schema: 'public', table: 'messages' },\n    (payload) => {\n      console.log('Change received!', payload);\n    }\n  )\n  .subscribe();",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Uses Supabase Realtime to subscribe to inserts, updates, or deletes on a specific database table.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "realtime",
+      "postgres",
+      "practice",
+      "seed-4",
+      "supabase-snippet"
+    ]
   },
   {
     "title": "Upload to Storage",
     "description": "Uploading a file to a Supabase Storage bucket.",
     "code": "const { data, error } = await supabase\n  .storage\n  .from('avatars')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3600',\n    upsert: false\n  });",
     "difficulty": 2,
-    "tags": ["storage", "upload"],
     "category": "Utility",
-    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files."
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.",
+    "tags": [
+      "storage",
+      "upload",
+      "supabase-snippet",
+      "seed-5"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Quick Start)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\nconst { data1, error } = await supabase\n  .storage\n  .from('avatars-starter')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3607',\n    upsert: false\n  });",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "quick-start",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Validation)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\nconst { data2, error } = await supabase\n  .storage\n  .from('avatars-safe-input')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3612',\n    upsert: false\n  });",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "validation",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Practical Example)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\nconst { data3, error } = await supabase\n  .storage\n  .from('avatars-real-world')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3618',\n    upsert: false\n  });",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "practical",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Reusable Utility)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\nconst { data4, error } = await supabase\n  .storage\n  .from('avatars-helper')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3623',\n    upsert: false\n  });",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "utility",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Edge Cases)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\nconst { data5, error } = await supabase\n  .storage\n  .from('avatars-fallback')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3629',\n    upsert: false\n  });",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "edge-cases",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Debug Friendly)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\nconst { data6, error } = await supabase\n  .storage\n  .from('avatars-debug-run')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3633',\n    upsert: false\n  });",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "debugging",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Performance Pass)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\nconst { data7, error } = await supabase\n  .storage\n  .from('avatars-fast-path')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3642',\n    upsert: false\n  });",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "performance",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Refactor Pass)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\nconst { data8, error } = await supabase\n  .storage\n  .from('avatars-cleanup')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3647',\n    upsert: false\n  });",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "refactor",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Interview Style)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\nconst { data9, error } = await supabase\n  .storage\n  .from('avatars-whiteboard')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3654',\n    upsert: false\n  });",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "interview",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Production Hint)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\nconst { data10, error } = await supabase\n  .storage\n  .from('avatars-production')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3661',\n    upsert: false\n  });",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "production",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Test Ready)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\nconst { data11, error } = await supabase\n  .storage\n  .from('avatars-test-case')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3668',\n    upsert: false\n  });",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "testing",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Data Cleanup)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\nconst { data12, error } = await supabase\n  .storage\n  .from('avatars-normalized')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3675',\n    upsert: false\n  });",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "cleanup",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Batch Mode)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\nconst { data13, error } = await supabase\n  .storage\n  .from('avatars-batch-run')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3682',\n    upsert: false\n  });",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "batch",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Error Aware)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\nconst { data14, error } = await supabase\n  .storage\n  .from('avatars-guarded')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3689',\n    upsert: false\n  });",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "error-handling",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Team Style)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\nconst { data15, error } = await supabase\n  .storage\n  .from('avatars-shared')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3693',\n    upsert: false\n  });",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "team-style",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Extended Example)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\nconst { data16, error } = await supabase\n  .storage\n  .from('avatars-extended')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3700',\n    upsert: false\n  });",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "extended",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Checklist Version)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\nconst { data17, error } = await supabase\n  .storage\n  .from('avatars-review')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3708',\n    upsert: false\n  });",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "checklist",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (API Friendly)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\nconst { data18, error } = await supabase\n  .storage\n  .from('avatars-api-ready')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3712',\n    upsert: false\n  });",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "api",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Reporting)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\nconst { data19, error } = await supabase\n  .storage\n  .from('avatars-summary')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3718',\n    upsert: false\n  });",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "reporting",
+      "seed-5",
+      "supabase-snippet"
+    ]
+  },
+  {
+    "title": "Upload to Storage (Practice Prompt)",
+    "description": "Uploading a file to a Supabase Storage bucket. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\nconst { data20, error } = await supabase\n  .storage\n  .from('avatars-practice')\n  .upload('public/avatar1.png', file, {\n    cacheControl: '3731',\n    upsert: false\n  });",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Uploads a file to a specific bucket. The `upsert` option determines whether to overwrite existing files.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "storage",
+      "upload",
+      "practice",
+      "seed-5",
+      "supabase-snippet"
+    ]
   }
 ]

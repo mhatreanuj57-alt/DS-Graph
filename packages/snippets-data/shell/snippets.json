@@ -4,59 +4,1569 @@
     "description": "Using sed to replace text across multiple files.",
     "code": "find . -type f -name \"*.txt\" -exec sed -i 's/old/new/g' {} +",
     "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.",
     "tags": [
       "automation",
-      "sed"
-    ],
+      "sed",
+      "shell-snippet",
+      "seed-1"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Quick Start)",
+    "description": "Using sed to replace text across multiple files. Focus: the smallest useful version.",
+    "code": "# Quick Start focus: the smallest useful version\nfind . -type f -name \"*.txt-starter\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 1,
     "category": "Utility",
-    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement."
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "quick-start",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Validation)",
+    "description": "Using sed to replace text across multiple files. Focus: guarding inputs before work begins.",
+    "code": "# Validation focus: guarding inputs before work begins\nfind . -type f -name \"*.txt-safe-input\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "validation",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Practical Example)",
+    "description": "Using sed to replace text across multiple files. Focus: a realistic day-to-day use case.",
+    "code": "# Practical Example focus: a realistic day-to-day use case\nfind . -type f -name \"*.txt-real-world\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "practical",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Reusable Utility)",
+    "description": "Using sed to replace text across multiple files. Focus: extracting logic into a helper.",
+    "code": "# Reusable Utility focus: extracting logic into a helper\nfind . -type f -name \"*.txt-helper\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "utility",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Edge Cases)",
+    "description": "Using sed to replace text across multiple files. Focus: behavior around empty or unexpected values.",
+    "code": "# Edge Cases focus: behavior around empty or unexpected values\nfind . -type f -name \"*.txt-fallback\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "edge-cases",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Debug Friendly)",
+    "description": "Using sed to replace text across multiple files. Focus: visibility while troubleshooting.",
+    "code": "# Debug Friendly focus: visibility while troubleshooting\nfind . -type f -name \"*.txt-debug-run\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "debugging",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Performance Pass)",
+    "description": "Using sed to replace text across multiple files. Focus: reducing extra work and repeated operations.",
+    "code": "# Performance Pass focus: reducing extra work and repeated operations\nfind . -type f -name \"*.txt-fast-path\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "performance",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Refactor Pass)",
+    "description": "Using sed to replace text across multiple files. Focus: cleaner naming and separation of concerns.",
+    "code": "# Refactor Pass focus: cleaner naming and separation of concerns\nfind . -type f -name \"*.txt-cleanup\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "refactor",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Interview Style)",
+    "description": "Using sed to replace text across multiple files. Focus: a compact explanation-friendly version.",
+    "code": "# Interview Style focus: a compact explanation-friendly version\nfind . -type f -name \"*.txt-whiteboard\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "interview",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Production Hint)",
+    "description": "Using sed to replace text across multiple files. Focus: a safer version to build on in production.",
+    "code": "# Production Hint focus: a safer version to build on in production\nfind . -type f -name \"*.txt-production\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "production",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Test Ready)",
+    "description": "Using sed to replace text across multiple files. Focus: making the behavior easier to verify.",
+    "code": "# Test Ready focus: making the behavior easier to verify\nfind . -type f -name \"*.txt-test-case\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "testing",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Data Cleanup)",
+    "description": "Using sed to replace text across multiple files. Focus: normalizing and cleaning source values.",
+    "code": "# Data Cleanup focus: normalizing and cleaning source values\nfind . -type f -name \"*.txt-normalized\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "cleanup",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Batch Mode)",
+    "description": "Using sed to replace text across multiple files. Focus: handling multiple values in one pass.",
+    "code": "# Batch Mode focus: handling multiple values in one pass\nfind . -type f -name \"*.txt-batch-run\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "batch",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Error Aware)",
+    "description": "Using sed to replace text across multiple files. Focus: failing clearly when assumptions break.",
+    "code": "# Error Aware focus: failing clearly when assumptions break\nfind . -type f -name \"*.txt-guarded\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "error-handling",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Team Style)",
+    "description": "Using sed to replace text across multiple files. Focus: readable code that other developers can extend.",
+    "code": "# Team Style focus: readable code that other developers can extend\nfind . -type f -name \"*.txt-shared\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "team-style",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Extended Example)",
+    "description": "Using sed to replace text across multiple files. Focus: one extra step beyond the original sample.",
+    "code": "# Extended Example focus: one extra step beyond the original sample\nfind . -type f -name \"*.txt-extended\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "extended",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Checklist Version)",
+    "description": "Using sed to replace text across multiple files. Focus: the moving parts you should review before shipping.",
+    "code": "# Checklist Version focus: the moving parts you should review before shipping\nfind . -type f -name \"*.txt-review\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "checklist",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (API Friendly)",
+    "description": "Using sed to replace text across multiple files. Focus: shaping output for an endpoint or integration.",
+    "code": "# API Friendly focus: shaping output for an endpoint or integration\nfind . -type f -name \"*.txt-api-ready\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "api",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Reporting)",
+    "description": "Using sed to replace text across multiple files. Focus: turning output into a concise summary.",
+    "code": "# Reporting focus: turning output into a concise summary\nfind . -type f -name \"*.txt-summary\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "reporting",
+      "seed-1",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Find and Replace in Files (Practice Prompt)",
+    "description": "Using sed to replace text across multiple files. Focus: a version that is easy to modify in exercises.",
+    "code": "# Practice Prompt focus: a version that is easy to modify in exercises\nfind . -type f -name \"*.txt-practice\" -exec sed -i 's/old/new/g' {} +",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Combines `find` to locate files and `sed` to perform in-place string replacement.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "automation",
+      "sed",
+      "practice",
+      "seed-1",
+      "shell-snippet"
+    ]
   },
   {
     "title": "Check if Command Exists",
     "description": "Scripting logic to verify dependencies.",
     "code": "if command -v git >/dev/null 2>&1; then\n  echo \"Git is installed\"\nelse\n  echo \"Git is missing\"\nfi",
     "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.",
     "tags": [
       "scripting",
-      "basics"
-    ],
+      "basics",
+      "shell-snippet",
+      "seed-2"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Quick Start)",
+    "description": "Scripting logic to verify dependencies. Focus: the smallest useful version.",
+    "code": "# Quick Start focus: the smallest useful version\nif command -v git >/dev/null 6>&1; then\n  echo \"Git is installed-starter\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 1,
     "category": "Basic",
-    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH."
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "quick-start",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Validation)",
+    "description": "Scripting logic to verify dependencies. Focus: guarding inputs before work begins.",
+    "code": "# Validation focus: guarding inputs before work begins\nif command -v git >/dev/null 11>&1; then\n  echo \"Git is installed-safe-input\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "validation",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Practical Example)",
+    "description": "Scripting logic to verify dependencies. Focus: a realistic day-to-day use case.",
+    "code": "# Practical Example focus: a realistic day-to-day use case\nif command -v git >/dev/null 17>&1; then\n  echo \"Git is installed-real-world\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "practical",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Reusable Utility)",
+    "description": "Scripting logic to verify dependencies. Focus: extracting logic into a helper.",
+    "code": "# Reusable Utility focus: extracting logic into a helper\nif command -v git >/dev/null 22>&1; then\n  echo \"Git is installed-helper\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "utility",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Edge Cases)",
+    "description": "Scripting logic to verify dependencies. Focus: behavior around empty or unexpected values.",
+    "code": "# Edge Cases focus: behavior around empty or unexpected values\nif command -v git >/dev/null 28>&1; then\n  echo \"Git is installed-fallback\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "edge-cases",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Debug Friendly)",
+    "description": "Scripting logic to verify dependencies. Focus: visibility while troubleshooting.",
+    "code": "# Debug Friendly focus: visibility while troubleshooting\nif command -v git >/dev/null 32>&1; then\n  echo \"Git is installed-debug-run\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "debugging",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Performance Pass)",
+    "description": "Scripting logic to verify dependencies. Focus: reducing extra work and repeated operations.",
+    "code": "# Performance Pass focus: reducing extra work and repeated operations\nif command -v git >/dev/null 41>&1; then\n  echo \"Git is installed-fast-path\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "performance",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Refactor Pass)",
+    "description": "Scripting logic to verify dependencies. Focus: cleaner naming and separation of concerns.",
+    "code": "# Refactor Pass focus: cleaner naming and separation of concerns\nif command -v git >/dev/null 46>&1; then\n  echo \"Git is installed-cleanup\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "refactor",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Interview Style)",
+    "description": "Scripting logic to verify dependencies. Focus: a compact explanation-friendly version.",
+    "code": "# Interview Style focus: a compact explanation-friendly version\nif command -v git >/dev/null 53>&1; then\n  echo \"Git is installed-whiteboard\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "interview",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Production Hint)",
+    "description": "Scripting logic to verify dependencies. Focus: a safer version to build on in production.",
+    "code": "# Production Hint focus: a safer version to build on in production\nif command -v git >/dev/null 60>&1; then\n  echo \"Git is installed-production\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "production",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Test Ready)",
+    "description": "Scripting logic to verify dependencies. Focus: making the behavior easier to verify.",
+    "code": "# Test Ready focus: making the behavior easier to verify\nif command -v git >/dev/null 67>&1; then\n  echo \"Git is installed-test-case\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "testing",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Data Cleanup)",
+    "description": "Scripting logic to verify dependencies. Focus: normalizing and cleaning source values.",
+    "code": "# Data Cleanup focus: normalizing and cleaning source values\nif command -v git >/dev/null 74>&1; then\n  echo \"Git is installed-normalized\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "cleanup",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Batch Mode)",
+    "description": "Scripting logic to verify dependencies. Focus: handling multiple values in one pass.",
+    "code": "# Batch Mode focus: handling multiple values in one pass\nif command -v git >/dev/null 81>&1; then\n  echo \"Git is installed-batch-run\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "batch",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Error Aware)",
+    "description": "Scripting logic to verify dependencies. Focus: failing clearly when assumptions break.",
+    "code": "# Error Aware focus: failing clearly when assumptions break\nif command -v git >/dev/null 88>&1; then\n  echo \"Git is installed-guarded\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "error-handling",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Team Style)",
+    "description": "Scripting logic to verify dependencies. Focus: readable code that other developers can extend.",
+    "code": "# Team Style focus: readable code that other developers can extend\nif command -v git >/dev/null 92>&1; then\n  echo \"Git is installed-shared\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "team-style",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Extended Example)",
+    "description": "Scripting logic to verify dependencies. Focus: one extra step beyond the original sample.",
+    "code": "# Extended Example focus: one extra step beyond the original sample\nif command -v git >/dev/null 99>&1; then\n  echo \"Git is installed-extended\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "extended",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Checklist Version)",
+    "description": "Scripting logic to verify dependencies. Focus: the moving parts you should review before shipping.",
+    "code": "# Checklist Version focus: the moving parts you should review before shipping\nif command -v git >/dev/null 107>&1; then\n  echo \"Git is installed-review\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "checklist",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (API Friendly)",
+    "description": "Scripting logic to verify dependencies. Focus: shaping output for an endpoint or integration.",
+    "code": "# API Friendly focus: shaping output for an endpoint or integration\nif command -v git >/dev/null 111>&1; then\n  echo \"Git is installed-api-ready\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "api",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Reporting)",
+    "description": "Scripting logic to verify dependencies. Focus: turning output into a concise summary.",
+    "code": "# Reporting focus: turning output into a concise summary\nif command -v git >/dev/null 117>&1; then\n  echo \"Git is installed-summary\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "reporting",
+      "seed-2",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Check if Command Exists (Practice Prompt)",
+    "description": "Scripting logic to verify dependencies. Focus: a version that is easy to modify in exercises.",
+    "code": "# Practice Prompt focus: a version that is easy to modify in exercises\nif command -v git >/dev/null 130>&1; then\n  echo \"Git is installed-practice\"\nelse\n  echo \"Git is missing\"\nfi",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`command -v` is a portable way to check for the existence of a command in the user's PATH.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "scripting",
+      "basics",
+      "practice",
+      "seed-2",
+      "shell-snippet"
+    ]
   },
   {
     "title": "Loop Through Files",
     "description": "Performing an action on every file in a directory.",
     "code": "for file in *.jpg; do\n  mv \"$file\" \"${file%.jpg}.png\"\ndone",
     "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.",
     "tags": [
       "looping",
-      "basics"
-    ],
+      "basics",
+      "shell-snippet",
+      "seed-3"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Quick Start)",
+    "description": "Performing an action on every file in a directory. Focus: the smallest useful version.",
+    "code": "# Quick Start focus: the smallest useful version\nfor file in *.jpg; do\n  mv \"$file-starter\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 1,
     "category": "Basic",
-    "explanation_md": "A `for` loop combined with parameter expansion to rename files."
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "quick-start",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Validation)",
+    "description": "Performing an action on every file in a directory. Focus: guarding inputs before work begins.",
+    "code": "# Validation focus: guarding inputs before work begins\nfor file in *.jpg; do\n  mv \"$file-safe-input\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "validation",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Practical Example)",
+    "description": "Performing an action on every file in a directory. Focus: a realistic day-to-day use case.",
+    "code": "# Practical Example focus: a realistic day-to-day use case\nfor file in *.jpg; do\n  mv \"$file-real-world\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "practical",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Reusable Utility)",
+    "description": "Performing an action on every file in a directory. Focus: extracting logic into a helper.",
+    "code": "# Reusable Utility focus: extracting logic into a helper\nfor file in *.jpg; do\n  mv \"$file-helper\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "utility",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Edge Cases)",
+    "description": "Performing an action on every file in a directory. Focus: behavior around empty or unexpected values.",
+    "code": "# Edge Cases focus: behavior around empty or unexpected values\nfor file in *.jpg; do\n  mv \"$file-fallback\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "edge-cases",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Debug Friendly)",
+    "description": "Performing an action on every file in a directory. Focus: visibility while troubleshooting.",
+    "code": "# Debug Friendly focus: visibility while troubleshooting\nfor file in *.jpg; do\n  mv \"$file-debug-run\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "debugging",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Performance Pass)",
+    "description": "Performing an action on every file in a directory. Focus: reducing extra work and repeated operations.",
+    "code": "# Performance Pass focus: reducing extra work and repeated operations\nfor file in *.jpg; do\n  mv \"$file-fast-path\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "performance",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Refactor Pass)",
+    "description": "Performing an action on every file in a directory. Focus: cleaner naming and separation of concerns.",
+    "code": "# Refactor Pass focus: cleaner naming and separation of concerns\nfor file in *.jpg; do\n  mv \"$file-cleanup\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "refactor",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Interview Style)",
+    "description": "Performing an action on every file in a directory. Focus: a compact explanation-friendly version.",
+    "code": "# Interview Style focus: a compact explanation-friendly version\nfor file in *.jpg; do\n  mv \"$file-whiteboard\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "interview",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Production Hint)",
+    "description": "Performing an action on every file in a directory. Focus: a safer version to build on in production.",
+    "code": "# Production Hint focus: a safer version to build on in production\nfor file in *.jpg; do\n  mv \"$file-production\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "production",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Test Ready)",
+    "description": "Performing an action on every file in a directory. Focus: making the behavior easier to verify.",
+    "code": "# Test Ready focus: making the behavior easier to verify\nfor file in *.jpg; do\n  mv \"$file-test-case\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "testing",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Data Cleanup)",
+    "description": "Performing an action on every file in a directory. Focus: normalizing and cleaning source values.",
+    "code": "# Data Cleanup focus: normalizing and cleaning source values\nfor file in *.jpg; do\n  mv \"$file-normalized\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "cleanup",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Batch Mode)",
+    "description": "Performing an action on every file in a directory. Focus: handling multiple values in one pass.",
+    "code": "# Batch Mode focus: handling multiple values in one pass\nfor file in *.jpg; do\n  mv \"$file-batch-run\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "batch",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Error Aware)",
+    "description": "Performing an action on every file in a directory. Focus: failing clearly when assumptions break.",
+    "code": "# Error Aware focus: failing clearly when assumptions break\nfor file in *.jpg; do\n  mv \"$file-guarded\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "error-handling",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Team Style)",
+    "description": "Performing an action on every file in a directory. Focus: readable code that other developers can extend.",
+    "code": "# Team Style focus: readable code that other developers can extend\nfor file in *.jpg; do\n  mv \"$file-shared\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "team-style",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Extended Example)",
+    "description": "Performing an action on every file in a directory. Focus: one extra step beyond the original sample.",
+    "code": "# Extended Example focus: one extra step beyond the original sample\nfor file in *.jpg; do\n  mv \"$file-extended\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "extended",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Checklist Version)",
+    "description": "Performing an action on every file in a directory. Focus: the moving parts you should review before shipping.",
+    "code": "# Checklist Version focus: the moving parts you should review before shipping\nfor file in *.jpg; do\n  mv \"$file-review\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "checklist",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (API Friendly)",
+    "description": "Performing an action on every file in a directory. Focus: shaping output for an endpoint or integration.",
+    "code": "# API Friendly focus: shaping output for an endpoint or integration\nfor file in *.jpg; do\n  mv \"$file-api-ready\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "api",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Reporting)",
+    "description": "Performing an action on every file in a directory. Focus: turning output into a concise summary.",
+    "code": "# Reporting focus: turning output into a concise summary\nfor file in *.jpg; do\n  mv \"$file-summary\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "reporting",
+      "seed-3",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Loop Through Files (Practice Prompt)",
+    "description": "Performing an action on every file in a directory. Focus: a version that is easy to modify in exercises.",
+    "code": "# Practice Prompt focus: a version that is easy to modify in exercises\nfor file in *.jpg; do\n  mv \"$file-practice\" \"${file%.jpg}.png\"\ndone",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "A `for` loop combined with parameter expansion to rename files.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "looping",
+      "basics",
+      "practice",
+      "seed-3",
+      "shell-snippet"
+    ]
   },
   {
     "title": "Process List and Filter",
     "description": "Finding specific running processes.",
     "code": "ps aux | grep \"node\" | grep -v \"grep\"",
     "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.",
     "tags": [
       "system",
-      "monitoring"
-    ],
+      "monitoring",
+      "shell-snippet",
+      "seed-4"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Quick Start)",
+    "description": "Finding specific running processes. Focus: the smallest useful version.",
+    "code": "# Quick Start focus: the smallest useful version\nps aux | grep \"node-starter\" | grep -v \"grep\"",
+    "difficulty": 1,
     "category": "Utility",
-    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself."
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "quick-start",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Validation)",
+    "description": "Finding specific running processes. Focus: guarding inputs before work begins.",
+    "code": "# Validation focus: guarding inputs before work begins\nps aux | grep \"node-safe-input\" | grep -v \"grep\"",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "validation",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Practical Example)",
+    "description": "Finding specific running processes. Focus: a realistic day-to-day use case.",
+    "code": "# Practical Example focus: a realistic day-to-day use case\nps aux | grep \"node-real-world\" | grep -v \"grep\"",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "practical",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Reusable Utility)",
+    "description": "Finding specific running processes. Focus: extracting logic into a helper.",
+    "code": "# Reusable Utility focus: extracting logic into a helper\nps aux | grep \"node-helper\" | grep -v \"grep\"",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "utility",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Edge Cases)",
+    "description": "Finding specific running processes. Focus: behavior around empty or unexpected values.",
+    "code": "# Edge Cases focus: behavior around empty or unexpected values\nps aux | grep \"node-fallback\" | grep -v \"grep\"",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "edge-cases",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Debug Friendly)",
+    "description": "Finding specific running processes. Focus: visibility while troubleshooting.",
+    "code": "# Debug Friendly focus: visibility while troubleshooting\nps aux | grep \"node-debug-run\" | grep -v \"grep\"",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "debugging",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Performance Pass)",
+    "description": "Finding specific running processes. Focus: reducing extra work and repeated operations.",
+    "code": "# Performance Pass focus: reducing extra work and repeated operations\nps aux | grep \"node-fast-path\" | grep -v \"grep\"",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "performance",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Refactor Pass)",
+    "description": "Finding specific running processes. Focus: cleaner naming and separation of concerns.",
+    "code": "# Refactor Pass focus: cleaner naming and separation of concerns\nps aux | grep \"node-cleanup\" | grep -v \"grep\"",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "refactor",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Interview Style)",
+    "description": "Finding specific running processes. Focus: a compact explanation-friendly version.",
+    "code": "# Interview Style focus: a compact explanation-friendly version\nps aux | grep \"node-whiteboard\" | grep -v \"grep\"",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "interview",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Production Hint)",
+    "description": "Finding specific running processes. Focus: a safer version to build on in production.",
+    "code": "# Production Hint focus: a safer version to build on in production\nps aux | grep \"node-production\" | grep -v \"grep\"",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "production",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Test Ready)",
+    "description": "Finding specific running processes. Focus: making the behavior easier to verify.",
+    "code": "# Test Ready focus: making the behavior easier to verify\nps aux | grep \"node-test-case\" | grep -v \"grep\"",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "testing",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Data Cleanup)",
+    "description": "Finding specific running processes. Focus: normalizing and cleaning source values.",
+    "code": "# Data Cleanup focus: normalizing and cleaning source values\nps aux | grep \"node-normalized\" | grep -v \"grep\"",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "cleanup",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Batch Mode)",
+    "description": "Finding specific running processes. Focus: handling multiple values in one pass.",
+    "code": "# Batch Mode focus: handling multiple values in one pass\nps aux | grep \"node-batch-run\" | grep -v \"grep\"",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "batch",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Error Aware)",
+    "description": "Finding specific running processes. Focus: failing clearly when assumptions break.",
+    "code": "# Error Aware focus: failing clearly when assumptions break\nps aux | grep \"node-guarded\" | grep -v \"grep\"",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "error-handling",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Team Style)",
+    "description": "Finding specific running processes. Focus: readable code that other developers can extend.",
+    "code": "# Team Style focus: readable code that other developers can extend\nps aux | grep \"node-shared\" | grep -v \"grep\"",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "team-style",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Extended Example)",
+    "description": "Finding specific running processes. Focus: one extra step beyond the original sample.",
+    "code": "# Extended Example focus: one extra step beyond the original sample\nps aux | grep \"node-extended\" | grep -v \"grep\"",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "extended",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Checklist Version)",
+    "description": "Finding specific running processes. Focus: the moving parts you should review before shipping.",
+    "code": "# Checklist Version focus: the moving parts you should review before shipping\nps aux | grep \"node-review\" | grep -v \"grep\"",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "checklist",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (API Friendly)",
+    "description": "Finding specific running processes. Focus: shaping output for an endpoint or integration.",
+    "code": "# API Friendly focus: shaping output for an endpoint or integration\nps aux | grep \"node-api-ready\" | grep -v \"grep\"",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "api",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Reporting)",
+    "description": "Finding specific running processes. Focus: turning output into a concise summary.",
+    "code": "# Reporting focus: turning output into a concise summary\nps aux | grep \"node-summary\" | grep -v \"grep\"",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "reporting",
+      "seed-4",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Process List and Filter (Practice Prompt)",
+    "description": "Finding specific running processes. Focus: a version that is easy to modify in exercises.",
+    "code": "# Practice Prompt focus: a version that is easy to modify in exercises\nps aux | grep \"node-practice\" | grep -v \"grep\"",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Pipes the output of `ps` through `grep` to filter for a specific process, excluding the grep process itself.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "system",
+      "monitoring",
+      "practice",
+      "seed-4",
+      "shell-snippet"
+    ]
   },
   {
     "title": "Redirecting Output",
     "description": "Capturing stdout and stderr.",
     "code": "./myscript.sh > output.log 2>&1",
     "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).",
     "tags": [
       "basics",
-      "io"
-    ],
+      "io",
+      "shell-snippet",
+      "seed-5"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Quick Start)",
+    "description": "Capturing stdout and stderr. Focus: the smallest useful version.",
+    "code": "# Quick Start focus: the smallest useful version\n./myscript.sh > output.log 9>&1",
+    "difficulty": 1,
     "category": "Basic",
-    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1)."
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "quick-start",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Validation)",
+    "description": "Capturing stdout and stderr. Focus: guarding inputs before work begins.",
+    "code": "# Validation focus: guarding inputs before work begins\n./myscript.sh > output.log 14>&1",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "validation",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Practical Example)",
+    "description": "Capturing stdout and stderr. Focus: a realistic day-to-day use case.",
+    "code": "# Practical Example focus: a realistic day-to-day use case\n./myscript.sh > output.log 20>&1",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "practical",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Reusable Utility)",
+    "description": "Capturing stdout and stderr. Focus: extracting logic into a helper.",
+    "code": "# Reusable Utility focus: extracting logic into a helper\n./myscript.sh > output.log 25>&1",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "utility",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Edge Cases)",
+    "description": "Capturing stdout and stderr. Focus: behavior around empty or unexpected values.",
+    "code": "# Edge Cases focus: behavior around empty or unexpected values\n./myscript.sh > output.log 31>&1",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "edge-cases",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Debug Friendly)",
+    "description": "Capturing stdout and stderr. Focus: visibility while troubleshooting.",
+    "code": "# Debug Friendly focus: visibility while troubleshooting\n./myscript.sh > output.log 35>&1",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "debugging",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Performance Pass)",
+    "description": "Capturing stdout and stderr. Focus: reducing extra work and repeated operations.",
+    "code": "# Performance Pass focus: reducing extra work and repeated operations\n./myscript.sh > output.log 44>&1",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "performance",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Refactor Pass)",
+    "description": "Capturing stdout and stderr. Focus: cleaner naming and separation of concerns.",
+    "code": "# Refactor Pass focus: cleaner naming and separation of concerns\n./myscript.sh > output.log 49>&1",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "refactor",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Interview Style)",
+    "description": "Capturing stdout and stderr. Focus: a compact explanation-friendly version.",
+    "code": "# Interview Style focus: a compact explanation-friendly version\n./myscript.sh > output.log 56>&1",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "interview",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Production Hint)",
+    "description": "Capturing stdout and stderr. Focus: a safer version to build on in production.",
+    "code": "# Production Hint focus: a safer version to build on in production\n./myscript.sh > output.log 63>&1",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "production",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Test Ready)",
+    "description": "Capturing stdout and stderr. Focus: making the behavior easier to verify.",
+    "code": "# Test Ready focus: making the behavior easier to verify\n./myscript.sh > output.log 70>&1",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "testing",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Data Cleanup)",
+    "description": "Capturing stdout and stderr. Focus: normalizing and cleaning source values.",
+    "code": "# Data Cleanup focus: normalizing and cleaning source values\n./myscript.sh > output.log 77>&1",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "cleanup",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Batch Mode)",
+    "description": "Capturing stdout and stderr. Focus: handling multiple values in one pass.",
+    "code": "# Batch Mode focus: handling multiple values in one pass\n./myscript.sh > output.log 84>&1",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "batch",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Error Aware)",
+    "description": "Capturing stdout and stderr. Focus: failing clearly when assumptions break.",
+    "code": "# Error Aware focus: failing clearly when assumptions break\n./myscript.sh > output.log 91>&1",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "error-handling",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Team Style)",
+    "description": "Capturing stdout and stderr. Focus: readable code that other developers can extend.",
+    "code": "# Team Style focus: readable code that other developers can extend\n./myscript.sh > output.log 95>&1",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "team-style",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Extended Example)",
+    "description": "Capturing stdout and stderr. Focus: one extra step beyond the original sample.",
+    "code": "# Extended Example focus: one extra step beyond the original sample\n./myscript.sh > output.log 102>&1",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "extended",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Checklist Version)",
+    "description": "Capturing stdout and stderr. Focus: the moving parts you should review before shipping.",
+    "code": "# Checklist Version focus: the moving parts you should review before shipping\n./myscript.sh > output.log 110>&1",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "checklist",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (API Friendly)",
+    "description": "Capturing stdout and stderr. Focus: shaping output for an endpoint or integration.",
+    "code": "# API Friendly focus: shaping output for an endpoint or integration\n./myscript.sh > output.log 114>&1",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "api",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Reporting)",
+    "description": "Capturing stdout and stderr. Focus: turning output into a concise summary.",
+    "code": "# Reporting focus: turning output into a concise summary\n./myscript.sh > output.log 120>&1",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "reporting",
+      "seed-5",
+      "shell-snippet"
+    ]
+  },
+  {
+    "title": "Redirecting Output (Practice Prompt)",
+    "description": "Capturing stdout and stderr. Focus: a version that is easy to modify in exercises.",
+    "code": "# Practice Prompt focus: a version that is easy to modify in exercises\n./myscript.sh > output.log 133>&1",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`>` redirects stdout, and `2>&1` redirects stderr (file descriptor 2) to stdout (file descriptor 1).\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "basics",
+      "io",
+      "practice",
+      "seed-5",
+      "shell-snippet"
+    ]
   }
 ]

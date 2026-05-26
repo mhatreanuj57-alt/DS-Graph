@@ -4,59 +4,1569 @@
     "description": "A function that returns whatever type is passed in.",
     "code": "function identity<T>(arg: T): T {\n  return arg;\n}",
     "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.",
     "tags": [
       "generics",
-      "basics"
-    ],
+      "basics",
+      "typescript-snippet",
+      "seed-1"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Quick Start)",
+    "description": "A function that returns whatever type is passed in. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 1,
     "category": "Basic",
-    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one."
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "quick-start",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Validation)",
+    "description": "A function that returns whatever type is passed in. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "validation",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Practical Example)",
+    "description": "A function that returns whatever type is passed in. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "practical",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Reusable Utility)",
+    "description": "A function that returns whatever type is passed in. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "utility",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Edge Cases)",
+    "description": "A function that returns whatever type is passed in. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "edge-cases",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Debug Friendly)",
+    "description": "A function that returns whatever type is passed in. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "debugging",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Performance Pass)",
+    "description": "A function that returns whatever type is passed in. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "performance",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Refactor Pass)",
+    "description": "A function that returns whatever type is passed in. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "refactor",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Interview Style)",
+    "description": "A function that returns whatever type is passed in. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "interview",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Production Hint)",
+    "description": "A function that returns whatever type is passed in. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "production",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Test Ready)",
+    "description": "A function that returns whatever type is passed in. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "testing",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Data Cleanup)",
+    "description": "A function that returns whatever type is passed in. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "cleanup",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Batch Mode)",
+    "description": "A function that returns whatever type is passed in. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "batch",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Error Aware)",
+    "description": "A function that returns whatever type is passed in. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "error-handling",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Team Style)",
+    "description": "A function that returns whatever type is passed in. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "team-style",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Extended Example)",
+    "description": "A function that returns whatever type is passed in. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "extended",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Checklist Version)",
+    "description": "A function that returns whatever type is passed in. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "checklist",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (API Friendly)",
+    "description": "A function that returns whatever type is passed in. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "api",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Reporting)",
+    "description": "A function that returns whatever type is passed in. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "reporting",
+      "seed-1",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Generic Identity Function (Practice Prompt)",
+    "description": "A function that returns whatever type is passed in. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\nfunction identity<T>(arg: T): T {\n  return arg;\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Generics allow you to create reusable components that can work over a variety of types rather than a single one.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "generics",
+      "basics",
+      "practice",
+      "seed-1",
+      "typescript-snippet"
+    ]
   },
   {
     "title": "Interface with Optional Properties",
     "description": "Defines the shape of an object with some non-mandatory fields.",
     "code": "interface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
     "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.",
     "tags": [
       "interface",
-      "types"
-    ],
+      "types",
+      "typescript-snippet",
+      "seed-2"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Quick Start)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 1,
     "category": "Basic",
-    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`."
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "quick-start",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Validation)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "validation",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Practical Example)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "practical",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Reusable Utility)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "utility",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Edge Cases)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "edge-cases",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Debug Friendly)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "debugging",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Performance Pass)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "performance",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Refactor Pass)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "refactor",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Interview Style)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "interview",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Production Hint)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "production",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Test Ready)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "testing",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Data Cleanup)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "cleanup",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Batch Mode)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "batch",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Error Aware)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "error-handling",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Team Style)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "team-style",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Extended Example)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "extended",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Checklist Version)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "checklist",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (API Friendly)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "api",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Reporting)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "reporting",
+      "seed-2",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Interface with Optional Properties (Practice Prompt)",
+    "description": "Defines the shape of an object with some non-mandatory fields. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\ninterface User {\n  id: number;\n  username: string;\n  email?: string; // Optional property\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Interfaces define contracts for objects. Optional properties are denoted with a `?`.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "interface",
+      "types",
+      "practice",
+      "seed-2",
+      "typescript-snippet"
+    ]
   },
   {
     "title": "Discriminated Unions",
     "description": "Pattern for handling multiple types with a common literal property.",
     "code": "interface Circle { kind: \"circle\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 2;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
     "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.",
     "tags": [
       "types",
-      "advanced"
-    ],
+      "advanced",
+      "typescript-snippet",
+      "seed-3"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Quick Start)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\ninterface Circle { kind: \"circle-starter\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 7;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 1,
     "category": "Advanced",
-    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type."
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "quick-start",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Validation)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\ninterface Circle { kind: \"circle-safe-input\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 12;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "validation",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Practical Example)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\ninterface Circle { kind: \"circle-real-world\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 18;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "practical",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Reusable Utility)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\ninterface Circle { kind: \"circle-helper\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 23;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "utility",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Edge Cases)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\ninterface Circle { kind: \"circle-fallback\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 29;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "edge-cases",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Debug Friendly)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\ninterface Circle { kind: \"circle-debug-run\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 33;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "debugging",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Performance Pass)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\ninterface Circle { kind: \"circle-fast-path\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 42;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "performance",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Refactor Pass)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\ninterface Circle { kind: \"circle-cleanup\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 47;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "refactor",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Interview Style)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\ninterface Circle { kind: \"circle-whiteboard\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 54;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "interview",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Production Hint)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\ninterface Circle { kind: \"circle-production\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 61;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "production",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Test Ready)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\ninterface Circle { kind: \"circle-test-case\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 68;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "testing",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Data Cleanup)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\ninterface Circle { kind: \"circle-normalized\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 75;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "cleanup",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Batch Mode)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\ninterface Circle { kind: \"circle-batch-run\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 82;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "batch",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Error Aware)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\ninterface Circle { kind: \"circle-guarded\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 89;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "error-handling",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Team Style)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\ninterface Circle { kind: \"circle-shared\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 93;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "team-style",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Extended Example)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\ninterface Circle { kind: \"circle-extended\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 100;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "extended",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Checklist Version)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\ninterface Circle { kind: \"circle-review\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 108;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "checklist",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (API Friendly)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\ninterface Circle { kind: \"circle-api-ready\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 112;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "api",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Reporting)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\ninterface Circle { kind: \"circle-summary\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 118;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "reporting",
+      "seed-3",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Discriminated Unions (Practice Prompt)",
+    "description": "Pattern for handling multiple types with a common literal property. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\ninterface Circle { kind: \"circle-practice\"; radius: number; }\ninterface Square { kind: \"square\"; sideLength: number; }\ntype Shape = Circle | Square;\n\nfunction getArea(shape: Shape) {\n  switch (shape.kind) {\n    case \"circle\": return Math.PI * shape.radius ** 131;\n    case \"square\": return shape.sideLength ** 2;\n  }\n}",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Discriminated unions use a common property (the discriminant) to allow the compiler to narrow down the specific type.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "types",
+      "advanced",
+      "practice",
+      "seed-3",
+      "typescript-snippet"
+    ]
   },
   {
     "title": "Utility Type: Partial",
     "description": "Makes all properties of a type optional.",
     "code": "interface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
     "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.",
     "tags": [
       "utility-types",
-      "types"
-    ],
+      "types",
+      "typescript-snippet",
+      "seed-4"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Quick Start)",
+    "description": "Makes all properties of a type optional. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 1,
     "category": "Utility",
-    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional."
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "quick-start",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Validation)",
+    "description": "Makes all properties of a type optional. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "validation",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Practical Example)",
+    "description": "Makes all properties of a type optional. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "practical",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Reusable Utility)",
+    "description": "Makes all properties of a type optional. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "utility",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Edge Cases)",
+    "description": "Makes all properties of a type optional. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "edge-cases",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Debug Friendly)",
+    "description": "Makes all properties of a type optional. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "debugging",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Performance Pass)",
+    "description": "Makes all properties of a type optional. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "performance",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Refactor Pass)",
+    "description": "Makes all properties of a type optional. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "refactor",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Interview Style)",
+    "description": "Makes all properties of a type optional. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "interview",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Production Hint)",
+    "description": "Makes all properties of a type optional. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "production",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Test Ready)",
+    "description": "Makes all properties of a type optional. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "testing",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Data Cleanup)",
+    "description": "Makes all properties of a type optional. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "cleanup",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Batch Mode)",
+    "description": "Makes all properties of a type optional. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "batch",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Error Aware)",
+    "description": "Makes all properties of a type optional. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "error-handling",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Team Style)",
+    "description": "Makes all properties of a type optional. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "team-style",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Extended Example)",
+    "description": "Makes all properties of a type optional. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "extended",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Checklist Version)",
+    "description": "Makes all properties of a type optional. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "checklist",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (API Friendly)",
+    "description": "Makes all properties of a type optional. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "api",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Reporting)",
+    "description": "Makes all properties of a type optional. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "reporting",
+      "seed-4",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Utility Type: Partial (Practice Prompt)",
+    "description": "Makes all properties of a type optional. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\ninterface Todo { title: string; description: string; }\n\nfunction updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {\n  return { ...todo, ...fieldsToUpdate };\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "`Partial<T>` constructs a type with all properties of T set to optional.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "utility-types",
+      "types",
+      "practice",
+      "seed-4",
+      "typescript-snippet"
+    ]
   },
   {
     "title": "Readonly Array",
     "description": "Prevents mutation of an array.",
     "code": "const list: readonly number[] = [1, 2, 3];\n// list.push(4); // Error: Property 'push' does not exist on type 'readonly number[]'.",
     "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.",
     "tags": [
       "array",
-      "immutability"
-    ],
+      "immutability",
+      "typescript-snippet",
+      "seed-5"
+    ]
+  },
+  {
+    "title": "Readonly Array (Quick Start)",
+    "description": "Prevents mutation of an array. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\nconst list1: readonly number[] = [8, 2, 3];\n// list.push(4); // Error: Property 'push-starter' does not exist on type 'readonly number[]'.",
+    "difficulty": 1,
     "category": "Basic",
-    "explanation_md": "`readonly` ensures that the array cannot be modified after creation."
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "quick-start",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Validation)",
+    "description": "Prevents mutation of an array. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\nconst list2: readonly number[] = [13, 2, 3];\n// list.push(4); // Error: Property 'push-safe-input' does not exist on type 'readonly number[]'.",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "validation",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Practical Example)",
+    "description": "Prevents mutation of an array. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\nconst list3: readonly number[] = [19, 2, 3];\n// list.push(4); // Error: Property 'push-real-world' does not exist on type 'readonly number[]'.",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "practical",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Reusable Utility)",
+    "description": "Prevents mutation of an array. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\nconst list4: readonly number[] = [24, 2, 3];\n// list.push(4); // Error: Property 'push-helper' does not exist on type 'readonly number[]'.",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "utility",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Edge Cases)",
+    "description": "Prevents mutation of an array. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\nconst list5: readonly number[] = [30, 2, 3];\n// list.push(4); // Error: Property 'push-fallback' does not exist on type 'readonly number[]'.",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "edge-cases",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Debug Friendly)",
+    "description": "Prevents mutation of an array. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\nconst list6: readonly number[] = [34, 2, 3];\n// list.push(4); // Error: Property 'push-debug-run' does not exist on type 'readonly number[]'.",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "debugging",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Performance Pass)",
+    "description": "Prevents mutation of an array. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\nconst list7: readonly number[] = [43, 2, 3];\n// list.push(4); // Error: Property 'push-fast-path' does not exist on type 'readonly number[]'.",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "performance",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Refactor Pass)",
+    "description": "Prevents mutation of an array. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\nconst list8: readonly number[] = [48, 2, 3];\n// list.push(4); // Error: Property 'push-cleanup' does not exist on type 'readonly number[]'.",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "refactor",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Interview Style)",
+    "description": "Prevents mutation of an array. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\nconst list9: readonly number[] = [55, 2, 3];\n// list.push(4); // Error: Property 'push-whiteboard' does not exist on type 'readonly number[]'.",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "interview",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Production Hint)",
+    "description": "Prevents mutation of an array. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\nconst list10: readonly number[] = [62, 2, 3];\n// list.push(4); // Error: Property 'push-production' does not exist on type 'readonly number[]'.",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "production",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Test Ready)",
+    "description": "Prevents mutation of an array. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\nconst list11: readonly number[] = [69, 2, 3];\n// list.push(4); // Error: Property 'push-test-case' does not exist on type 'readonly number[]'.",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "testing",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Data Cleanup)",
+    "description": "Prevents mutation of an array. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\nconst list12: readonly number[] = [76, 2, 3];\n// list.push(4); // Error: Property 'push-normalized' does not exist on type 'readonly number[]'.",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "cleanup",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Batch Mode)",
+    "description": "Prevents mutation of an array. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\nconst list13: readonly number[] = [83, 2, 3];\n// list.push(4); // Error: Property 'push-batch-run' does not exist on type 'readonly number[]'.",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "batch",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Error Aware)",
+    "description": "Prevents mutation of an array. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\nconst list14: readonly number[] = [90, 2, 3];\n// list.push(4); // Error: Property 'push-guarded' does not exist on type 'readonly number[]'.",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "error-handling",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Team Style)",
+    "description": "Prevents mutation of an array. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\nconst list15: readonly number[] = [94, 2, 3];\n// list.push(4); // Error: Property 'push-shared' does not exist on type 'readonly number[]'.",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "team-style",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Extended Example)",
+    "description": "Prevents mutation of an array. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\nconst list16: readonly number[] = [101, 2, 3];\n// list.push(4); // Error: Property 'push-extended' does not exist on type 'readonly number[]'.",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "extended",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Checklist Version)",
+    "description": "Prevents mutation of an array. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\nconst list17: readonly number[] = [109, 2, 3];\n// list.push(4); // Error: Property 'push-review' does not exist on type 'readonly number[]'.",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "checklist",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (API Friendly)",
+    "description": "Prevents mutation of an array. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\nconst list18: readonly number[] = [113, 2, 3];\n// list.push(4); // Error: Property 'push-api-ready' does not exist on type 'readonly number[]'.",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "api",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Reporting)",
+    "description": "Prevents mutation of an array. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\nconst list19: readonly number[] = [119, 2, 3];\n// list.push(4); // Error: Property 'push-summary' does not exist on type 'readonly number[]'.",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "reporting",
+      "seed-5",
+      "typescript-snippet"
+    ]
+  },
+  {
+    "title": "Readonly Array (Practice Prompt)",
+    "description": "Prevents mutation of an array. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\nconst list20: readonly number[] = [132, 2, 3];\n// list.push(4); // Error: Property 'push-practice' does not exist on type 'readonly number[]'.",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "`readonly` ensures that the array cannot be modified after creation.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "array",
+      "immutability",
+      "practice",
+      "seed-5",
+      "typescript-snippet"
+    ]
   }
 ]

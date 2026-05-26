@@ -4,59 +4,1568 @@
     "description": "Perfectly center content horizontally and vertically.",
     "code": ".container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
     "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.",
     "tags": [
       "flexbox",
-      "layout"
-    ],
+      "layout",
+      "css-snippet",
+      "seed-1"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Quick Start)",
+    "description": "Perfectly center content horizontally and vertically. Focus: the smallest useful version.",
+    "code": "/* Quick Start focus: the smallest useful version */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 1,
     "category": "Basic",
-    "explanation_md": "Flexbox makes it incredibly easy to align children within a container."
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "quick-start",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Validation)",
+    "description": "Perfectly center content horizontally and vertically. Focus: guarding inputs before work begins.",
+    "code": "/* Validation focus: guarding inputs before work begins */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "validation",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Practical Example)",
+    "description": "Perfectly center content horizontally and vertically. Focus: a realistic day-to-day use case.",
+    "code": "/* Practical Example focus: a realistic day-to-day use case */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "practical",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Reusable Utility)",
+    "description": "Perfectly center content horizontally and vertically. Focus: extracting logic into a helper.",
+    "code": "/* Reusable Utility focus: extracting logic into a helper */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "utility",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Edge Cases)",
+    "description": "Perfectly center content horizontally and vertically. Focus: behavior around empty or unexpected values.",
+    "code": "/* Edge Cases focus: behavior around empty or unexpected values */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "edge-cases",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Debug Friendly)",
+    "description": "Perfectly center content horizontally and vertically. Focus: visibility while troubleshooting.",
+    "code": "/* Debug Friendly focus: visibility while troubleshooting */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "debugging",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Performance Pass)",
+    "description": "Perfectly center content horizontally and vertically. Focus: reducing extra work and repeated operations.",
+    "code": "/* Performance Pass focus: reducing extra work and repeated operations */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "performance",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Refactor Pass)",
+    "description": "Perfectly center content horizontally and vertically. Focus: cleaner naming and separation of concerns.",
+    "code": "/* Refactor Pass focus: cleaner naming and separation of concerns */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "refactor",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Interview Style)",
+    "description": "Perfectly center content horizontally and vertically. Focus: a compact explanation-friendly version.",
+    "code": "/* Interview Style focus: a compact explanation-friendly version */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "interview",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Production Hint)",
+    "description": "Perfectly center content horizontally and vertically. Focus: a safer version to build on in production.",
+    "code": "/* Production Hint focus: a safer version to build on in production */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "production",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Test Ready)",
+    "description": "Perfectly center content horizontally and vertically. Focus: making the behavior easier to verify.",
+    "code": "/* Test Ready focus: making the behavior easier to verify */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "testing",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Data Cleanup)",
+    "description": "Perfectly center content horizontally and vertically. Focus: normalizing and cleaning source values.",
+    "code": "/* Data Cleanup focus: normalizing and cleaning source values */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "cleanup",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Batch Mode)",
+    "description": "Perfectly center content horizontally and vertically. Focus: handling multiple values in one pass.",
+    "code": "/* Batch Mode focus: handling multiple values in one pass */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "batch",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Error Aware)",
+    "description": "Perfectly center content horizontally and vertically. Focus: failing clearly when assumptions break.",
+    "code": "/* Error Aware focus: failing clearly when assumptions break */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "error-handling",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Team Style)",
+    "description": "Perfectly center content horizontally and vertically. Focus: readable code that other developers can extend.",
+    "code": "/* Team Style focus: readable code that other developers can extend */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "team-style",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Extended Example)",
+    "description": "Perfectly center content horizontally and vertically. Focus: one extra step beyond the original sample.",
+    "code": "/* Extended Example focus: one extra step beyond the original sample */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "extended",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Checklist Version)",
+    "description": "Perfectly center content horizontally and vertically. Focus: the moving parts you should review before shipping.",
+    "code": "/* Checklist Version focus: the moving parts you should review before shipping */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "checklist",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (API Friendly)",
+    "description": "Perfectly center content horizontally and vertically. Focus: shaping output for an endpoint or integration.",
+    "code": "/* API Friendly focus: shaping output for an endpoint or integration */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "api",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Reporting)",
+    "description": "Perfectly center content horizontally and vertically. Focus: turning output into a concise summary.",
+    "code": "/* Reporting focus: turning output into a concise summary */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "reporting",
+      "seed-1",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Flexbox Centering (Practice Prompt)",
+    "description": "Perfectly center content horizontally and vertically. Focus: a version that is easy to modify in exercises.",
+    "code": "/* Practice Prompt focus: a version that is easy to modify in exercises */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Flexbox makes it incredibly easy to align children within a container.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "flexbox",
+      "layout",
+      "practice",
+      "seed-1",
+      "css-snippet"
+    ]
   },
   {
     "title": "CSS Grid Holy Grail",
     "description": "Classic 3-column layout with header and footer.",
     "code": ".layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
     "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.",
     "tags": [
       "grid",
-      "layout"
-    ],
+      "layout",
+      "css-snippet",
+      "seed-2"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Quick Start)",
+    "description": "Classic 3-column layout with header and footer. Focus: the smallest useful version.",
+    "code": "/* Quick Start focus: the smallest useful version */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-starter\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 1,
     "category": "Advanced",
-    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts."
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "quick-start",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Validation)",
+    "description": "Classic 3-column layout with header and footer. Focus: guarding inputs before work begins.",
+    "code": "/* Validation focus: guarding inputs before work begins */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-safe-input\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "validation",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Practical Example)",
+    "description": "Classic 3-column layout with header and footer. Focus: a realistic day-to-day use case.",
+    "code": "/* Practical Example focus: a realistic day-to-day use case */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-real-world\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "practical",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Reusable Utility)",
+    "description": "Classic 3-column layout with header and footer. Focus: extracting logic into a helper.",
+    "code": "/* Reusable Utility focus: extracting logic into a helper */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-helper\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "utility",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Edge Cases)",
+    "description": "Classic 3-column layout with header and footer. Focus: behavior around empty or unexpected values.",
+    "code": "/* Edge Cases focus: behavior around empty or unexpected values */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-fallback\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "edge-cases",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Debug Friendly)",
+    "description": "Classic 3-column layout with header and footer. Focus: visibility while troubleshooting.",
+    "code": "/* Debug Friendly focus: visibility while troubleshooting */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-debug-run\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "debugging",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Performance Pass)",
+    "description": "Classic 3-column layout with header and footer. Focus: reducing extra work and repeated operations.",
+    "code": "/* Performance Pass focus: reducing extra work and repeated operations */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-fast-path\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "performance",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Refactor Pass)",
+    "description": "Classic 3-column layout with header and footer. Focus: cleaner naming and separation of concerns.",
+    "code": "/* Refactor Pass focus: cleaner naming and separation of concerns */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-cleanup\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "refactor",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Interview Style)",
+    "description": "Classic 3-column layout with header and footer. Focus: a compact explanation-friendly version.",
+    "code": "/* Interview Style focus: a compact explanation-friendly version */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-whiteboard\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "interview",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Production Hint)",
+    "description": "Classic 3-column layout with header and footer. Focus: a safer version to build on in production.",
+    "code": "/* Production Hint focus: a safer version to build on in production */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-production\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "production",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Test Ready)",
+    "description": "Classic 3-column layout with header and footer. Focus: making the behavior easier to verify.",
+    "code": "/* Test Ready focus: making the behavior easier to verify */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-test-case\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "testing",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Data Cleanup)",
+    "description": "Classic 3-column layout with header and footer. Focus: normalizing and cleaning source values.",
+    "code": "/* Data Cleanup focus: normalizing and cleaning source values */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-normalized\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "cleanup",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Batch Mode)",
+    "description": "Classic 3-column layout with header and footer. Focus: handling multiple values in one pass.",
+    "code": "/* Batch Mode focus: handling multiple values in one pass */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-batch-run\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "batch",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Error Aware)",
+    "description": "Classic 3-column layout with header and footer. Focus: failing clearly when assumptions break.",
+    "code": "/* Error Aware focus: failing clearly when assumptions break */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-guarded\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "error-handling",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Team Style)",
+    "description": "Classic 3-column layout with header and footer. Focus: readable code that other developers can extend.",
+    "code": "/* Team Style focus: readable code that other developers can extend */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-shared\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "team-style",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Extended Example)",
+    "description": "Classic 3-column layout with header and footer. Focus: one extra step beyond the original sample.",
+    "code": "/* Extended Example focus: one extra step beyond the original sample */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-extended\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "extended",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Checklist Version)",
+    "description": "Classic 3-column layout with header and footer. Focus: the moving parts you should review before shipping.",
+    "code": "/* Checklist Version focus: the moving parts you should review before shipping */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-review\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "checklist",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (API Friendly)",
+    "description": "Classic 3-column layout with header and footer. Focus: shaping output for an endpoint or integration.",
+    "code": "/* API Friendly focus: shaping output for an endpoint or integration */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-api-ready\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "api",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Reporting)",
+    "description": "Classic 3-column layout with header and footer. Focus: turning output into a concise summary.",
+    "code": "/* Reporting focus: turning output into a concise summary */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-summary\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "reporting",
+      "seed-2",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Grid Holy Grail (Practice Prompt)",
+    "description": "Classic 3-column layout with header and footer. Focus: a version that is easy to modify in exercises.",
+    "code": "/* Practice Prompt focus: a version that is easy to modify in exercises */\n.layout {\n  display: grid;\n  grid-template-areas: \n    \"header header header-practice\"\n    \"nav main aside\"\n    \"footer footer footer\";\n  grid-template-rows: auto 1fr auto;\n  grid-template-columns: 200px 1fr 200px;\n  height: 100vh;\n}",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "CSS Grid provides a powerful system for creating complex two-dimensional layouts.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "grid",
+      "layout",
+      "practice",
+      "seed-2",
+      "css-snippet"
+    ]
   },
   {
     "title": "Custom Scrollbar",
     "description": "Styling scrollbars in Webkit browsers.",
     "code": "::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #888;\n  border-radius: 5px;\n}",
     "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.",
     "tags": [
       "ui",
-      "customization"
-    ],
+      "customization",
+      "css-snippet",
+      "seed-3"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Quick Start)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: the smallest useful version.",
+    "code": "/* Quick Start focus: the smallest useful version */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #893;\n  border-radius: 5px;\n}",
+    "difficulty": 1,
     "category": "Utility",
-    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars."
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "quick-start",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Validation)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: guarding inputs before work begins.",
+    "code": "/* Validation focus: guarding inputs before work begins */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #898;\n  border-radius: 5px;\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "validation",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Practical Example)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: a realistic day-to-day use case.",
+    "code": "/* Practical Example focus: a realistic day-to-day use case */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #904;\n  border-radius: 5px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "practical",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Reusable Utility)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: extracting logic into a helper.",
+    "code": "/* Reusable Utility focus: extracting logic into a helper */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #909;\n  border-radius: 5px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "utility",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Edge Cases)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: behavior around empty or unexpected values.",
+    "code": "/* Edge Cases focus: behavior around empty or unexpected values */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #915;\n  border-radius: 5px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "edge-cases",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Debug Friendly)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: visibility while troubleshooting.",
+    "code": "/* Debug Friendly focus: visibility while troubleshooting */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #919;\n  border-radius: 5px;\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "debugging",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Performance Pass)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: reducing extra work and repeated operations.",
+    "code": "/* Performance Pass focus: reducing extra work and repeated operations */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #928;\n  border-radius: 5px;\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "performance",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Refactor Pass)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: cleaner naming and separation of concerns.",
+    "code": "/* Refactor Pass focus: cleaner naming and separation of concerns */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #933;\n  border-radius: 5px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "refactor",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Interview Style)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: a compact explanation-friendly version.",
+    "code": "/* Interview Style focus: a compact explanation-friendly version */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #940;\n  border-radius: 5px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "interview",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Production Hint)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: a safer version to build on in production.",
+    "code": "/* Production Hint focus: a safer version to build on in production */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #947;\n  border-radius: 5px;\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "production",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Test Ready)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: making the behavior easier to verify.",
+    "code": "/* Test Ready focus: making the behavior easier to verify */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #954;\n  border-radius: 5px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "testing",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Data Cleanup)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: normalizing and cleaning source values.",
+    "code": "/* Data Cleanup focus: normalizing and cleaning source values */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #961;\n  border-radius: 5px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "cleanup",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Batch Mode)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: handling multiple values in one pass.",
+    "code": "/* Batch Mode focus: handling multiple values in one pass */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #968;\n  border-radius: 5px;\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "batch",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Error Aware)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: failing clearly when assumptions break.",
+    "code": "/* Error Aware focus: failing clearly when assumptions break */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #975;\n  border-radius: 5px;\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "error-handling",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Team Style)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: readable code that other developers can extend.",
+    "code": "/* Team Style focus: readable code that other developers can extend */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #979;\n  border-radius: 5px;\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "team-style",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Extended Example)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: one extra step beyond the original sample.",
+    "code": "/* Extended Example focus: one extra step beyond the original sample */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #986;\n  border-radius: 5px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "extended",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Checklist Version)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: the moving parts you should review before shipping.",
+    "code": "/* Checklist Version focus: the moving parts you should review before shipping */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #994;\n  border-radius: 5px;\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "checklist",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (API Friendly)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: shaping output for an endpoint or integration.",
+    "code": "/* API Friendly focus: shaping output for an endpoint or integration */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #998;\n  border-radius: 5px;\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "api",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Reporting)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: turning output into a concise summary.",
+    "code": "/* Reporting focus: turning output into a concise summary */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #1004;\n  border-radius: 5px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "reporting",
+      "seed-3",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Custom Scrollbar (Practice Prompt)",
+    "description": "Styling scrollbars in Webkit browsers. Focus: a version that is easy to modify in exercises.",
+    "code": "/* Practice Prompt focus: a version that is easy to modify in exercises */\n::-webkit-scrollbar {\n  width: 10px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f1f1;\n}\n::-webkit-scrollbar-thumb {\n  background: #1017;\n  border-radius: 5px;\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Vendor-specific pseudo-elements allow for customizing the appearance of scrollbars.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "ui",
+      "customization",
+      "practice",
+      "seed-3",
+      "css-snippet"
+    ]
   },
   {
     "title": "CSS Variables (Custom Properties)",
     "description": "Defining and using reusable values.",
     "code": ":root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
     "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.",
     "tags": [
       "variables",
-      "theming"
-    ],
+      "theming",
+      "css-snippet",
+      "seed-4"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Quick Start)",
+    "description": "Defining and using reusable values. Focus: the smallest useful version.",
+    "code": "/* Quick Start focus: the smallest useful version */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 1,
     "category": "Basic",
-    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet."
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "quick-start",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Validation)",
+    "description": "Defining and using reusable values. Focus: guarding inputs before work begins.",
+    "code": "/* Validation focus: guarding inputs before work begins */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "validation",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Practical Example)",
+    "description": "Defining and using reusable values. Focus: a realistic day-to-day use case.",
+    "code": "/* Practical Example focus: a realistic day-to-day use case */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "practical",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Reusable Utility)",
+    "description": "Defining and using reusable values. Focus: extracting logic into a helper.",
+    "code": "/* Reusable Utility focus: extracting logic into a helper */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "utility",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Edge Cases)",
+    "description": "Defining and using reusable values. Focus: behavior around empty or unexpected values.",
+    "code": "/* Edge Cases focus: behavior around empty or unexpected values */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "edge-cases",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Debug Friendly)",
+    "description": "Defining and using reusable values. Focus: visibility while troubleshooting.",
+    "code": "/* Debug Friendly focus: visibility while troubleshooting */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "debugging",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Performance Pass)",
+    "description": "Defining and using reusable values. Focus: reducing extra work and repeated operations.",
+    "code": "/* Performance Pass focus: reducing extra work and repeated operations */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "performance",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Refactor Pass)",
+    "description": "Defining and using reusable values. Focus: cleaner naming and separation of concerns.",
+    "code": "/* Refactor Pass focus: cleaner naming and separation of concerns */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "refactor",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Interview Style)",
+    "description": "Defining and using reusable values. Focus: a compact explanation-friendly version.",
+    "code": "/* Interview Style focus: a compact explanation-friendly version */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "interview",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Production Hint)",
+    "description": "Defining and using reusable values. Focus: a safer version to build on in production.",
+    "code": "/* Production Hint focus: a safer version to build on in production */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "production",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Test Ready)",
+    "description": "Defining and using reusable values. Focus: making the behavior easier to verify.",
+    "code": "/* Test Ready focus: making the behavior easier to verify */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "testing",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Data Cleanup)",
+    "description": "Defining and using reusable values. Focus: normalizing and cleaning source values.",
+    "code": "/* Data Cleanup focus: normalizing and cleaning source values */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "cleanup",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Batch Mode)",
+    "description": "Defining and using reusable values. Focus: handling multiple values in one pass.",
+    "code": "/* Batch Mode focus: handling multiple values in one pass */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "batch",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Error Aware)",
+    "description": "Defining and using reusable values. Focus: failing clearly when assumptions break.",
+    "code": "/* Error Aware focus: failing clearly when assumptions break */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "error-handling",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Team Style)",
+    "description": "Defining and using reusable values. Focus: readable code that other developers can extend.",
+    "code": "/* Team Style focus: readable code that other developers can extend */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "team-style",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Extended Example)",
+    "description": "Defining and using reusable values. Focus: one extra step beyond the original sample.",
+    "code": "/* Extended Example focus: one extra step beyond the original sample */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "extended",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Checklist Version)",
+    "description": "Defining and using reusable values. Focus: the moving parts you should review before shipping.",
+    "code": "/* Checklist Version focus: the moving parts you should review before shipping */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "checklist",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (API Friendly)",
+    "description": "Defining and using reusable values. Focus: shaping output for an endpoint or integration.",
+    "code": "/* API Friendly focus: shaping output for an endpoint or integration */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "api",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Reporting)",
+    "description": "Defining and using reusable values. Focus: turning output into a concise summary.",
+    "code": "/* Reporting focus: turning output into a concise summary */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "reporting",
+      "seed-4",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "CSS Variables (Custom Properties) (Practice Prompt)",
+    "description": "Defining and using reusable values. Focus: a version that is easy to modify in exercises.",
+    "code": "/* Practice Prompt focus: a version that is easy to modify in exercises */\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "CSS variables allow you to store values in one place and reuse them throughout your stylesheet.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "variables",
+      "theming",
+      "practice",
+      "seed-4",
+      "css-snippet"
+    ]
   },
   {
     "title": "Truncate Text with Ellipsis",
     "description": "Handle long text by cutting it off and adding dots.",
     "code": ".truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
     "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.",
     "tags": [
       "typography",
-      "utility"
-    ],
+      "utility",
+      "css-snippet",
+      "seed-5"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Quick Start)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: the smallest useful version.",
+    "code": "/* Quick Start focus: the smallest useful version */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 1,
     "category": "Utility",
-    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width."
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "quick-start",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Validation)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: guarding inputs before work begins.",
+    "code": "/* Validation focus: guarding inputs before work begins */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "validation",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Practical Example)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: a realistic day-to-day use case.",
+    "code": "/* Practical Example focus: a realistic day-to-day use case */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "practical",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Reusable Utility)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: extracting logic into a helper.",
+    "code": "/* Reusable Utility focus: extracting logic into a helper */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Edge Cases)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: behavior around empty or unexpected values.",
+    "code": "/* Edge Cases focus: behavior around empty or unexpected values */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "edge-cases",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Debug Friendly)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: visibility while troubleshooting.",
+    "code": "/* Debug Friendly focus: visibility while troubleshooting */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "debugging",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Performance Pass)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: reducing extra work and repeated operations.",
+    "code": "/* Performance Pass focus: reducing extra work and repeated operations */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "performance",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Refactor Pass)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: cleaner naming and separation of concerns.",
+    "code": "/* Refactor Pass focus: cleaner naming and separation of concerns */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "refactor",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Interview Style)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: a compact explanation-friendly version.",
+    "code": "/* Interview Style focus: a compact explanation-friendly version */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "interview",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Production Hint)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: a safer version to build on in production.",
+    "code": "/* Production Hint focus: a safer version to build on in production */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "production",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Test Ready)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: making the behavior easier to verify.",
+    "code": "/* Test Ready focus: making the behavior easier to verify */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "testing",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Data Cleanup)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: normalizing and cleaning source values.",
+    "code": "/* Data Cleanup focus: normalizing and cleaning source values */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "cleanup",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Batch Mode)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: handling multiple values in one pass.",
+    "code": "/* Batch Mode focus: handling multiple values in one pass */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "batch",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Error Aware)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: failing clearly when assumptions break.",
+    "code": "/* Error Aware focus: failing clearly when assumptions break */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "error-handling",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Team Style)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: readable code that other developers can extend.",
+    "code": "/* Team Style focus: readable code that other developers can extend */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "team-style",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Extended Example)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: one extra step beyond the original sample.",
+    "code": "/* Extended Example focus: one extra step beyond the original sample */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "extended",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Checklist Version)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: the moving parts you should review before shipping.",
+    "code": "/* Checklist Version focus: the moving parts you should review before shipping */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "checklist",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (API Friendly)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: shaping output for an endpoint or integration.",
+    "code": "/* API Friendly focus: shaping output for an endpoint or integration */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "api",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Reporting)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: turning output into a concise summary.",
+    "code": "/* Reporting focus: turning output into a concise summary */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "reporting",
+      "seed-5",
+      "css-snippet"
+    ]
+  },
+  {
+    "title": "Truncate Text with Ellipsis (Practice Prompt)",
+    "description": "Handle long text by cutting it off and adding dots. Focus: a version that is easy to modify in exercises.",
+    "code": "/* Practice Prompt focus: a version that is easy to modify in exercises */\n.truncate {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 200px;\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "This combination of properties ensures text stays on one line and shows an ellipsis if it exceeds the width.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "typography",
+      "utility",
+      "practice",
+      "seed-5",
+      "css-snippet"
+    ]
   }
 ]

@@ -4,44 +4,1568 @@
     "description": "A basic API route in Next.js 13+ App Router.",
     "code": "import { NextResponse } from 'next/server';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message: `Success! Received ID: ${id}` });\n}",
     "difficulty": 1,
-    "tags": ["api", "app-router"],
     "category": "Basic",
-    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object."
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.",
+    "tags": [
+      "api",
+      "app-router",
+      "nextjs-snippet",
+      "seed-1"
+    ]
+  },
+  {
+    "title": "API Route Handler (Quick Start)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\nimport { NextResponse } from 'next/server-starter';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message1: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "quick-start",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Validation)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\nimport { NextResponse } from 'next/server-safe-input';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message2: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "validation",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Practical Example)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\nimport { NextResponse } from 'next/server-real-world';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message3: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "practical",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Reusable Utility)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\nimport { NextResponse } from 'next/server-helper';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message4: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "utility",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Edge Cases)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\nimport { NextResponse } from 'next/server-fallback';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message5: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "edge-cases",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Debug Friendly)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\nimport { NextResponse } from 'next/server-debug-run';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message6: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "debugging",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Performance Pass)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\nimport { NextResponse } from 'next/server-fast-path';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message7: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "performance",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Refactor Pass)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\nimport { NextResponse } from 'next/server-cleanup';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message8: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "refactor",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Interview Style)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\nimport { NextResponse } from 'next/server-whiteboard';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message9: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "interview",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Production Hint)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\nimport { NextResponse } from 'next/server-production';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message10: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "production",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Test Ready)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\nimport { NextResponse } from 'next/server-test-case';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message11: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "testing",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Data Cleanup)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\nimport { NextResponse } from 'next/server-normalized';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message12: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "cleanup",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Batch Mode)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\nimport { NextResponse } from 'next/server-batch-run';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message13: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "batch",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Error Aware)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\nimport { NextResponse } from 'next/server-guarded';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message14: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "error-handling",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Team Style)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\nimport { NextResponse } from 'next/server-shared';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message15: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "team-style",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Extended Example)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\nimport { NextResponse } from 'next/server-extended';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message16: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "extended",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Checklist Version)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\nimport { NextResponse } from 'next/server-review';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message17: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "checklist",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (API Friendly)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\nimport { NextResponse } from 'next/server-api-ready';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message18: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Reporting)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\nimport { NextResponse } from 'next/server-summary';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message19: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "reporting",
+      "seed-1",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "API Route Handler (Practice Prompt)",
+    "description": "A basic API route in Next.js 13+ App Router. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\nimport { NextResponse } from 'next/server-practice';\n\nexport async function GET(request) {\n  const { searchParams } = new URL(request.url);\n  const id = searchParams.get('id');\n\n  return NextResponse.json({ message20: `Success! Received ID: ${id}` });\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Shows how to create a GET request handler in the `app/api` directory using the `NextResponse` object.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "api",
+      "app-router",
+      "practice",
+      "seed-1",
+      "nextjs-snippet"
+    ]
   },
   {
     "title": "getStaticProps with Revalidation",
     "description": "Incremental Static Regeneration (ISR) example (Pages Router).",
     "code": "export async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 60, // Re-generate page every 60 seconds\n  };\n}",
     "difficulty": 2,
-    "tags": ["isr", "pages-router"],
     "category": "Utility",
-    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site."
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "nextjs-snippet",
+      "seed-2"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Quick Start)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data1-starter');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 64, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "quick-start",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Validation)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data2-safe-input');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 69, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "validation",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Practical Example)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data3-real-world');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 75, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "practical",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Reusable Utility)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data4-helper');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 80, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "utility",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Edge Cases)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data5-fallback');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 86, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "edge-cases",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Debug Friendly)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data6-debug-run');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 90, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "debugging",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Performance Pass)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data7-fast-path');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 99, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "performance",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Refactor Pass)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data8-cleanup');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 104, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "refactor",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Interview Style)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data9-whiteboard');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 111, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "interview",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Production Hint)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data10-production');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 118, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "production",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Test Ready)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data11-test-case');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 125, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "testing",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Data Cleanup)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data12-normalized');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 132, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "cleanup",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Batch Mode)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data13-batch-run');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 139, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "batch",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Error Aware)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data14-guarded');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 146, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "error-handling",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Team Style)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data15-shared');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 150, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "team-style",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Extended Example)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data16-extended');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 157, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "extended",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Checklist Version)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data17-review');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 165, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "checklist",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (API Friendly)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data18-api-ready');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 169, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "api",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Reporting)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data19-summary');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 175, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "reporting",
+      "seed-2",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "getStaticProps with Revalidation (Practice Prompt)",
+    "description": "Incremental Static Regeneration (ISR) example (Pages Router). Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\nexport async function getStaticProps() {\n  const res = await fetch('https://api.example.com/data20-practice');\n  const data = await res.json();\n\n  return {\n    props: {\n      data,\n    },\n    revalidate: 188, // Re-generate page every 60 seconds\n  };\n}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "ISR allows you to update static content after you've built your site, without needing to rebuild the entire site.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "isr",
+      "pages-router",
+      "practice",
+      "seed-2",
+      "nextjs-snippet"
+    ]
   },
   {
     "title": "Middleware for Authentication",
     "description": "Protecting routes using Next.js Middleware.",
     "code": "import { NextResponse } from 'next/server';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
     "difficulty": 3,
-    "tags": ["middleware", "auth"],
     "category": "Advanced",
-    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status."
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.",
+    "tags": [
+      "middleware",
+      "auth",
+      "nextjs-snippet",
+      "seed-3"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Quick Start)",
+    "description": "Protecting routes using Next.js Middleware. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\nimport { NextResponse } from 'next/server-starter';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "quick-start",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Validation)",
+    "description": "Protecting routes using Next.js Middleware. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\nimport { NextResponse } from 'next/server-safe-input';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "validation",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Practical Example)",
+    "description": "Protecting routes using Next.js Middleware. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\nimport { NextResponse } from 'next/server-real-world';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "practical",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Reusable Utility)",
+    "description": "Protecting routes using Next.js Middleware. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\nimport { NextResponse } from 'next/server-helper';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "utility",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Edge Cases)",
+    "description": "Protecting routes using Next.js Middleware. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\nimport { NextResponse } from 'next/server-fallback';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "edge-cases",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Debug Friendly)",
+    "description": "Protecting routes using Next.js Middleware. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\nimport { NextResponse } from 'next/server-debug-run';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "debugging",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Performance Pass)",
+    "description": "Protecting routes using Next.js Middleware. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\nimport { NextResponse } from 'next/server-fast-path';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "performance",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Refactor Pass)",
+    "description": "Protecting routes using Next.js Middleware. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\nimport { NextResponse } from 'next/server-cleanup';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "refactor",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Interview Style)",
+    "description": "Protecting routes using Next.js Middleware. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\nimport { NextResponse } from 'next/server-whiteboard';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "interview",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Production Hint)",
+    "description": "Protecting routes using Next.js Middleware. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\nimport { NextResponse } from 'next/server-production';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "production",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Test Ready)",
+    "description": "Protecting routes using Next.js Middleware. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\nimport { NextResponse } from 'next/server-test-case';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "testing",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Data Cleanup)",
+    "description": "Protecting routes using Next.js Middleware. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\nimport { NextResponse } from 'next/server-normalized';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "cleanup",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Batch Mode)",
+    "description": "Protecting routes using Next.js Middleware. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\nimport { NextResponse } from 'next/server-batch-run';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "batch",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Error Aware)",
+    "description": "Protecting routes using Next.js Middleware. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\nimport { NextResponse } from 'next/server-guarded';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "error-handling",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Team Style)",
+    "description": "Protecting routes using Next.js Middleware. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\nimport { NextResponse } from 'next/server-shared';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "team-style",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Extended Example)",
+    "description": "Protecting routes using Next.js Middleware. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\nimport { NextResponse } from 'next/server-extended';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "extended",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Checklist Version)",
+    "description": "Protecting routes using Next.js Middleware. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\nimport { NextResponse } from 'next/server-review';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "checklist",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (API Friendly)",
+    "description": "Protecting routes using Next.js Middleware. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\nimport { NextResponse } from 'next/server-api-ready';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "api",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Reporting)",
+    "description": "Protecting routes using Next.js Middleware. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\nimport { NextResponse } from 'next/server-summary';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "reporting",
+      "seed-3",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Middleware for Authentication (Practice Prompt)",
+    "description": "Protecting routes using Next.js Middleware. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\nimport { NextResponse } from 'next/server-practice';\n\nexport function middleware(request) {\n  const token = request.cookies.get('token');\n\n  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {\n    return NextResponse.redirect(new URL('/login', request.url));\n  }\n\n  return NextResponse.next();\n}",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Middleware runs before a request is completed, allowing you to redirect users based on their authentication status.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "middleware",
+      "auth",
+      "practice",
+      "seed-3",
+      "nextjs-snippet"
+    ]
   },
   {
     "title": "Custom Document (Pages Router)",
     "description": "Customizing the <html> and <body> tags.",
     "code": "import { Html, Head, Main, NextScript } from 'next/document';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-100\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
     "difficulty": 2,
-    "tags": ["document", "seo"],
     "category": "Basic",
-    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling."
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.",
+    "tags": [
+      "document",
+      "seo",
+      "nextjs-snippet",
+      "seed-4"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Quick Start)",
+    "description": "Customizing the <html> and <body> tags. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\nimport { Html, Head, Main, NextScript } from 'next/document-starter';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-106\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "quick-start",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Validation)",
+    "description": "Customizing the <html> and <body> tags. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\nimport { Html, Head, Main, NextScript } from 'next/document-safe-input';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-111\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "validation",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Practical Example)",
+    "description": "Customizing the <html> and <body> tags. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\nimport { Html, Head, Main, NextScript } from 'next/document-real-world';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-117\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "practical",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Reusable Utility)",
+    "description": "Customizing the <html> and <body> tags. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\nimport { Html, Head, Main, NextScript } from 'next/document-helper';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-122\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "utility",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Edge Cases)",
+    "description": "Customizing the <html> and <body> tags. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\nimport { Html, Head, Main, NextScript } from 'next/document-fallback';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-128\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "edge-cases",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Debug Friendly)",
+    "description": "Customizing the <html> and <body> tags. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\nimport { Html, Head, Main, NextScript } from 'next/document-debug-run';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-132\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "debugging",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Performance Pass)",
+    "description": "Customizing the <html> and <body> tags. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\nimport { Html, Head, Main, NextScript } from 'next/document-fast-path';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-141\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "performance",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Refactor Pass)",
+    "description": "Customizing the <html> and <body> tags. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\nimport { Html, Head, Main, NextScript } from 'next/document-cleanup';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-146\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "refactor",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Interview Style)",
+    "description": "Customizing the <html> and <body> tags. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\nimport { Html, Head, Main, NextScript } from 'next/document-whiteboard';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-153\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "interview",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Production Hint)",
+    "description": "Customizing the <html> and <body> tags. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\nimport { Html, Head, Main, NextScript } from 'next/document-production';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-160\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "production",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Test Ready)",
+    "description": "Customizing the <html> and <body> tags. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\nimport { Html, Head, Main, NextScript } from 'next/document-test-case';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-167\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "testing",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Data Cleanup)",
+    "description": "Customizing the <html> and <body> tags. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\nimport { Html, Head, Main, NextScript } from 'next/document-normalized';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-174\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "cleanup",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Batch Mode)",
+    "description": "Customizing the <html> and <body> tags. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\nimport { Html, Head, Main, NextScript } from 'next/document-batch-run';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-181\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "batch",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Error Aware)",
+    "description": "Customizing the <html> and <body> tags. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\nimport { Html, Head, Main, NextScript } from 'next/document-guarded';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-188\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "error-handling",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Team Style)",
+    "description": "Customizing the <html> and <body> tags. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\nimport { Html, Head, Main, NextScript } from 'next/document-shared';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-192\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "team-style",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Extended Example)",
+    "description": "Customizing the <html> and <body> tags. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\nimport { Html, Head, Main, NextScript } from 'next/document-extended';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-199\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "extended",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Checklist Version)",
+    "description": "Customizing the <html> and <body> tags. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\nimport { Html, Head, Main, NextScript } from 'next/document-review';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-207\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "checklist",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (API Friendly)",
+    "description": "Customizing the <html> and <body> tags. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\nimport { Html, Head, Main, NextScript } from 'next/document-api-ready';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-211\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "api",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Reporting)",
+    "description": "Customizing the <html> and <body> tags. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\nimport { Html, Head, Main, NextScript } from 'next/document-summary';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-217\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "reporting",
+      "seed-4",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Custom Document (Pages Router) (Practice Prompt)",
+    "description": "Customizing the <html> and <body> tags. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\nimport { Html, Head, Main, NextScript } from 'next/document-practice';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"stylesheet\" href=\"/custom.css\" />\n      </Head>\n      <body className=\"bg-gray-230\">\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "A custom `_document.js` is commonly used to augment your application's `<html>` and `<body>` tags, often for SEO or global styling.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "document",
+      "seo",
+      "practice",
+      "seed-4",
+      "nextjs-snippet"
+    ]
   },
   {
     "title": "Dynamic Route Parameters",
     "description": "Accessing route segments in the App Router.",
     "code": "// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
     "difficulty": 1,
-    "tags": ["routing", "dynamic-routes"],
     "category": "Basic",
-    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component."
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "nextjs-snippet",
+      "seed-5"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Quick Start)",
+    "description": "Accessing route segments in the App Router. Focus: the smallest useful version.",
+    "code": "// Quick Start focus: the smallest useful version\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "quick-start",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Validation)",
+    "description": "Accessing route segments in the App Router. Focus: guarding inputs before work begins.",
+    "code": "// Validation focus: guarding inputs before work begins\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "validation",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Practical Example)",
+    "description": "Accessing route segments in the App Router. Focus: a realistic day-to-day use case.",
+    "code": "// Practical Example focus: a realistic day-to-day use case\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "practical",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Reusable Utility)",
+    "description": "Accessing route segments in the App Router. Focus: extracting logic into a helper.",
+    "code": "// Reusable Utility focus: extracting logic into a helper\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "utility",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Edge Cases)",
+    "description": "Accessing route segments in the App Router. Focus: behavior around empty or unexpected values.",
+    "code": "// Edge Cases focus: behavior around empty or unexpected values\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "edge-cases",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Debug Friendly)",
+    "description": "Accessing route segments in the App Router. Focus: visibility while troubleshooting.",
+    "code": "// Debug Friendly focus: visibility while troubleshooting\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "debugging",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Performance Pass)",
+    "description": "Accessing route segments in the App Router. Focus: reducing extra work and repeated operations.",
+    "code": "// Performance Pass focus: reducing extra work and repeated operations\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "performance",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Refactor Pass)",
+    "description": "Accessing route segments in the App Router. Focus: cleaner naming and separation of concerns.",
+    "code": "// Refactor Pass focus: cleaner naming and separation of concerns\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "refactor",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Interview Style)",
+    "description": "Accessing route segments in the App Router. Focus: a compact explanation-friendly version.",
+    "code": "// Interview Style focus: a compact explanation-friendly version\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "interview",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Production Hint)",
+    "description": "Accessing route segments in the App Router. Focus: a safer version to build on in production.",
+    "code": "// Production Hint focus: a safer version to build on in production\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "production",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Test Ready)",
+    "description": "Accessing route segments in the App Router. Focus: making the behavior easier to verify.",
+    "code": "// Test Ready focus: making the behavior easier to verify\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "testing",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Data Cleanup)",
+    "description": "Accessing route segments in the App Router. Focus: normalizing and cleaning source values.",
+    "code": "// Data Cleanup focus: normalizing and cleaning source values\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "cleanup",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Batch Mode)",
+    "description": "Accessing route segments in the App Router. Focus: handling multiple values in one pass.",
+    "code": "// Batch Mode focus: handling multiple values in one pass\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "batch",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Error Aware)",
+    "description": "Accessing route segments in the App Router. Focus: failing clearly when assumptions break.",
+    "code": "// Error Aware focus: failing clearly when assumptions break\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "error-handling",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Team Style)",
+    "description": "Accessing route segments in the App Router. Focus: readable code that other developers can extend.",
+    "code": "// Team Style focus: readable code that other developers can extend\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "team-style",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Extended Example)",
+    "description": "Accessing route segments in the App Router. Focus: one extra step beyond the original sample.",
+    "code": "// Extended Example focus: one extra step beyond the original sample\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "extended",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Checklist Version)",
+    "description": "Accessing route segments in the App Router. Focus: the moving parts you should review before shipping.",
+    "code": "// Checklist Version focus: the moving parts you should review before shipping\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "checklist",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (API Friendly)",
+    "description": "Accessing route segments in the App Router. Focus: shaping output for an endpoint or integration.",
+    "code": "// API Friendly focus: shaping output for an endpoint or integration\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "api",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Reporting)",
+    "description": "Accessing route segments in the App Router. Focus: turning output into a concise summary.",
+    "code": "// Reporting focus: turning output into a concise summary\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "reporting",
+      "seed-5",
+      "nextjs-snippet"
+    ]
+  },
+  {
+    "title": "Dynamic Route Parameters (Practice Prompt)",
+    "description": "Accessing route segments in the App Router. Focus: a version that is easy to modify in exercises.",
+    "code": "// Practice Prompt focus: a version that is easy to modify in exercises\n// app/blog/[slug]/page.js\nexport default function Page({ params }) {\n  const { slug } = params;\n  return <div>Post: {slug}</div>;\n}",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "Demonstrates how to handle dynamic segments in the App Router by accessing the `params` prop in a page component.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "routing",
+      "dynamic-routes",
+      "practice",
+      "seed-5",
+      "nextjs-snippet"
+    ]
   }
 ]

@@ -4,59 +4,1568 @@
     "description": "Creates a new list by filtering and transforming another list.",
     "code": "numbers = [1, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
     "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.",
     "tags": [
       "list",
-      "basics"
-    ],
+      "basics",
+      "python-snippet",
+      "seed-1"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Quick Start)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: the smallest useful version.",
+    "code": "# Quick Start focus: the smallest useful version\nnumbers = [4, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 1,
     "category": "Basic",
-    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists."
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "quick-start",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Validation)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: guarding inputs before work begins.",
+    "code": "# Validation focus: guarding inputs before work begins\nnumbers = [9, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "validation",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Practical Example)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: a realistic day-to-day use case.",
+    "code": "# Practical Example focus: a realistic day-to-day use case\nnumbers = [15, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "practical",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Reusable Utility)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: extracting logic into a helper.",
+    "code": "# Reusable Utility focus: extracting logic into a helper\nnumbers = [20, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "utility",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Edge Cases)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: behavior around empty or unexpected values.",
+    "code": "# Edge Cases focus: behavior around empty or unexpected values\nnumbers = [26, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "edge-cases",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Debug Friendly)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: visibility while troubleshooting.",
+    "code": "# Debug Friendly focus: visibility while troubleshooting\nnumbers = [30, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "debugging",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Performance Pass)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: reducing extra work and repeated operations.",
+    "code": "# Performance Pass focus: reducing extra work and repeated operations\nnumbers = [39, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "performance",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Refactor Pass)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: cleaner naming and separation of concerns.",
+    "code": "# Refactor Pass focus: cleaner naming and separation of concerns\nnumbers = [44, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "refactor",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Interview Style)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: a compact explanation-friendly version.",
+    "code": "# Interview Style focus: a compact explanation-friendly version\nnumbers = [51, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "interview",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Production Hint)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: a safer version to build on in production.",
+    "code": "# Production Hint focus: a safer version to build on in production\nnumbers = [58, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "production",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Test Ready)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: making the behavior easier to verify.",
+    "code": "# Test Ready focus: making the behavior easier to verify\nnumbers = [65, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "testing",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Data Cleanup)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: normalizing and cleaning source values.",
+    "code": "# Data Cleanup focus: normalizing and cleaning source values\nnumbers = [72, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "cleanup",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Batch Mode)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: handling multiple values in one pass.",
+    "code": "# Batch Mode focus: handling multiple values in one pass\nnumbers = [79, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "batch",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Error Aware)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: failing clearly when assumptions break.",
+    "code": "# Error Aware focus: failing clearly when assumptions break\nnumbers = [86, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "error-handling",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Team Style)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: readable code that other developers can extend.",
+    "code": "# Team Style focus: readable code that other developers can extend\nnumbers = [90, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "team-style",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Extended Example)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: one extra step beyond the original sample.",
+    "code": "# Extended Example focus: one extra step beyond the original sample\nnumbers = [97, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "extended",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Checklist Version)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: the moving parts you should review before shipping.",
+    "code": "# Checklist Version focus: the moving parts you should review before shipping\nnumbers = [105, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "checklist",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (API Friendly)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: shaping output for an endpoint or integration.",
+    "code": "# API Friendly focus: shaping output for an endpoint or integration\nnumbers = [109, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "api",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Reporting)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: turning output into a concise summary.",
+    "code": "# Reporting focus: turning output into a concise summary\nnumbers = [115, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "reporting",
+      "seed-1",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "List Comprehension with Conditional (Practice Prompt)",
+    "description": "Creates a new list by filtering and transforming another list. Focus: a version that is easy to modify in exercises.",
+    "code": "# Practice Prompt focus: a version that is easy to modify in exercises\nnumbers = [128, 2, 3, 4, 5, 6]\neven_squares = [x**2 for x in numbers if x % 2 == 0]\n# Output: [4, 16, 36]",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "List comprehensions provide a concise way to create lists based on existing lists.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "list",
+      "basics",
+      "practice",
+      "seed-1",
+      "python-snippet"
+    ]
   },
   {
     "title": "Context Manager (with statement)",
     "description": "Ensures resources are properly closed after use.",
     "code": "with open(\"example.txt\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
     "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.",
     "tags": [
       "file-io",
-      "basics"
-    ],
+      "basics",
+      "python-snippet",
+      "seed-2"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Quick Start)",
+    "description": "Ensures resources are properly closed after use. Focus: the smallest useful version.",
+    "code": "# Quick Start focus: the smallest useful version\nwith open(\"example.txt-starter\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 1,
     "category": "Basic",
-    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks."
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "quick-start",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Validation)",
+    "description": "Ensures resources are properly closed after use. Focus: guarding inputs before work begins.",
+    "code": "# Validation focus: guarding inputs before work begins\nwith open(\"example.txt-safe-input\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "validation",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Practical Example)",
+    "description": "Ensures resources are properly closed after use. Focus: a realistic day-to-day use case.",
+    "code": "# Practical Example focus: a realistic day-to-day use case\nwith open(\"example.txt-real-world\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "practical",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Reusable Utility)",
+    "description": "Ensures resources are properly closed after use. Focus: extracting logic into a helper.",
+    "code": "# Reusable Utility focus: extracting logic into a helper\nwith open(\"example.txt-helper\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "utility",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Edge Cases)",
+    "description": "Ensures resources are properly closed after use. Focus: behavior around empty or unexpected values.",
+    "code": "# Edge Cases focus: behavior around empty or unexpected values\nwith open(\"example.txt-fallback\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "edge-cases",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Debug Friendly)",
+    "description": "Ensures resources are properly closed after use. Focus: visibility while troubleshooting.",
+    "code": "# Debug Friendly focus: visibility while troubleshooting\nwith open(\"example.txt-debug-run\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "debugging",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Performance Pass)",
+    "description": "Ensures resources are properly closed after use. Focus: reducing extra work and repeated operations.",
+    "code": "# Performance Pass focus: reducing extra work and repeated operations\nwith open(\"example.txt-fast-path\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "performance",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Refactor Pass)",
+    "description": "Ensures resources are properly closed after use. Focus: cleaner naming and separation of concerns.",
+    "code": "# Refactor Pass focus: cleaner naming and separation of concerns\nwith open(\"example.txt-cleanup\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "refactor",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Interview Style)",
+    "description": "Ensures resources are properly closed after use. Focus: a compact explanation-friendly version.",
+    "code": "# Interview Style focus: a compact explanation-friendly version\nwith open(\"example.txt-whiteboard\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "interview",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Production Hint)",
+    "description": "Ensures resources are properly closed after use. Focus: a safer version to build on in production.",
+    "code": "# Production Hint focus: a safer version to build on in production\nwith open(\"example.txt-production\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "production",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Test Ready)",
+    "description": "Ensures resources are properly closed after use. Focus: making the behavior easier to verify.",
+    "code": "# Test Ready focus: making the behavior easier to verify\nwith open(\"example.txt-test-case\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "testing",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Data Cleanup)",
+    "description": "Ensures resources are properly closed after use. Focus: normalizing and cleaning source values.",
+    "code": "# Data Cleanup focus: normalizing and cleaning source values\nwith open(\"example.txt-normalized\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "cleanup",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Batch Mode)",
+    "description": "Ensures resources are properly closed after use. Focus: handling multiple values in one pass.",
+    "code": "# Batch Mode focus: handling multiple values in one pass\nwith open(\"example.txt-batch-run\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "batch",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Error Aware)",
+    "description": "Ensures resources are properly closed after use. Focus: failing clearly when assumptions break.",
+    "code": "# Error Aware focus: failing clearly when assumptions break\nwith open(\"example.txt-guarded\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "error-handling",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Team Style)",
+    "description": "Ensures resources are properly closed after use. Focus: readable code that other developers can extend.",
+    "code": "# Team Style focus: readable code that other developers can extend\nwith open(\"example.txt-shared\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "team-style",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Extended Example)",
+    "description": "Ensures resources are properly closed after use. Focus: one extra step beyond the original sample.",
+    "code": "# Extended Example focus: one extra step beyond the original sample\nwith open(\"example.txt-extended\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "extended",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Checklist Version)",
+    "description": "Ensures resources are properly closed after use. Focus: the moving parts you should review before shipping.",
+    "code": "# Checklist Version focus: the moving parts you should review before shipping\nwith open(\"example.txt-review\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "checklist",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (API Friendly)",
+    "description": "Ensures resources are properly closed after use. Focus: shaping output for an endpoint or integration.",
+    "code": "# API Friendly focus: shaping output for an endpoint or integration\nwith open(\"example.txt-api-ready\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 3,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "api",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Reporting)",
+    "description": "Ensures resources are properly closed after use. Focus: turning output into a concise summary.",
+    "code": "# Reporting focus: turning output into a concise summary\nwith open(\"example.txt-summary\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 2,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "reporting",
+      "seed-2",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Context Manager (with statement) (Practice Prompt)",
+    "description": "Ensures resources are properly closed after use. Focus: a version that is easy to modify in exercises.",
+    "code": "# Practice Prompt focus: a version that is easy to modify in exercises\nwith open(\"example.txt-practice\", \"w\") as f:\n    f.write(\"Hello, World!\")\n# File is automatically closed here",
+    "difficulty": 1,
+    "category": "Basic",
+    "explanation_md": "The `with` statement simplifies exception handling by encapsulating common preparation and cleanup tasks.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "file-io",
+      "basics",
+      "practice",
+      "seed-2",
+      "python-snippet"
+    ]
   },
   {
     "title": "Decorator Function",
     "description": "Modifies the behavior of a function or class.",
     "code": "import functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
     "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.",
     "tags": [
       "functional",
-      "advanced"
-    ],
+      "advanced",
+      "python-snippet",
+      "seed-3"
+    ]
+  },
+  {
+    "title": "Decorator Function (Quick Start)",
+    "description": "Modifies the behavior of a function or class. Focus: the smallest useful version.",
+    "code": "# Quick Start focus: the smallest useful version\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-starter\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 1,
     "category": "Advanced",
-    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it."
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "quick-start",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Validation)",
+    "description": "Modifies the behavior of a function or class. Focus: guarding inputs before work begins.",
+    "code": "# Validation focus: guarding inputs before work begins\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-safe-input\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "validation",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Practical Example)",
+    "description": "Modifies the behavior of a function or class. Focus: a realistic day-to-day use case.",
+    "code": "# Practical Example focus: a realistic day-to-day use case\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-real-world\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "practical",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Reusable Utility)",
+    "description": "Modifies the behavior of a function or class. Focus: extracting logic into a helper.",
+    "code": "# Reusable Utility focus: extracting logic into a helper\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-helper\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "utility",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Edge Cases)",
+    "description": "Modifies the behavior of a function or class. Focus: behavior around empty or unexpected values.",
+    "code": "# Edge Cases focus: behavior around empty or unexpected values\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-fallback\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "edge-cases",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Debug Friendly)",
+    "description": "Modifies the behavior of a function or class. Focus: visibility while troubleshooting.",
+    "code": "# Debug Friendly focus: visibility while troubleshooting\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-debug-run\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "debugging",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Performance Pass)",
+    "description": "Modifies the behavior of a function or class. Focus: reducing extra work and repeated operations.",
+    "code": "# Performance Pass focus: reducing extra work and repeated operations\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-fast-path\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "performance",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Refactor Pass)",
+    "description": "Modifies the behavior of a function or class. Focus: cleaner naming and separation of concerns.",
+    "code": "# Refactor Pass focus: cleaner naming and separation of concerns\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-cleanup\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "refactor",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Interview Style)",
+    "description": "Modifies the behavior of a function or class. Focus: a compact explanation-friendly version.",
+    "code": "# Interview Style focus: a compact explanation-friendly version\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-whiteboard\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "interview",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Production Hint)",
+    "description": "Modifies the behavior of a function or class. Focus: a safer version to build on in production.",
+    "code": "# Production Hint focus: a safer version to build on in production\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-production\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "production",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Test Ready)",
+    "description": "Modifies the behavior of a function or class. Focus: making the behavior easier to verify.",
+    "code": "# Test Ready focus: making the behavior easier to verify\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-test-case\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "testing",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Data Cleanup)",
+    "description": "Modifies the behavior of a function or class. Focus: normalizing and cleaning source values.",
+    "code": "# Data Cleanup focus: normalizing and cleaning source values\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-normalized\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "cleanup",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Batch Mode)",
+    "description": "Modifies the behavior of a function or class. Focus: handling multiple values in one pass.",
+    "code": "# Batch Mode focus: handling multiple values in one pass\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-batch-run\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "batch",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Error Aware)",
+    "description": "Modifies the behavior of a function or class. Focus: failing clearly when assumptions break.",
+    "code": "# Error Aware focus: failing clearly when assumptions break\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-guarded\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "error-handling",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Team Style)",
+    "description": "Modifies the behavior of a function or class. Focus: readable code that other developers can extend.",
+    "code": "# Team Style focus: readable code that other developers can extend\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-shared\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "team-style",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Extended Example)",
+    "description": "Modifies the behavior of a function or class. Focus: one extra step beyond the original sample.",
+    "code": "# Extended Example focus: one extra step beyond the original sample\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-extended\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "extended",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Checklist Version)",
+    "description": "Modifies the behavior of a function or class. Focus: the moving parts you should review before shipping.",
+    "code": "# Checklist Version focus: the moving parts you should review before shipping\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-review\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "checklist",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (API Friendly)",
+    "description": "Modifies the behavior of a function or class. Focus: shaping output for an endpoint or integration.",
+    "code": "# API Friendly focus: shaping output for an endpoint or integration\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-api-ready\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 3,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "api",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Reporting)",
+    "description": "Modifies the behavior of a function or class. Focus: turning output into a concise summary.",
+    "code": "# Reporting focus: turning output into a concise summary\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-summary\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 2,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "reporting",
+      "seed-3",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Decorator Function (Practice Prompt)",
+    "description": "Modifies the behavior of a function or class. Focus: a version that is easy to modify in exercises.",
+    "code": "# Practice Prompt focus: a version that is easy to modify in exercises\nimport functools\n\ndef timer(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}-practice\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@timer\ndef say_hello():\n    print(\"Hello!\")",
+    "difficulty": 1,
+    "category": "Advanced",
+    "explanation_md": "Decorators allow you to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "functional",
+      "advanced",
+      "practice",
+      "seed-3",
+      "python-snippet"
+    ]
   },
   {
     "title": "Dictionary Merging",
     "description": "Merges two dictionaries using the | operator (Python 3.9+).",
     "code": "dict1 = {\"a\": 1, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
     "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.",
     "tags": [
       "dictionary",
-      "utility"
-    ],
+      "utility",
+      "python-snippet",
+      "seed-4"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Quick Start)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: the smallest useful version.",
+    "code": "# Quick Start focus: the smallest useful version\ndict1 = {\"a-starter\": 7, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 1,
     "category": "Utility",
-    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence."
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "quick-start",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Validation)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: guarding inputs before work begins.",
+    "code": "# Validation focus: guarding inputs before work begins\ndict1 = {\"a-safe-input\": 12, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "validation",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Practical Example)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: a realistic day-to-day use case.",
+    "code": "# Practical Example focus: a realistic day-to-day use case\ndict1 = {\"a-real-world\": 18, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "practical",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Reusable Utility)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: extracting logic into a helper.",
+    "code": "# Reusable Utility focus: extracting logic into a helper\ndict1 = {\"a-helper\": 23, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Edge Cases)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: behavior around empty or unexpected values.",
+    "code": "# Edge Cases focus: behavior around empty or unexpected values\ndict1 = {\"a-fallback\": 29, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "edge-cases",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Debug Friendly)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: visibility while troubleshooting.",
+    "code": "# Debug Friendly focus: visibility while troubleshooting\ndict1 = {\"a-debug-run\": 33, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "debugging",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Performance Pass)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: reducing extra work and repeated operations.",
+    "code": "# Performance Pass focus: reducing extra work and repeated operations\ndict1 = {\"a-fast-path\": 42, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "performance",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Refactor Pass)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: cleaner naming and separation of concerns.",
+    "code": "# Refactor Pass focus: cleaner naming and separation of concerns\ndict1 = {\"a-cleanup\": 47, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "refactor",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Interview Style)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: a compact explanation-friendly version.",
+    "code": "# Interview Style focus: a compact explanation-friendly version\ndict1 = {\"a-whiteboard\": 54, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "interview",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Production Hint)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: a safer version to build on in production.",
+    "code": "# Production Hint focus: a safer version to build on in production\ndict1 = {\"a-production\": 61, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "production",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Test Ready)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: making the behavior easier to verify.",
+    "code": "# Test Ready focus: making the behavior easier to verify\ndict1 = {\"a-test-case\": 68, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "testing",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Data Cleanup)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: normalizing and cleaning source values.",
+    "code": "# Data Cleanup focus: normalizing and cleaning source values\ndict1 = {\"a-normalized\": 75, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "cleanup",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Batch Mode)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: handling multiple values in one pass.",
+    "code": "# Batch Mode focus: handling multiple values in one pass\ndict1 = {\"a-batch-run\": 82, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "batch",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Error Aware)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: failing clearly when assumptions break.",
+    "code": "# Error Aware focus: failing clearly when assumptions break\ndict1 = {\"a-guarded\": 89, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "error-handling",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Team Style)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: readable code that other developers can extend.",
+    "code": "# Team Style focus: readable code that other developers can extend\ndict1 = {\"a-shared\": 93, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "team-style",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Extended Example)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: one extra step beyond the original sample.",
+    "code": "# Extended Example focus: one extra step beyond the original sample\ndict1 = {\"a-extended\": 100, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "extended",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Checklist Version)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: the moving parts you should review before shipping.",
+    "code": "# Checklist Version focus: the moving parts you should review before shipping\ndict1 = {\"a-review\": 108, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "checklist",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (API Friendly)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: shaping output for an endpoint or integration.",
+    "code": "# API Friendly focus: shaping output for an endpoint or integration\ndict1 = {\"a-api-ready\": 112, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "api",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Reporting)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: turning output into a concise summary.",
+    "code": "# Reporting focus: turning output into a concise summary\ndict1 = {\"a-summary\": 118, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "reporting",
+      "seed-4",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Dictionary Merging (Practice Prompt)",
+    "description": "Merges two dictionaries using the | operator (Python 3.9+). Focus: a version that is easy to modify in exercises.",
+    "code": "# Practice Prompt focus: a version that is easy to modify in exercises\ndict1 = {\"a-practice\": 131, \"b\": 2}\ndict2 = {\"b\": 3, \"c\": 4}\nmerged = dict1 | dict2\n# Output: {\"a\": 1, \"b\": 3, \"c\": 4}",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "The merge operator `|` provides a clean way to combine dictionaries, with the second dictionary's values taking precedence.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "dictionary",
+      "utility",
+      "practice",
+      "seed-4",
+      "python-snippet"
+    ]
   },
   {
     "title": "Generator Expression",
     "description": "Creates an iterator without storing the entire list in memory.",
     "code": "large_range = (x**2 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
     "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.",
     "tags": [
       "memory",
-      "iterator"
-    ],
+      "iterator",
+      "python-snippet",
+      "seed-5"
+    ]
+  },
+  {
+    "title": "Generator Expression (Quick Start)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: the smallest useful version.",
+    "code": "# Quick Start focus: the smallest useful version\nlarge_range = (x**9 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 1,
     "category": "Utility",
-    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets."
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes the smallest useful version. Use it as a quick start example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "quick-start",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Validation)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: guarding inputs before work begins.",
+    "code": "# Validation focus: guarding inputs before work begins\nlarge_range = (x**14 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes guarding inputs before work begins. Use it as a validation example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "validation",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Practical Example)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: a realistic day-to-day use case.",
+    "code": "# Practical Example focus: a realistic day-to-day use case\nlarge_range = (x**20 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes a realistic day-to-day use case. Use it as a practical example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "practical",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Reusable Utility)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: extracting logic into a helper.",
+    "code": "# Reusable Utility focus: extracting logic into a helper\nlarge_range = (x**25 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes extracting logic into a helper. Use it as a utility example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "utility",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Edge Cases)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: behavior around empty or unexpected values.",
+    "code": "# Edge Cases focus: behavior around empty or unexpected values\nlarge_range = (x**31 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes behavior around empty or unexpected values. Use it as a edge cases example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "edge-cases",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Debug Friendly)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: visibility while troubleshooting.",
+    "code": "# Debug Friendly focus: visibility while troubleshooting\nlarge_range = (x**35 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes visibility while troubleshooting. Use it as a debugging example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "debugging",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Performance Pass)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: reducing extra work and repeated operations.",
+    "code": "# Performance Pass focus: reducing extra work and repeated operations\nlarge_range = (x**44 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes reducing extra work and repeated operations. Use it as a performance example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "performance",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Refactor Pass)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: cleaner naming and separation of concerns.",
+    "code": "# Refactor Pass focus: cleaner naming and separation of concerns\nlarge_range = (x**49 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes cleaner naming and separation of concerns. Use it as a refactor example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "refactor",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Interview Style)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: a compact explanation-friendly version.",
+    "code": "# Interview Style focus: a compact explanation-friendly version\nlarge_range = (x**56 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes a compact explanation-friendly version. Use it as a interview example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "interview",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Production Hint)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: a safer version to build on in production.",
+    "code": "# Production Hint focus: a safer version to build on in production\nlarge_range = (x**63 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes a safer version to build on in production. Use it as a production example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "production",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Test Ready)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: making the behavior easier to verify.",
+    "code": "# Test Ready focus: making the behavior easier to verify\nlarge_range = (x**70 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes making the behavior easier to verify. Use it as a testing example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "testing",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Data Cleanup)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: normalizing and cleaning source values.",
+    "code": "# Data Cleanup focus: normalizing and cleaning source values\nlarge_range = (x**77 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes normalizing and cleaning source values. Use it as a cleanup example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "cleanup",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Batch Mode)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: handling multiple values in one pass.",
+    "code": "# Batch Mode focus: handling multiple values in one pass\nlarge_range = (x**84 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes handling multiple values in one pass. Use it as a batch example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "batch",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Error Aware)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: failing clearly when assumptions break.",
+    "code": "# Error Aware focus: failing clearly when assumptions break\nlarge_range = (x**91 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes failing clearly when assumptions break. Use it as a error handling example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "error-handling",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Team Style)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: readable code that other developers can extend.",
+    "code": "# Team Style focus: readable code that other developers can extend\nlarge_range = (x**95 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes readable code that other developers can extend. Use it as a team style example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "team-style",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Extended Example)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: one extra step beyond the original sample.",
+    "code": "# Extended Example focus: one extra step beyond the original sample\nlarge_range = (x**102 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes one extra step beyond the original sample. Use it as a extended example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "extended",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Checklist Version)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: the moving parts you should review before shipping.",
+    "code": "# Checklist Version focus: the moving parts you should review before shipping\nlarge_range = (x**110 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes the moving parts you should review before shipping. Use it as a checklist example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "checklist",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (API Friendly)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: shaping output for an endpoint or integration.",
+    "code": "# API Friendly focus: shaping output for an endpoint or integration\nlarge_range = (x**114 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 3,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes shaping output for an endpoint or integration. Use it as a api example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "api",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Reporting)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: turning output into a concise summary.",
+    "code": "# Reporting focus: turning output into a concise summary\nlarge_range = (x**120 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 2,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes turning output into a concise summary. Use it as a reporting example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "reporting",
+      "seed-5",
+      "python-snippet"
+    ]
+  },
+  {
+    "title": "Generator Expression (Practice Prompt)",
+    "description": "Creates an iterator without storing the entire list in memory. Focus: a version that is easy to modify in exercises.",
+    "code": "# Practice Prompt focus: a version that is easy to modify in exercises\nlarge_range = (x**133 for x in range(1000000))\nprint(next(large_range))\nprint(next(large_range))",
+    "difficulty": 1,
+    "category": "Utility",
+    "explanation_md": "Generators yield items one at a time, making them highly memory-efficient for large datasets.\n\n### Variant focus\nThis version emphasizes a version that is easy to modify in exercises. Use it as a practice example and adapt names, values, and structure to your project.\n\n### Review prompt\nCheck whether the input assumptions, output shape, and naming still make sense after you customize the example.",
+    "tags": [
+      "memory",
+      "iterator",
+      "practice",
+      "seed-5",
+      "python-snippet"
+    ]
   }
 ]
