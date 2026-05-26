@@ -1,25 +1,27 @@
 import { initTRPC, TRPCError } from '@trpc/server';
 import { z } from 'zod';
 import { prisma } from '@codeforge/db';
-import type { Prisma } from '@codeforge/db';
 
 const t = initTRPC.create();
 
-type SnippetWithRelations = Prisma.SnippetGetPayload<{
-  include: {
-    language: true;
-    tags: true;
-  };
-}>;
+type SnippetTag = {
+  name: string;
+};
 
-type SnippetFacetRow = Prisma.SnippetGetPayload<{
-  select: {
-    category: true;
-    tags: {
-      select: { name: true };
-    };
-  };
-}>;
+type SnippetWithRelations = {
+  title: string;
+  description?: string | null;
+  category?: string | null;
+  code: string;
+  views: number;
+  createdAt: Date;
+  tags: SnippetTag[];
+};
+
+type SnippetFacetRow = {
+  category?: string | null;
+  tags: SnippetTag[];
+};
 
 export const appRouter = t.router({
   getLanguages: t.procedure.query(async () => {
@@ -44,13 +46,11 @@ export const appRouter = t.router({
     )
     .query(async ({ input }) => {
       const { languageSlug, difficulty, category, search, tags } = input;
-      const searchTerms = search
-        ?.trim()
-        .toLowerCase()
-        .split(/\s+/)
-        .filter(Boolean);
+      const searchTerms: string[] = search
+        ? search.trim().toLowerCase().split(/\s+/).filter(Boolean)
+        : [];
 
-      const snippets = await prisma.snippet.findMany({
+      const snippets = (await prisma.snippet.findMany({
         where: {
           ...(languageSlug && { language: { slug: languageSlug } }),
           ...(difficulty && { difficulty }),
@@ -58,8 +58,8 @@ export const appRouter = t.router({
           ...(tags && tags.length > 0 && {
             tags: { some: { name: { in: tags } } },
           }),
-          ...(searchTerms && searchTerms.length > 0 && {
-            AND: searchTerms.map((term) => ({
+          ...(searchTerms.length > 0 && {
+            AND: searchTerms.map((term: string) => ({
               OR: [
                 { title: { contains: term, mode: 'insensitive' } },
                 { description: { contains: term, mode: 'insensitive' } },
@@ -74,9 +74,9 @@ export const appRouter = t.router({
           language: true,
           tags: true,
         },
-      });
+      })) as SnippetWithRelations[];
 
-      if (!searchTerms || searchTerms.length === 0) {
+      if (searchTerms.length === 0) {
         return snippets.sort(
           (a: SnippetWithRelations, b: SnippetWithRelations) =>
             b.createdAt.getTime() - a.createdAt.getTime(),
@@ -92,7 +92,7 @@ export const appRouter = t.router({
           tags: snippet.tags.map((tag: { name: string }) => tag.name.toLowerCase()),
         };
 
-        return searchTerms.reduce((score, term) => {
+        return searchTerms.reduce((score: number, term: string) => {
           let next = score;
 
           if (haystacks.title === term) next += 120;
@@ -124,7 +124,7 @@ export const appRouter = t.router({
       })
     )
     .query(async ({ input }) => {
-      const snippets = await prisma.snippet.findMany({
+      const snippets = (await prisma.snippet.findMany({
         where: {
           ...(input.languageSlug && { language: { slug: input.languageSlug } }),
         },
@@ -134,7 +134,7 @@ export const appRouter = t.router({
             select: { name: true },
           },
         },
-      });
+      })) as SnippetFacetRow[];
 
       const categoryValues: string[] = snippets
         .map((snippet: SnippetFacetRow) => snippet.category?.trim())
@@ -253,7 +253,7 @@ export const appRouter = t.router({
             connect: { id: createdBy },
           },
           tags: {
-            connectOrCreate: tags.map((name) => ({
+            connectOrCreate: tags.map((name: string) => ({
               where: { name },
               create: { name },
             })),

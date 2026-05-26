@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "main": "./index.ts",
   "dependencies": {
+    "@prisma/client": "^5.0.0",
     "@trpc/client": "next",
     "@trpc/server": "next",
     "@trpc/react-query": "next",
