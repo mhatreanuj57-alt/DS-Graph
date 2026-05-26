@@ -1,0 +1,123 @@
+{
+  "quizSets": [
+    {
+      "title": "Next.js Mastery MCQ",
+      "setNumber": 1,
+      "type": "MCQ",
+      "questions": [
+        {
+          "type": "MCQ",
+          "text": "What is the primary benefit of Server-Side Rendering (SSR)?",
+          "options": ["Slower initial load", "Better SEO and faster First Contentful Paint", "No need for a server", "Reduced security"],
+          "correctOption": 1,
+          "explanation": "SSR renders pages on the server, providing fully formed HTML to the browser which is great for SEO."
+        },
+        {
+          "type": "MCQ",
+          "text": "How do you define a route in the Next.js App Router?",
+          "options": ["Using a routes.js file", "By creating a folder with a page.tsx file", "In the next.config.js file", "By using a <Route> component"],
+          "correctOption": 1,
+          "explanation": "Next.js uses file-system based routing where folders define paths and page files define the UI."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which directive marks a component as a Client Component?",
+          "options": ["'client side'", "'use client'", "'enable hooks'", "'run client'"],
+          "correctOption": 1,
+          "explanation": "The `'use client'` directive is used to opt-in to client-side interactivity."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is the purpose of the `Link` component?",
+          "options": ["To link external CSS", "For client-side navigation between pages", "To create a database link", "To download files"],
+          "correctOption": 1,
+          "explanation": "The `Link` component enables fast, client-side transitions between routes."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which function is used for Static Site Generation (SSG) in the Pages Router?",
+          "options": ["getStaticProps", "getServerSideProps", "getInitialProps", "useEffect"],
+          "correctOption": 0,
+          "explanation": "In the Pages Router, `getStaticProps` is used to fetch data at build time for SSG."
+        },
+        {
+          "type": "MCQ",
+          "text": "What does ISR stand for?",
+          "options": ["Internal Server Reset", "Incremental Static Regeneration", "Instant Site Rendering", "Indexed Search Response"],
+          "correctOption": 1,
+          "explanation": "ISR allows you to update static content without needing to rebuild the entire site."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is the `public` folder used for?",
+          "options": ["Private API keys", "Static assets like images and fonts", "Source code", "Node modules"],
+          "correctOption": 1,
+          "explanation": "The `public` folder is for static files that can be accessed directly via URL."
+        },
+        {
+          "type": "MCQ",
+          "text": "How can you optimize images in Next.js?",
+          "options": ["Using the <img> tag", "Using the <NextImage> component", "Using the <Image /> component from 'next/image'", "Manually resizing every image"],
+          "correctOption": 2,
+          "explanation": "The `next/image` component provides automatic optimization and lazy loading."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is Next.js Middleware?",
+          "options": ["A database", "Code that runs before a request is completed", "A styling library", "A deployment tool"],
+          "correctOption": 1,
+          "explanation": "Middleware allows you to run logic like authentication or redirects before a page is rendered."
+        },
+        {
+          "type": "MCQ",
+          "text": "Who created Next.js?",
+          "options": ["Google", "Meta", "Vercel", "Amazon"],
+          "correctOption": 2,
+          "explanation": "Next.js is maintained and developed by Vercel."
+        }
+      ]
+    },
+    {
+      "title": "Next.js Theory & Practical",
+      "setNumber": 2,
+      "type": "Theory/Practical",
+      "questions": [
+        {
+          "type": "Theory/Practical",
+          "text": "Describe the difference between Static Site Generation (SSG) and Server-Side Rendering (SSR).",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "SSG generates HTML at build time and serves it as static files. SSR generates HTML on each request, which is better for frequently changing data."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What are React Server Components (RSC) and why are they important?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "RSC are components that run only on the server. They reduce the amount of JavaScript sent to the client, improving performance, and allow for direct access to server-side resources like databases."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "Explain how dynamic routing works in Next.js.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Dynamic routing uses square brackets in file names, like `[id].tsx`. Next.js extracts the `id` from the URL and passes it as a parameter to the page."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What is the role of `layout.js` in the App Router?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "A layout is UI that is shared between multiple pages. It preserves state across navigations and is useful for headers, footers, and sidebars."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "How do Server Actions improve the developer experience?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Server Actions allow you to handle form submissions and data mutations with simple async functions, eliminating the need to manually create API endpoints for every action."
+        }
+      ]
+    }
+  ]
+}

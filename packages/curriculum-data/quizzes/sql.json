@@ -1,0 +1,138 @@
+{
+  "quizSets": [
+    {
+      "title": "SQL Mastery Set 1",
+      "setNumber": 1,
+      "type": "MCQ",
+      "questions": [
+        {
+          "type": "MCQ",
+          "text": "What does SQL stand for?",
+          "options": [
+            "Structured Query Language",
+            "Strong Question Language",
+            "Structured Question Language",
+            "Simple Query Language"
+          ],
+          "correctOption": 0,
+          "explanation": "SQL stands for Structured Query Language, the standard for RDBMS."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which SQL statement is used to extract data from a database?",
+          "options": ["GET", "EXTRACT", "SELECT", "OPEN"],
+          "correctOption": 2,
+          "explanation": "The `SELECT` statement is used to query data from database tables."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which SQL statement is used to update data in a database?",
+          "options": ["SAVE", "UPDATE", "MODIFY", "SAVE AS"],
+          "correctOption": 1,
+          "explanation": "The `UPDATE` statement is used to modify existing records in a table."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which SQL statement is used to delete data from a database?",
+          "options": ["COLLAPSE", "REMOVE", "DELETE", "DROP"],
+          "correctOption": 2,
+          "explanation": "The `DELETE` statement is used to remove rows from a table."
+        },
+        {
+          "type": "MCQ",
+          "text": "How do you select all the columns from a table named 'Persons'?",
+          "options": ["SELECT [all] FROM Persons", "SELECT * FROM Persons", "SELECT Persons", "SELECT *.Persons"],
+          "correctOption": 1,
+          "explanation": "The asterisk `*` is a wildcard that selects all columns."
+        },
+        {
+          "type": "MCQ",
+          "text": "How do you select all the records from a table where the 'FirstName' is 'Peter'?",
+          "options": [
+            "SELECT [all] FROM Persons WHERE FirstName='Peter'",
+            "SELECT * FROM Persons WHERE FirstName<>'Peter'",
+            "SELECT * FROM Persons WHERE FirstName='Peter'",
+            "SELECT * FROM Persons LIKE FirstName='Peter'"
+          ],
+          "correctOption": 2,
+          "explanation": "The `WHERE` clause is used to filter records based on a condition."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which keyword is used to return only different values?",
+          "options": ["COUNT", "DISTINCT", "DIFFERENT", "UNIQUE"],
+          "correctOption": 1,
+          "explanation": "The `SELECT DISTINCT` statement is used to return only distinct (unique) values."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which SQL keyword is used to sort the result-set?",
+          "options": ["SORT BY", "ORDER BY", "ARRANGE BY", "ORDER"],
+          "correctOption": 1,
+          "explanation": "The `ORDER BY` keyword is used to sort the result-set in ascending or descending order."
+        },
+        {
+          "type": "MCQ",
+          "text": "How do you insert a new record into the 'Persons' table?",
+          "options": [
+            "INSERT INTO Persons VALUES ('Jimmy', 'Jackson')",
+            "INSERT VALUES ('Jimmy', 'Jackson') INTO Persons",
+            "INSERT (Jimmy, Jackson) INTO Persons",
+            "ADD NEW Persons VALUES ('Jimmy', 'Jackson')"
+          ],
+          "correctOption": 0,
+          "explanation": "The `INSERT INTO` statement is used to insert new records into a table."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which join returns all rows when there is a match in one of the tables?",
+          "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL JOIN"],
+          "correctOption": 3,
+          "explanation": "A `FULL JOIN` (or `FULL OUTER JOIN`) returns all records when there is a match in either left or right table records."
+        }
+      ]
+    },
+    {
+      "title": "SQL Theory & Practice Set 1",
+      "setNumber": 2,
+      "type": "Theory/Practical",
+      "questions": [
+        {
+          "type": "Theory/Practical",
+          "text": "What is the difference between `DELETE` and `TRUNCATE`?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "`DELETE` is a DML command that removes rows one by one and can be filtered with a `WHERE` clause (it also logs each deletion). `TRUNCATE` is a DDL command that removes all rows from a table by deallocating the pages, which is faster but cannot be filtered and typically doesn't log individual row deletions."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "Explain the difference between `WHERE` and `HAVING` clauses.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "`WHERE` is used to filter records before any groupings are made. `HAVING` is used to filter the groups created by the `GROUP BY` clause, typically based on an aggregate function result."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What is a 'Primary Key'?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "A primary key is a field (or combination of fields) that uniquely identifies each record in a table. Primary keys must contain unique values, cannot contain NULLs, and each table can have only one primary key."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What is 'Database Normalization' and why is it important?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Normalization is the process of structuring a database to reduce data redundancy and improve data integrity. It involves breaking large tables into smaller ones and defining relationships between them."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "How does an `INNER JOIN` differ from a `LEFT JOIN`?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "An `INNER JOIN` only returns rows where there is a match in both tables. A `LEFT JOIN` returns all rows from the left table, and the matched rows from the right table; if there is no match, the result is NULL on the right side."
+        }
+      ]
+    }
+  ]
+}

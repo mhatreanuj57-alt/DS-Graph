@@ -1,0 +1,123 @@
+{
+  "quizSets": [
+    {
+      "title": "WordPress Essentials MCQ",
+      "setNumber": 1,
+      "type": "MCQ",
+      "questions": [
+        {
+          "type": "MCQ",
+          "text": "What is a custom post type used for in WordPress?",
+          "options": ["Styling CSS", "Modeling domain-specific content", "Running database backups", "Creating server processes"],
+          "correctOption": 1,
+          "explanation": "Custom post types let WordPress represent content such as products, events, portfolios, or movies in a structured way."
+        },
+        {
+          "type": "MCQ",
+          "text": "What does the WordPress Loop do?",
+          "options": ["Encrypt passwords", "Iterate through queried posts for output", "Install plugins", "Create SQL indexes"],
+          "correctOption": 1,
+          "explanation": "The Loop is the core template pattern used to render posts returned by the current query."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which WordPress mechanism lets you run code at specific lifecycle points?",
+          "options": ["Actions", "Tablespaces", "Routes only", "Render threads"],
+          "correctOption": 0,
+          "explanation": "Actions are hooks that let developers attach behavior at defined points in WordPress execution."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is the main role of a taxonomy?",
+          "options": ["Execute PHP faster", "Group and classify content", "Replace media uploads", "Compile themes"],
+          "correctOption": 1,
+          "explanation": "Taxonomies such as categories, tags, or custom terms organize content for browsing and filtering."
+        },
+        {
+          "type": "MCQ",
+          "text": "Why should output escaping matter in WordPress templates?",
+          "options": ["It changes URLs automatically", "It helps prevent unsafe output and XSS issues", "It disables plugins", "It makes SQL faster"],
+          "correctOption": 1,
+          "explanation": "Escaping output helps ensure content is rendered safely in the appropriate HTML, attribute, or URL context."
+        },
+        {
+          "type": "MCQ",
+          "text": "Where should reusable site behavior usually live?",
+          "options": ["In random template files", "In plugins or hook-based code", "Only in CSS", "Only in the database"],
+          "correctOption": 1,
+          "explanation": "Behavior that should survive theme changes is usually better placed in plugins or reusable hook logic."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is a common use for post meta?",
+          "options": ["Storing extra structured values for content", "Replacing all taxonomies", "Managing DNS records", "Compiling blocks"],
+          "correctOption": 0,
+          "explanation": "Post meta stores extra per-post values such as dates, settings, SKUs, or display flags."
+        },
+        {
+          "type": "MCQ",
+          "text": "What often hurts WordPress performance?",
+          "options": ["Too few images", "Plugin bloat and expensive queries", "Short URLs", "Using categories"],
+          "correctOption": 1,
+          "explanation": "Heavy plugins, poor queries, and unoptimized assets are common performance bottlenecks."
+        },
+        {
+          "type": "MCQ",
+          "text": "Why would a team use WordPress headlessly?",
+          "options": ["To avoid any frontend work", "To consume content through an API in another frontend", "To remove all editorial workflows", "To stop using HTTP"],
+          "correctOption": 1,
+          "explanation": "Headless setups use WordPress as the content backend while a separate frontend renders the experience."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which maintenance habit is most important for WordPress security?",
+          "options": ["Never updating anything", "Keeping core, plugins, and themes updated", "Disabling all users", "Only editing CSS"],
+          "correctOption": 1,
+          "explanation": "Regular updates reduce exposure to known vulnerabilities in WordPress core and extensions."
+        }
+      ]
+    },
+    {
+      "title": "WordPress Theory & Practical",
+      "setNumber": 2,
+      "type": "Theory/Practical",
+      "questions": [
+        {
+          "type": "Theory/Practical",
+          "text": "Explain when a custom post type is a better choice than regular posts.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "A custom post type is better when the content has a distinct purpose, admin workflow, metadata, or archive behavior that should be modeled separately from blog posts."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What is the difference between an action hook and a filter hook?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Actions let you run code at a specific point, while filters receive data and return a modified version of that data."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "Why is output escaping still necessary even when editors are trusted?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Trusted users can still introduce malformed or unsafe content accidentally, and plugins or imported data may add unexpected values. Escaping protects the rendered output context."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "Describe a reasonable strategy for improving a slow WordPress page.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Profile the page, identify expensive queries or plugin hooks, reduce unnecessary work, optimize images, and add appropriate caching rather than guessing broadly."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What tradeoffs come with using WordPress as a headless CMS?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Headless setups improve frontend flexibility but add complexity around previews, caching, SEO, routing, and editorial tooling that classic themes often handle more directly."
+        }
+      ]
+    }
+  ]
+}

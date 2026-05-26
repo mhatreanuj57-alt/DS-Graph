@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { Sparkles, X, Loader2 } from 'lucide-react';
-import axios from 'axios';
 
 interface ExplainPanelProps {
   code: string;
@@ -17,8 +16,21 @@ export default function ExplainPanel({ code, language, onClose }: ExplainPanelPr
   const handleExplain = async () => {
     setLoading(true);
     try {
-      const response = await axios.post('/api/ai/explain', { code, language });
-      setExplanation(response.data.text);
+      const response = await fetch('/api/ai/explain', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ code, language }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to explain code');
+      }
+
+      setExplanation(data.text);
     } catch (error) {
       console.error(error);
     } finally {

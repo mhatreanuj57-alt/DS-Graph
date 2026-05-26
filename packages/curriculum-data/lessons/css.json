@@ -1,0 +1,67 @@
+{
+  "modules": [
+    {
+      "title": "Selectors & Box Model",
+      "order": 1,
+      "lessons": [
+        {
+          "title": "CSS Selectors",
+          "order": 1,
+          "content": "# CSS Selectors\n\nSelectors are used to target HTML elements for styling.\n\n### Basic Selectors\n- **Element**: `p { color: red; }` targets all `<p>` tags.\n- **Class**: `.btn { background: blue; }` targets all elements with `class=\"btn\"`.\n- **ID**: `#header { height: 100px; }` targets the single element with `id=\"header\"`.\n- **Universal**: `* { box-sizing: border-box; }` targets all elements.\n\n### Combinators\n- **Descendant**: `div p` (all `<p>` inside `<div>`).\n- **Child**: `div > p` (direct `<p>` children of `<div>`).\n- **Adjacent Sibling**: `h1 + p` (the `<p>` immediately after an `<h1>`)."
+        },
+        {
+          "title": "The Box Model",
+          "order": 2,
+          "content": "# The Box Model\n\nEvery element in CSS is a rectangular box. The box model consists of:\n\n1. **Content**: The actual text or image.\n2. **Padding**: Transparent area around the content (inside the border).\n3. **Border**: Goes around the padding and content.\n4. **Margin**: Transparent area outside the border.\n\n```css\n.box {\n  width: 300px;\n  padding: 20px;\n  border: 5px solid black;\n  margin: 10px;\n}\n```\nBy default, `width` only sets the content width. Use `box-sizing: border-box;` to include padding and border in the width."
+        },
+        {
+          "title": "Colors & Typography",
+          "order": 3,
+          "content": "# Colors & Typography\n\n### Colors\n- **Named**: `red`, `blue`\n- **Hex**: `#ff0000`\n- **RGB/RGBA**: `rgb(255, 0, 0)`, `rgba(255, 0, 0, 0.5)`\n- **HSL**: `hsl(0, 100%, 50%)`\n\n### Typography\n```css\nbody {\n  font-family: 'Arial', sans-serif;\n  font-size: 16px;\n  line-height: 1.5;\n  text-align: center;\n  text-decoration: none;\n}\n```"
+        }
+      ]
+    },
+    {
+      "title": "Layout",
+      "order": 2,
+      "lessons": [
+        {
+          "title": "Flexbox",
+          "order": 1,
+          "content": "# Flexbox\n\nA one-dimensional layout method for arranging items in rows or columns.\n\n```css\n.container {\n  display: flex;\n  justify-content: center; /* horizontal alignment */\n  align-items: center;     /* vertical alignment */\n  flex-direction: row;      /* default */\n}\n\n.item {\n  flex-grow: 1; /* item takes up remaining space */\n}\n```\nFlexbox is perfect for navigation bars, centering items, and simple layouts."
+        },
+        {
+          "title": "CSS Grid",
+          "order": 2,
+          "content": "# CSS Grid\n\nA two-dimensional layout system, handling both rows and columns.\n\n```css\n.grid-container {\n  display: grid;\n  grid-template-columns: 1fr 2fr 1fr;\n  grid-template-rows: auto 100px;\n  gap: 10px;\n}\n\n.grid-item {\n  grid-column: 1 / 3; /* spans two columns */\n}\n```\nGrid is ideal for complex web layouts that require precise control over both dimensions."
+        },
+        {
+          "title": "Positioning",
+          "order": 3,
+          "content": "# Positioning\n\nDetermines how an element is placed in the document.\n\n- **static**: (Default) Normal document flow.\n- **relative**: Positioned relative to its normal position.\n- **absolute**: Positioned relative to its nearest positioned ancestor.\n- **fixed**: Positioned relative to the viewport; stays in place during scroll.\n- **sticky**: Switches between relative and fixed based on scroll position."
+        }
+      ]
+    },
+    {
+      "title": "Advanced CSS",
+      "order": 3,
+      "lessons": [
+        {
+          "title": "Transitions & Animations",
+          "order": 1,
+          "content": "# Transitions & Animations\n\n### Transitions\nSmoothly change property values over a duration.\n```css\n.btn {\n  transition: background-color 0.3s ease;\n}\n.btn:hover { background-color: darkblue; }\n```\n\n### Animations\nUse `@keyframes` to create complex sequences.\n```css\n@keyframes slideIn {\n  from { transform: translateX(-100%); }\n  to { transform: translateX(0); }\n}\n\n.sidebar { animation: slideIn 0.5s forwards; }\n```"
+        },
+        {
+          "title": "Media Queries",
+          "order": 2,
+          "content": "# Media Queries\n\nThe cornerstone of responsive web design.\n\n```css\n/* Styles for mobile */\n.container { width: 100%; }\n\n/* Styles for desktop (min-width 768px) */\n@media (min-width: 768px) {\n  .container { width: 80%; }\n}\n```\nUse them to adapt your layout to different screen sizes and devices."
+        },
+        {
+          "title": "CSS Variables",
+          "order": 3,
+          "content": "# CSS Variables (Custom Properties)\n\nAllow you to store values and reuse them throughout your stylesheet.\n\n```css\n:root {\n  --primary-color: #3498db;\n  --padding-std: 20px;\n}\n\n.btn {\n  background-color: var(--primary-color);\n  padding: var(--padding-std);\n}\n```\nVariables make maintenance much easier and allow for dynamic theme switching via JavaScript."
+        }
+      ]
+    }
+  ]
+}

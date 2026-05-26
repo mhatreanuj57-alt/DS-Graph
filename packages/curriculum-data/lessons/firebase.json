@@ -1,0 +1,67 @@
+{
+  "modules": [
+    {
+      "title": "Firebase Foundations",
+      "order": 1,
+      "lessons": [
+        {
+          "title": "Firebase Project Setup",
+          "order": 1,
+          "content": "# Firebase Project Setup\n\nFirebase is a Backend-as-a-Service platform that bundles authentication, databases, storage, hosting, analytics, and serverless functions under one project.\n\n### Core setup steps\n- Create a Firebase project in the console.\n- Register your web or mobile app.\n- Add the SDK and initialize it with your project config.\n- Turn on only the products you actually need.\n\n### Practical rule\nKeep Firebase config in one shared module so the rest of the app imports initialized services instead of repeating setup logic."
+        },
+        {
+          "title": "Authentication Basics",
+          "order": 2,
+          "content": "# Authentication Basics\n\nFirebase Authentication handles sign-in flows such as email/password, Google, GitHub, and anonymous sessions.\n\n### Common concepts\n- `createUserWithEmailAndPassword` creates accounts.\n- `signInWithEmailAndPassword` signs in existing users.\n- `onAuthStateChanged` reacts to login state changes.\n- Security rules should assume the client is untrusted.\n\n### Good practice\nDrive UI state from the authenticated user object and keep route guards separate from visual components."
+        },
+        {
+          "title": "Firestore Documents and Collections",
+          "order": 3,
+          "content": "# Firestore Documents and Collections\n\nCloud Firestore stores data in collections, documents, and nested subcollections.\n\n### Model basics\n- A collection contains documents.\n- A document stores fields as key-value pairs.\n- Reads are usually scoped to a document or query.\n- Writes use `setDoc`, `addDoc`, `updateDoc`, or `deleteDoc`.\n\n### Design tip\nModel data around access patterns. If a screen needs to query by owner and status, store those fields explicitly instead of reconstructing them later."
+        }
+      ]
+    },
+    {
+      "title": "Data and Backend Workflows",
+      "order": 2,
+      "lessons": [
+        {
+          "title": "Realtime Reads and Queries",
+          "order": 1,
+          "content": "# Realtime Reads and Queries\n\nFirestore supports one-time reads and realtime subscriptions.\n\n### Main APIs\n- `getDoc` and `getDocs` fetch once.\n- `onSnapshot` subscribes to changes.\n- `query`, `where`, `orderBy`, and `limit` build filtered reads.\n\n### Performance note\nSubscribe only where realtime behavior matters. Dashboards, notifications, and collaborative views are good candidates; static profile data usually is not."
+        },
+        {
+          "title": "Cloud Storage and File Uploads",
+          "order": 2,
+          "content": "# Cloud Storage and File Uploads\n\nFirebase Storage is used for user uploads such as avatars, PDFs, and media files.\n\n### Typical flow\n1. Create a storage reference.\n2. Upload with `uploadBytes` or `uploadBytesResumable`.\n3. Fetch a public download URL when needed.\n4. Store file metadata in Firestore if the app needs querying.\n\n### Security tip\nDo not rely on file names for authorization. Use storage rules and paths tied to authenticated user or tenant identifiers."
+        },
+        {
+          "title": "Cloud Functions Overview",
+          "order": 3,
+          "content": "# Cloud Functions Overview\n\nCloud Functions let you run backend code without managing servers.\n\n### Common uses\n- React to Firestore writes.\n- Send notifications or emails.\n- Create secure callable APIs.\n- Process uploads after they land in storage.\n\n### Design rule\nUse Functions for privileged operations that should not run in the client, especially anything involving secrets, admin access, or system-wide side effects."
+        }
+      ]
+    },
+    {
+      "title": "Security and Production Readiness",
+      "order": 3,
+      "lessons": [
+        {
+          "title": "Security Rules Essentials",
+          "order": 1,
+          "content": "# Security Rules Essentials\n\nFirebase security rules control who can read or write data in Firestore and Storage.\n\n### Important ideas\n- Rules are not filters; queries must already satisfy them.\n- Validate both authentication and document shape.\n- Check ownership, membership, or role fields explicitly.\n- Deny by default and open only what is necessary.\n\n### Review habit\nTest rules with both allowed and denied cases before shipping schema changes."
+        },
+        {
+          "title": "Environment Configuration and Deployment",
+          "order": 2,
+          "content": "# Environment Configuration and Deployment\n\nA production Firebase app usually has separate environments for local work, staging, and production.\n\n### Checklist\n- Keep client config in environment variables where appropriate.\n- Use separate Firebase projects for risky experiments.\n- Review indexes, rules, and function configs during deployment.\n- Track which app points to which backend.\n\n### Operational tip\nMost Firebase incidents come from pointing the wrong frontend at the wrong project or deploying loose security rules."
+        },
+        {
+          "title": "Debugging Firebase Apps",
+          "order": 3,
+          "content": "# Debugging Firebase Apps\n\nFirebase issues usually come from configuration mismatches, missing indexes, or rejected security rules.\n\n### Fast debugging path\n- Confirm the current project ID.\n- Check browser console and network responses.\n- Read Firestore or Storage rule errors closely.\n- Verify the authenticated user and expected document path.\n\n### Team rule\nWhen a Firebase error appears, capture the exact failing operation and path first. Vague \"read failed\" reports slow down debugging."
+        }
+      ]
+    }
+  ]
+}

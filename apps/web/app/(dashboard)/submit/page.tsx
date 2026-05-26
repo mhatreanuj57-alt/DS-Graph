@@ -80,7 +80,7 @@ export default function SubmitPage() {
                     onChange={(e) => setFormData({ ...formData, languageSlug: e.target.value })}
                     className="w-full bg-bg-base border border-border-dim rounded-lg px-4 py-2.5 text-text-hi focus:outline-none focus:border-accent transition-colors"
                   >
-                    {languages?.map((lang) => (
+                    {languages?.map((lang: any) => (
                       <option key={lang.id} value={lang.slug}>{lang.name}</option>
                     ))}
                   </select>

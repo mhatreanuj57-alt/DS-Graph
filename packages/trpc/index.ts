@@ -1,8 +1,25 @@
 import { initTRPC, TRPCError } from '@trpc/server';
 import { z } from 'zod';
 import { prisma } from '@codeforge/db';
+import type { Prisma } from '@codeforge/db';
 
 const t = initTRPC.create();
+
+type SnippetWithRelations = Prisma.SnippetGetPayload<{
+  include: {
+    language: true;
+    tags: true;
+  };
+}>;
+
+type SnippetFacetRow = Prisma.SnippetGetPayload<{
+  select: {
+    category: true;
+    tags: {
+      select: { name: true };
+    };
+  };
+}>;
 
 export const appRouter = t.router({
   getLanguages: t.procedure.query(async () => {
@@ -20,34 +37,122 @@ export const appRouter = t.router({
       z.object({
         languageSlug: z.string().optional(),
         difficulty: z.number().min(1).max(3).optional(),
+        category: z.string().optional(),
         search: z.string().optional(),
         tags: z.array(z.string()).optional(),
       })
     )
     .query(async ({ input }) => {
-      const { languageSlug, difficulty, search, tags } = input;
+      const { languageSlug, difficulty, category, search, tags } = input;
+      const searchTerms = search
+        ?.trim()
+        .toLowerCase()
+        .split(/\s+/)
+        .filter(Boolean);
 
-      return prisma.snippet.findMany({
+      const snippets = await prisma.snippet.findMany({
         where: {
           ...(languageSlug && { language: { slug: languageSlug } }),
           ...(difficulty && { difficulty }),
+          ...(category && { category }),
           ...(tags && tags.length > 0 && {
             tags: { some: { name: { in: tags } } },
           }),
-          ...(search && {
-            OR: [
-              { title: { contains: search, mode: 'insensitive' } },
-              { description: { contains: search, mode: 'insensitive' } },
-              { code: { contains: search, mode: 'insensitive' } },
-            ],
+          ...(searchTerms && searchTerms.length > 0 && {
+            AND: searchTerms.map((term) => ({
+              OR: [
+                { title: { contains: term, mode: 'insensitive' } },
+                { description: { contains: term, mode: 'insensitive' } },
+                { code: { contains: term, mode: 'insensitive' } },
+                { category: { contains: term, mode: 'insensitive' } },
+                { tags: { some: { name: { contains: term, mode: 'insensitive' } } } },
+              ],
+            })),
           }),
         },
         include: {
           language: true,
           tags: true,
         },
-        orderBy: { createdAt: 'desc' },
       });
+
+      if (!searchTerms || searchTerms.length === 0) {
+        return snippets.sort(
+          (a: SnippetWithRelations, b: SnippetWithRelations) =>
+            b.createdAt.getTime() - a.createdAt.getTime(),
+        );
+      }
+
+      const scoreSnippet = (snippet: SnippetWithRelations) => {
+        const haystacks = {
+          title: snippet.title.toLowerCase(),
+          description: snippet.description?.toLowerCase() ?? '',
+          category: snippet.category?.toLowerCase() ?? '',
+          code: snippet.code.toLowerCase(),
+          tags: snippet.tags.map((tag: { name: string }) => tag.name.toLowerCase()),
+        };
+
+        return searchTerms.reduce((score, term) => {
+          let next = score;
+
+          if (haystacks.title === term) next += 120;
+          if (haystacks.title.startsWith(term)) next += 45;
+          if (haystacks.title.includes(term)) next += 30;
+          if (haystacks.category === term) next += 20;
+          if (haystacks.category.includes(term)) next += 10;
+          if (haystacks.tags.some((tag: string) => tag === term)) next += 25;
+          if (haystacks.tags.some((tag: string) => tag.includes(term))) next += 12;
+          if (haystacks.description.includes(term)) next += 8;
+          if (haystacks.code.includes(term)) next += 3;
+
+          return next;
+        }, 0);
+      };
+
+      return snippets.sort((a: SnippetWithRelations, b: SnippetWithRelations) => {
+        const scoreDiff = scoreSnippet(b) - scoreSnippet(a);
+        if (scoreDiff !== 0) return scoreDiff;
+        if (b.views !== a.views) return b.views - a.views;
+        return b.createdAt.getTime() - a.createdAt.getTime();
+      });
+    }),
+
+  getSnippetFacets: t.procedure
+    .input(
+      z.object({
+        languageSlug: z.string().optional(),
+      })
+    )
+    .query(async ({ input }) => {
+      const snippets = await prisma.snippet.findMany({
+        where: {
+          ...(input.languageSlug && { language: { slug: input.languageSlug } }),
+        },
+        select: {
+          category: true,
+          tags: {
+            select: { name: true },
+          },
+        },
+      });
+
+      const categoryValues: string[] = snippets
+        .map((snippet: SnippetFacetRow) => snippet.category?.trim())
+        .filter((value: string | undefined): value is string => Boolean(value));
+
+      const categories = [...new Set<string>(categoryValues)].sort((a, b) =>
+        a.localeCompare(b),
+      );
+
+      const tagValues: string[] = snippets.flatMap((snippet: SnippetFacetRow) =>
+        snippet.tags
+          .map((tag: { name: string }) => tag.name.trim())
+          .filter((value: string) => Boolean(value)),
+      );
+
+      const tags = [...new Set<string>(tagValues)].sort((a, b) => a.localeCompare(b));
+
+      return { categories, tags };
     }),
 
   getSnippetById: t.procedure
@@ -127,7 +232,7 @@ export const appRouter = t.router({
       })
     )
     .mutation(async ({ input }) => {
-      const { languageSlug, tags, ...rest } = input;
+      const { languageSlug, tags, createdBy, ...rest } = input;
       
       const language = await prisma.language.findUnique({
         where: { slug: languageSlug },
@@ -137,8 +242,16 @@ export const appRouter = t.router({
 
       return prisma.snippet.create({
         data: {
-          ...rest,
-          languageId: language.id,
+          title: rest.title,
+          description: rest.description,
+          code: rest.code,
+          difficulty: rest.difficulty,
+          language: {
+            connect: { id: language.id },
+          },
+          author: {
+            connect: { id: createdBy },
+          },
           tags: {
             connectOrCreate: tags.map((name) => ({
               where: { name },
@@ -204,7 +317,16 @@ export const appRouter = t.router({
     }))
     .mutation(async ({ input }) => {
       return prisma.userQuizResult.create({
-        data: input,
+        data: {
+          score: input.score,
+          total: input.total,
+          user: {
+            connect: { id: input.userId },
+          },
+          quizSet: {
+            connect: { id: input.quizSetId },
+          },
+        },
       });
     }),
 
@@ -215,9 +337,22 @@ export const appRouter = t.router({
     }))
     .mutation(async ({ input }) => {
       return prisma.userProgress.upsert({
-        where: { userId_lessonId: input },
+        where: {
+          userId_lessonId: {
+            userId: input.userId,
+            lessonId: input.lessonId,
+          },
+        },
         update: { completed: true },
-        create: { ...input, completed: true },
+        create: {
+          completed: true,
+          user: {
+            connect: { id: input.userId },
+          },
+          lesson: {
+            connect: { id: input.lessonId },
+          },
+        },
       });
     }),
 });

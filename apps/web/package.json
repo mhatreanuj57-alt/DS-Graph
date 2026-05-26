@@ -10,8 +10,9 @@
   },
   "dependencies": {
     "next": "15.0.0",
-    "react": "19.0.0-rc-0",
-    "react-dom": "19.0.0-rc-0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@trpc/server": "next",
     "lucide-react": "^0.294.0",
     "zustand": "^4.4.7",
     "@monaco-editor/react": "^4.6.0",
@@ -19,7 +20,8 @@
     "clsx": "^2.0.0",
     "tailwind-merge": "^2.1.0",
     "@codeforge/types": "workspace:*",
-    "@codeforge/db": "workspace:*"
+    "@codeforge/db": "workspace:*",
+    "@codeforge/ai": "workspace:*"
   },
   "devDependencies": {
     "typescript": "latest",

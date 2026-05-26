@@ -1,0 +1,67 @@
+{
+  "modules": [
+    {
+      "title": "Supabase Foundations",
+      "order": 1,
+      "lessons": [
+        {
+          "title": "Supabase Architecture Overview",
+          "order": 1,
+          "content": "# Supabase Architecture Overview\n\nSupabase is an open-source backend platform built around Postgres, authentication, storage, realtime, and edge functions.\n\n### Key idea\nUnlike document-first platforms, Supabase starts from a relational database model.\n\n### Main services\n- Postgres database\n- Auth\n- Storage\n- Realtime subscriptions\n- Edge Functions\n\n### Practical takeaway\nDesigning tables, constraints, and policies well matters more in Supabase than trying to hide database structure behind vague application code."
+        },
+        {
+          "title": "Project Setup and API Keys",
+          "order": 2,
+          "content": "# Project Setup and API Keys\n\nA Supabase project exposes a URL plus API keys used by clients and servers.\n\n### Important distinction\n- The anonymous key is safe for client-side use when paired with Row Level Security.\n- Service role keys are server-only and must never be exposed in the browser.\n\n### Setup rule\nCreate separate client helpers for browser and server code so the wrong credentials do not leak across boundaries."
+        },
+        {
+          "title": "Working with Tables and Rows",
+          "order": 3,
+          "content": "# Working with Tables and Rows\n\nSupabase queries are built on top of PostgREST, so you interact with tables in a relational way.\n\n### Common operations\n- `select()` reads rows.\n- `insert()` creates rows.\n- `update()` changes rows.\n- `delete()` removes rows.\n\n### Schema tip\nUse foreign keys, unique constraints, and sensible column names early. They improve both correctness and query clarity."
+        }
+      ]
+    },
+    {
+      "title": "Auth, Queries, and Realtime",
+      "order": 2,
+      "lessons": [
+        {
+          "title": "Authentication and Sessions",
+          "order": 1,
+          "content": "# Authentication and Sessions\n\nSupabase Auth supports email/password, magic links, OAuth providers, and session handling.\n\n### Workflow basics\n- Sign up or sign in a user.\n- Read the current session.\n- React to auth state changes.\n- Use the access token on the client or server where appropriate.\n\n### Operational rule\nTreat session refresh and logout flows as first-class behavior, not edge cases, especially in multi-tab web apps."
+        },
+        {
+          "title": "Filtering, Joins, and Pagination",
+          "order": 2,
+          "content": "# Filtering, Joins, and Pagination\n\nSupabase query builders support filtering and selecting related data through Postgres relationships.\n\n### Typical patterns\n- Use `.eq()`, `.ilike()`, `.in()`, and range filters.\n- Select related rows using foreign key relationships.\n- Paginate long lists instead of loading everything.\n\n### Design note\nSearch UIs should decide whether they need prefix matching, fuzzy search, or full-text search. A plain substring filter is often not enough for production data."
+        },
+        {
+          "title": "Realtime Channels",
+          "order": 3,
+          "content": "# Realtime Channels\n\nSupabase Realtime can broadcast database changes or custom events to connected clients.\n\n### Good use cases\n- Activity feeds\n- Presence indicators\n- Collaborative dashboards\n- Admin monitoring tools\n\n### Caution\nUse realtime intentionally. If every table change becomes a live client subscription, performance and debugging get messy quickly."
+        }
+      ]
+    },
+    {
+      "title": "Security and Backend Extensions",
+      "order": 3,
+      "lessons": [
+        {
+          "title": "Row Level Security Fundamentals",
+          "order": 1,
+          "content": "# Row Level Security Fundamentals\n\nRow Level Security, usually called RLS, is the main access-control mechanism in Supabase.\n\n### Why it matters\nRLS policies decide which rows a user can select, insert, update, or delete.\n\n### Core rule\nEnable RLS for exposed tables and write explicit policies for each operation that should be allowed.\n\n### Review habit\nTest both positive and negative policy paths. A policy that works for owners but fails for admins, or vice versa, is a common production bug."
+        },
+        {
+          "title": "Storage Buckets and File Policies",
+          "order": 2,
+          "content": "# Storage Buckets and File Policies\n\nSupabase Storage provides buckets for file uploads along with policies to control access.\n\n### Common flow\n- Create a bucket.\n- Upload files with a predictable path convention.\n- Use signed URLs or public URLs based on the use case.\n- Protect private files with storage policies.\n\n### Practical rule\nFile path structure should reflect ownership or tenancy, otherwise authorization becomes harder to reason about."
+        },
+        {
+          "title": "Edge Functions and Server Work",
+          "order": 3,
+          "content": "# Edge Functions and Server Work\n\nSupabase Edge Functions run backend logic close to users and are useful for webhooks, secure mutations, and integrations.\n\n### Use them for\n- Secret-dependent integrations\n- Payment or email workflows\n- Controlled admin actions\n- Request validation before database writes\n\n### Engineering guideline\nKeep functions narrow. One function with a clear input and output is easier to secure and deploy than a generic catch-all endpoint."
+        }
+      ]
+    }
+  ]
+}

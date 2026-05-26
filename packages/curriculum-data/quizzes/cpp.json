@@ -1,0 +1,123 @@
+{
+  "quizSets": [
+    {
+      "title": "C++ MCQ Set 1",
+      "setNumber": 1,
+      "type": "MCQ",
+      "questions": [
+        {
+          "type": "MCQ",
+          "text": "Who developed C++?",
+          "options": ["Dennis Ritchie", "Bjarne Stroustrup", "Ken Thompson", "Linus Torvalds"],
+          "correctOption": 1,
+          "explanation": "Bjarne Stroustrup created C++ at Bell Labs as an extension of C."
+        },
+        {
+          "type": "MCQ",
+          "text": "What does 'OOP' stand for?",
+          "options": ["Open Object Programming", "Oriented Object Procedure", "Object-Oriented Programming", "Office Object Protocol"],
+          "correctOption": 2,
+          "explanation": "OOP is a programming paradigm based on the concept of 'objects'."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which operator is used for input in C++?",
+          "options": [">>", "<<", "::", "->"],
+          "correctOption": 0,
+          "explanation": "The extraction operator `>>` is used with `std::cin` for input."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is the default access specifier for class members?",
+          "options": ["public", "protected", "private", "global"],
+          "correctOption": 2,
+          "explanation": "In C++, class members are private by default, whereas struct members are public."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is a virtual function used for?",
+          "options": ["Speeding up code", "Runtime Polymorphism", "Static binding", "Memory allocation"],
+          "correctOption": 1,
+          "explanation": "Virtual functions allow the derived class's implementation to be called even through a base class pointer."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which of these is not an STL container?",
+          "options": ["vector", "list", "array", "pointer"],
+          "correctOption": 3,
+          "explanation": "A pointer is a built-in type, not an STL container."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is the purpose of a destructor?",
+          "options": ["To create objects", "To copy objects", "To clean up resources when an object is destroyed", "To initialize members"],
+          "correctOption": 2,
+          "explanation": "Destructors are called automatically when an object goes out of scope or is deleted."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which keyword is used for generic programming in C++?",
+          "options": ["generic", "template", "auto", "type"],
+          "correctOption": 1,
+          "explanation": "The `template` keyword is used for creating generic classes and functions."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is multiple inheritance?",
+          "options": ["Inheriting from one class", "A class inheriting from two or more base classes", "A class having multiple methods", "Inheriting through many levels"],
+          "correctOption": 1,
+          "explanation": "Multiple inheritance is a feature where a class can inherit from more than one parent class."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is the result of `10 / 4` in C++?",
+          "options": ["2.5", "2", "3", "Error"],
+          "correctOption": 1,
+          "explanation": "Integer division in C++ truncates the decimal part."
+        }
+      ]
+    },
+    {
+      "title": "C++ Theory & Practical",
+      "setNumber": 2,
+      "type": "Theory/Practical",
+      "questions": [
+        {
+          "type": "Theory/Practical",
+          "text": "Explain the difference between a `struct` and a `class` in C++.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "The only technical difference is the default access level: `struct` members are public by default, while `class` members are private by default."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What is a 'Pure Virtual Function'?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "A virtual function assigned `= 0`. It makes the class abstract, meaning it cannot be instantiated and derived classes must override it."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "Describe RAII (Resource Acquisition Is Initialization).",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "RAII is a pattern where resource management is tied to object lifetime. Resources are acquired in the constructor and automatically released in the destructor when the object goes out of scope."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What are smart pointers and why should you use them?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Smart pointers (`unique_ptr`, `shared_ptr`) automate memory management. They ensure memory is freed when it's no longer needed, preventing memory leaks and dangling pointers."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What is the Diamond Problem in C++ inheritance and how is it solved?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "It occurs in multiple inheritance when a class inherits from two classes that both inherit from the same base class. It's solved using `virtual` inheritance."
+        }
+      ]
+    }
+  ]
+}

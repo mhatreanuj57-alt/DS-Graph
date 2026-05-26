@@ -1,0 +1,67 @@
+{
+  "modules": [
+    {
+      "title": "Python Basics",
+      "order": 1,
+      "lessons": [
+        {
+          "title": "Variables & Data Types",
+          "order": 1,
+          "content": "# Variables & Data Types\n\nPython is a dynamically typed language, meaning you don't need to declare the type of a variable when you create one.\n\n### Basic Types\n- **int**: Integer values like `5`, `-10`.\n- **float**: Floating-point numbers like `3.14`, `-0.001`.\n- **str**: Strings of characters, e.g., `\"Hello\"` or `'Python'`.\n- **bool**: Boolean values `True` and `False`.\n\n### Dynamic Typing\n```python\nx = 5\nx = \"Now I'm a string\"\n```\n\n### Type Conversion\nYou can convert between types using `int()`, `float()`, `str()`, etc."
+        },
+        {
+          "title": "Control Flow",
+          "order": 2,
+          "content": "# Control Flow\n\nControl the execution flow of your program using conditionals and loops.\n\n### Conditionals\nUse `if`, `elif`, and `else` for branching logic.\n```python\nif age >= 18:\n    print(\"Adult\")\nelif age > 12:\n    print(\"Teenager\")\nelse:\n    print(\"Child\")\n```\n\n### Loops\n- **for**: Iterate over a sequence (list, tuple, string).\n- **while**: Repeat while a condition is true.\n\n```python\nfor i in range(5):\n    print(i)\n```"
+        },
+        {
+          "title": "Functions & Scope",
+          "order": 3,
+          "content": "# Functions & Scope\n\nFunctions are defined using the `def` keyword.\n\n```python\ndef greet(name, greeting=\"Hello\"):\n    return f\"{greeting}, {name}!\"\n```\n\n### Arguments\n- **Positional**: `greet(\"Alice\")`\n- **Keyword**: `greet(name=\"Alice\", greeting=\"Hi\")`\n- **Default**: `greeting` has a default value in the example above.\n\n### Scope\n- **Local**: Variables defined inside a function.\n- **Global**: Variables defined at the top level of a script.\n- **LEGB Rule**: Local, Enclosing, Global, Built-in."
+        }
+      ]
+    },
+    {
+      "title": "Data Structures",
+      "order": 2,
+      "lessons": [
+        {
+          "title": "Lists & Tuples",
+          "order": 1,
+          "content": "# Lists & Tuples\n\n### Lists\nMutable, ordered sequences of items.\n```python\nfruits = [\"apple\", \"banana\", \"cherry\"]\nfruits.append(\"date\")\nfruits[0] = \"apricot\"\n```\n\n### Tuples\nImmutable, ordered sequences. Useful for fixed data.\n```python\ncoordinates = (10, 20)\n# coordinates[0] = 15  # This would raise a TypeError\n```\n\n### Slicing\nBoth support slicing: `my_list[start:stop:step]`."
+        },
+        {
+          "title": "Dictionaries & Sets",
+          "order": 2,
+          "content": "# Dictionaries & Sets\n\n### Dictionaries\nKey-value pairs. Keys must be immutable (hashable).\n```python\nperson = {\"name\": \"Alice\", \"age\": 30}\nprint(person[\"name\"])\n```\n\n### Sets\nUnordered collections of unique elements.\n```python\nunique_nums = {1, 2, 3, 3}  # {1, 2, 3}\n```\n\nSets are highly efficient for membership testing (`x in my_set`)."
+        },
+        {
+          "title": "List Comprehensions",
+          "order": 3,
+          "content": "# List Comprehensions\n\nA concise way to create lists.\n\n```python\n# Traditional way\nsquares = []\nfor x in range(10):\n    squares.append(x**2)\n\n# List comprehension\nsquares = [x**2 for x in range(10)]\n```\n\nYou can also add conditions:\n```python\neven_squares = [x**2 for x in range(10) if x % 2 == 0]\n```"
+        }
+      ]
+    },
+    {
+      "title": "Advanced Python",
+      "order": 3,
+      "lessons": [
+        {
+          "title": "Iterators & Generators",
+          "order": 1,
+          "content": "# Iterators & Generators\n\n### Iterators\nAn object that can be iterated upon. Implements `__iter__()` and `__next__()`.\n\n### Generators\nFunctions that return an iterator using the `yield` keyword. They are memory efficient as they produce values on the fly.\n\n```python\ndef count_up_to(n):\n    count = 1\n    while count <= n:\n        yield count\n        count += 1\n```"
+        },
+        {
+          "title": "Decorators",
+          "order": 2,
+          "content": "# Decorators\n\nDecorators allow you to modify the behavior of a function or class without changing its source code.\n\n```python\ndef my_decorator(func):\n    def wrapper():\n        print(\"Something before function.\")\n        func()\n        print(\"Something after function.\")\n    return wrapper\n\n@my_decorator\ndef say_hello():\n    print(\"Hello!\")\n```"
+        },
+        {
+          "title": "Context Managers",
+          "order": 3,
+          "content": "# Context Managers\n\nUsed for resource management, typically with the `with` statement. Ensures resources like files or database connections are properly closed.\n\n```python\nwith open(\"test.txt\", \"w\") as f:\n    f.write(\"Hello World\")\n```\n\nYou can create custom context managers using the `__enter__` and `__exit__` methods or the `@contextmanager` decorator."
+        }
+      ]
+    }
+  ]
+}

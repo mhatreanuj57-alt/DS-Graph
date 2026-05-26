@@ -1,0 +1,123 @@
+{
+  "quizSets": [
+    {
+      "title": "Three.js Essentials MCQ",
+      "setNumber": 1,
+      "type": "MCQ",
+      "questions": [
+        {
+          "type": "MCQ",
+          "text": "Which three pieces are required for a basic Three.js render setup?",
+          "options": ["Scene, Camera, Renderer", "Mesh, CSS, Router", "Canvas, SQL, Shader", "Node, Module, Event"],
+          "correctOption": 0,
+          "explanation": "A minimal Three.js application needs a scene, a camera, and a renderer."
+        },
+        {
+          "type": "MCQ",
+          "text": "What does geometry represent in a mesh?",
+          "options": ["The lighting rules", "The object shape", "The network request", "The frame rate"],
+          "correctOption": 1,
+          "explanation": "Geometry defines the structure or shape of the object, while material controls appearance."
+        },
+        {
+          "type": "MCQ",
+          "text": "Why is `requestAnimationFrame` commonly used in Three.js apps?",
+          "options": ["To connect to databases", "To schedule smooth visual updates", "To compile shaders on the server", "To validate forms"],
+          "correctOption": 1,
+          "explanation": "`requestAnimationFrame` drives the browser-friendly render loop used for animations and interaction."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which loader is commonly used for modern 3D models in Three.js?",
+          "options": ["CSVLoader", "GLTFLoader", "JsonAuthLoader", "FileRouterLoader"],
+          "correctOption": 1,
+          "explanation": "GLTFLoader is widely used for importing glTF and GLB models into Three.js scenes."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is raycasting used for in a 3D scene?",
+          "options": ["Compiling TypeScript", "Detecting intersections for selection or hover", "Generating SQL joins", "Resizing textures automatically"],
+          "correctOption": 1,
+          "explanation": "Raycasting is the usual way to detect which objects a pointer intersects in 3D space."
+        },
+        {
+          "type": "MCQ",
+          "text": "Why should shadows be enabled selectively?",
+          "options": ["They remove all lighting", "They often add rendering cost", "They prevent textures from loading", "They disable materials"],
+          "correctOption": 1,
+          "explanation": "Shadows improve realism but can significantly increase rendering work."
+        },
+        {
+          "type": "MCQ",
+          "text": "What should happen when the viewport size changes?",
+          "options": ["Nothing", "Only the CSS should change", "Update camera aspect and renderer size", "Delete the scene and rebuild it"],
+          "correctOption": 2,
+          "explanation": "Resize handling usually updates the camera projection and renderer dimensions."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which practice helps avoid memory leaks in Three.js apps?",
+          "options": ["Never removing event listeners", "Cleaning up controls, listeners, and WebGL resources", "Recreating all materials every frame", "Ignoring unmount behavior"],
+          "correctOption": 1,
+          "explanation": "Cleanup matters because WebGL resources and listeners can survive longer than intended."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is a mesh in Three.js?",
+          "options": ["A build tool", "Geometry combined with a material", "A CSS layout system", "An HTTP request wrapper"],
+          "correctOption": 1,
+          "explanation": "A mesh is the combination of shape data and appearance data that can be rendered in the scene."
+        },
+        {
+          "type": "MCQ",
+          "text": "Why is measuring performance important before optimizing a Three.js scene?",
+          "options": ["It disables rendering", "It shows where frame time is actually being spent", "It guarantees 60 FPS", "It replaces asset optimization"],
+          "correctOption": 1,
+          "explanation": "Profiling reveals whether bottlenecks come from draw calls, shaders, assets, CPU work, or something else."
+        }
+      ]
+    },
+    {
+      "title": "Three.js Theory & Practical",
+      "setNumber": 2,
+      "type": "Theory/Practical",
+      "questions": [
+        {
+          "type": "Theory/Practical",
+          "text": "Explain the difference between geometry, material, and mesh in Three.js.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Geometry describes shape, material describes visual appearance, and a mesh combines both into a renderable object."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "Why should asset loading be treated as asynchronous application state?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Models and textures can fail or arrive late, so apps need loading, success, and error states instead of assuming immediate availability."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What are the most common causes of poor Three.js performance?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Heavy geometry, large textures, too many draw calls, expensive shadows, and excessive work inside the animation loop are common causes."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "Describe how raycasting can be used to implement object selection.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Convert pointer position into normalized coordinates, cast a ray from the camera into the scene, and inspect which selectable objects the ray intersects."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What cleanup work is important when unmounting a Three.js view inside a web app?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Remove listeners, stop animation loops if needed, dispose geometries, materials, and textures, and tear down controls or scene-related helpers."
+        }
+      ]
+    }
+  ]
+}

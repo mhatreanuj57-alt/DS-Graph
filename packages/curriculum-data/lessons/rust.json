@@ -1,0 +1,67 @@
+{
+  "modules": [
+    {
+      "title": "Memory Management",
+      "order": 1,
+      "lessons": [
+        {
+          "title": "Ownership",
+          "order": 1,
+          "content": "# Ownership\n\nOwnership is Rust's most unique feature and enables memory safety without a garbage collector.\n\n### Three Rules of Ownership\n1. Each value in Rust has a variable that's called its owner.\n2. There can only be one owner at a time.\n3. When the owner goes out of scope, the value will be dropped.\n\n```rust\nlet s1 = String::from(\"hello\");\nlet s2 = s1; // s1 is moved to s2 and is no longer valid\n```"
+        },
+        {
+          "title": "References & Borrowing",
+          "order": 2,
+          "content": "# References & Borrowing\n\nBorrowing allows you to use a value without taking ownership of it.\n\n### Rules of Borrowing\n1. At any given time, you can have either one mutable reference or any number of immutable references.\n2. References must always be valid.\n\n```rust\nfn calculate_length(s: &String) -> usize { // s is a reference\n    s.len()\n}\n```"
+        },
+        {
+          "title": "Lifetimes",
+          "order": 3,
+          "content": "# Lifetimes\n\nLifetimes ensure that references are valid as long as we need them to be.\n\nMost of the time, lifetimes are implicit and inferred, but sometimes you need to annotate them when the lifetime of a reference could be ambiguous.\n\n```rust\nfn longest<'a>(x: &'a str, y: &'a str) -> &'a str {\n    if x.len() > y.len() { x } else { y }\n}\n```\nThis annotation means that the returned reference will be valid as long as both parameters are valid."
+        }
+      ]
+    },
+    {
+      "title": "Data Structures & Traits",
+      "order": 2,
+      "lessons": [
+        {
+          "title": "Structs & Enums",
+          "order": 1,
+          "content": "# Structs & Enums\n\n### Structs\nUsed to create custom data types.\n```rust\nstruct User {\n    username: String,\n    active: bool,\n}\n```\n\n### Enums\nAllow you to enumerate over possible variants. Rust enums are very powerful as they can hold data.\n```rust\nenum Message {\n    Quit,\n    Move { x: i32, y: i32 },\n    Write(String),\n}\n```"
+        },
+        {
+          "title": "Pattern Matching",
+          "order": 2,
+          "content": "# Pattern Matching\n\nThe `match` control flow operator allows you to compare a value against a series of patterns.\n\n```rust\nlet some_u8_value = 0u8;\nmatch some_u8_value {\n    1 => println!(\"one\"),\n    3 => println!(\"three\"),\n    _ => (), // placeholder for all other values\n}\n```\nIt is exhaustive, meaning you must handle every possible case."
+        },
+        {
+          "title": "Traits",
+          "order": 3,
+          "content": "# Traits\n\nA trait tells the Rust compiler about functionality a particular type has and can share with other types.\n\n```rust\npub trait Summary {\n    fn summarize(&self) -> String;\n}\n\nimpl Summary for NewsArticle {\n    fn summarize(&self) -> String {\n        format!(\"{}, by {}\", this.headline, this.author)\n    }\n}\n```\nTraits are similar to interfaces in other languages but are more flexible."
+        }
+      ]
+    },
+    {
+      "title": "Error Handling & Concurrency",
+      "order": 3,
+      "lessons": [
+        {
+          "title": "Result & Option",
+          "order": 1,
+          "content": "# Result & Option\n\nRust does not have `null`. Instead, it uses `Option` and `Result` enums for error handling.\n\n- `Option<T>`: Used for values that might be absent (`Some(T)` or `None`).\n- `Result<T, E>`: Used for operations that can fail (`Ok(T)` or `Err(E)`).\n\n```rust\nlet f = File::open(\"hello.txt\");\nlet f = match f {\n    Ok(file) => file,\n    Err(error) => panic!(\"Problem opening the file: {:?}\", error),\n};\n```"
+        },
+        {
+          "title": "Threads & Shared State",
+          "order": 2,
+          "content": "# Threads & Shared State\n\nRust provides memory safety even in concurrent environments.\n\n```rust\nuse std::thread;\n\nlet handle = thread::spawn(|| {\n    for i in 1..10 {\n        println!(\"hi number {} from the spawned thread!\", i);\n    }\n});\n```\nUse `Arc` (Atomic Reference Counted) and `Mutex` for safe shared state between threads."
+        },
+        {
+          "title": "Async/Await",
+          "order": 3,
+          "content": "# Async/Await\n\nAsynchronous programming allows you to run multiple tasks on a single thread.\n\n```rust\nasync fn hello_world() {\n    println!(\"hello, world!\");\n}\n\n// To execute, you need an executor like 'tokio'\n```\nAsync functions return a `Future`, which needs to be polled to completion."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "modules": [
+    {
+      "title": "Go Basics",
+      "order": 1,
+      "lessons": [
+        {
+          "title": "Variables & Types",
+          "order": 1,
+          "content": "# Variables & Types\n\nGo is a statically typed, compiled language with a focus on simplicity.\n\n### Declarations\n- `var x int = 10`\n- `x := 10` (Short declaration, only inside functions)\n\n### Basic Types\n- `bool`, `string`\n- `int`, `int8`, `int16`, `int32`, `int64`\n- `uint`, `uintptr`\n- `byte` (alias for `uint8`)\n- `rune` (alias for `int32`, represents a Unicode code point)\n- `float32`, `float64`\n- `complex64`, `complex128`\n\n### Zero Values\nVariables declared without an explicit initial value are given their zero value (`0` for numbers, `false` for booleans, `\"\"` for strings)."
+        },
+        {
+          "title": "Control Flow",
+          "order": 2,
+          "content": "# Control Flow\n\n### If/Else\n```go\nif x > 0 {\n    return \"positive\"\n} else {\n    return \"negative\"\n}\n```\nYou can also have an init statement before the condition: `if v := math.Pow(x, n); v < lim { ... }`.\n\n### For Loops\nGo only has one looping construct: `for`.\n```go\nfor i := 0; i < 10; i++ {\n    sum += i\n}\n```\nIt can also act as a `while` loop: `for sum < 1000 { ... }`.\n\n### Switch\n```go\nswitch os := runtime.GOOS; os {\ncase \"darwin\":\n    fmt.Println(\"OS X.\")\ndefault:\n    fmt.Printf(\"%s.\\n\", os)\n}\n```"
+        },
+        {
+          "title": "Functions",
+          "order": 3,
+          "content": "# Functions\n\nFunctions can take zero or more arguments and return zero or more values.\n\n```go\nfunc add(x int, y int) int {\n    return x + y\n}\n\nfunc swap(x, y string) (string, string) {\n    return y, x\n}\n```\n\n### Named Return Values\nGo's return values may be named. If so, they are treated as variables defined at the top of the function.\n```go\nfunc split(sum int) (x, y int) {\n    x = sum * 4 / 9\n    y = sum - x\n    return\n}\n```"
+        }
+      ]
+    },
+    {
+      "title": "Structs, Methods & Interfaces",
+      "order": 2,
+      "lessons": [
+        {
+          "title": "Structs & Pointers",
+          "order": 1,
+          "content": "# Structs & Pointers\n\n### Structs\nA collection of fields.\n```go\ntype Vertex struct {\n    X int\n    Y int\n}\n```\n\n### Pointers\nGo has pointers. A pointer holds the memory address of a value. There is no pointer arithmetic.\n```go\ni := 42\np := &i\nfmt.Println(*p) // read i through the pointer p\n*p = 21         // set i through the pointer p\n```"
+        },
+        {
+          "title": "Methods",
+          "order": 2,
+          "content": "# Methods\n\nGo does not have classes. However, you can define methods on types.\n\n```go\ntype Vertex struct {\n    X, Y float64\n}\n\nfunc (v Vertex) Abs() float64 {\n    return math.Sqrt(v.X*v.X + v.Y*v.Y)\n}\n```\n\n### Pointer Receivers\nYou can define methods with pointer receivers to modify the value to which the receiver points.\n```go\nfunc (v *Vertex) Scale(f float64) {\n    v.X = v.X * f\n    v.Y = v.Y * f\n}\n```"
+        },
+        {
+          "title": "Interfaces",
+          "order": 3,
+          "content": "# Interfaces\n\nAn interface type is defined as a set of method signatures.\n\n```go\ntype Abser interface {\n    Abs() float64\n}\n```\n\nIn Go, interfaces are implemented implicitly. A type implements an interface by implementing its methods. There is no explicit declaration of intent, no \"implements\" keyword."
+        }
+      ]
+    },
+    {
+      "title": "Concurrency",
+      "order": 3,
+      "lessons": [
+        {
+          "title": "Goroutines",
+          "order": 1,
+          "content": "# Goroutines\n\nA goroutine is a lightweight thread managed by the Go runtime.\n\n```go\ngo f(x, y, z)\n```\nstarts a new goroutine running `f(x, y, z)`. The evaluation of `f`, `x`, `y`, and `z` happens in the current goroutine and the execution of `f` happens in the new goroutine."
+        },
+        {
+          "title": "Channels",
+          "order": 2,
+          "content": "# Channels\n\nChannels are a typed conduit through which you can send and receive values with the channel operator, `<-`.\n\n```go\nch := make(chan int)\nch <- v    // Send v to channel ch.\nv := <-ch  // Receive from ch, and assign value to v.\n```\nBy default, sends and receives block until the other side is ready. This allows goroutines to synchronize without explicit locks or condition variables."
+        },
+        {
+          "title": "Select",
+          "order": 3,
+          "content": "# Select\n\nThe `select` statement lets a goroutine wait on multiple communication operations.\n\n```go\nselect {\ncase c <- x:\n    x, y = y, x+y\ncase <-quit:\n    fmt.Println(\"quit\")\n    return\n}\n```\nA `select` blocks until one of its cases can run, then it executes that case. It chooses one at random if multiple are ready."
+        }
+      ]
+    }
+  ]
+}

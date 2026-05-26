@@ -1,0 +1,153 @@
+{
+  "quizSets": [
+    {
+      "title": "Rust Mastery Set 1",
+      "setNumber": 1,
+      "type": "MCQ",
+      "questions": [
+        {
+          "type": "MCQ",
+          "text": "What is the core concept Rust uses to manage memory?",
+          "options": ["Garbage Collection", "Manual Reference Counting", "Ownership", "Pointer Arithmetic"],
+          "correctOption": 2,
+          "explanation": "Rust uses a system of ownership with a set of rules that the compiler checks at compile time."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which of these is NOT a rule of ownership?",
+          "options": [
+            "Each value has an owner",
+            "There can be multiple owners at once",
+            "When the owner goes out of scope, the value is dropped",
+            "There can only be one owner at a time"
+          ],
+          "correctOption": 1,
+          "explanation": "Rust enforces that there can only be one owner for a value at any given time."
+        },
+        {
+          "type": "MCQ",
+          "text": "What happens when you 'move' a variable?",
+          "options": [
+            "It is copied to a new location",
+            "The ownership is transferred, and the original variable is invalidated",
+            "A reference is created",
+            "The variable is deleted from memory"
+          ],
+          "correctOption": 1,
+          "explanation": "Moving a value transfers ownership, making the previous variable unusable to prevent double-free errors."
+        },
+        {
+          "type": "MCQ",
+          "text": "How do you declare a mutable variable in Rust?",
+          "options": ["var x = 5;", "let x = 5;", "let mut x = 5;", "mut x: i32 = 5;"],
+          "correctOption": 2,
+          "explanation": "Variables are immutable by default in Rust; the `mut` keyword is required to make them mutable."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is the purpose of the 'Option' enum?",
+          "options": [
+            "To handle potential errors",
+            "To represent a value that could be something or nothing",
+            "To define a optional function argument",
+            "To optimize performance"
+          ],
+          "correctOption": 1,
+          "explanation": "`Option<T>` is used when a value might be absent, replacing the need for 'null'."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which operator is used to propagate errors in Rust?",
+          "options": ["!", "?", "&", "*"],
+          "correctOption": 1,
+          "explanation": "The `?` operator is used to return an error from a function if the result is an `Err` variant."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is a 'Trait' in Rust?",
+          "options": [
+            "A type of loop",
+            "A way to define shared behavior between types",
+            "A memory allocation strategy",
+            "A primitive data type"
+          ],
+          "correctOption": 1,
+          "explanation": "Traits are similar to interfaces and define functionality a type must implement."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which smart pointer allows for multiple ownership in a single-threaded context?",
+          "options": ["Box<T>", "Arc<T>", "Rc<T>", "RefCell<T>"],
+          "correctOption": 2,
+          "explanation": "`Rc<T>` stands for Reference Counted and allows multiple owners for a value on the heap."
+        },
+        {
+          "type": "MCQ",
+          "text": "What does the 'match' operator require for Enums?",
+          "options": [
+            "At least one arm",
+            "A default case using _",
+            "Exhaustive handling of all variants",
+            "That the enum is public"
+          ],
+          "correctOption": 2,
+          "explanation": "`match` must be exhaustive; you must handle every possible variant of the enum being matched."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is 'Borrowing' in Rust?",
+          "options": [
+            "Moving a value into a function",
+            "Accessing a value via a reference without taking ownership",
+            "Allocating memory on the stack",
+            "Creating a copy of a value"
+          ],
+          "correctOption": 1,
+          "explanation": "Borrowing is the act of creating a reference to a value, allowing it to be used without moving its ownership."
+        }
+      ]
+    },
+    {
+      "title": "Rust Theory & Practice Set 1",
+      "setNumber": 2,
+      "type": "Theory/Practical",
+      "questions": [
+        {
+          "type": "Theory/Practical",
+          "text": "Explain the difference between `String` and `&str`.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "`String` is an owned, growable, UTF-8 encoded string on the heap. `&str` is a string slice, which is an immutable reference to a sequence of UTF-8 bytes stored elsewhere (stack, heap, or static memory)."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What are 'Lifetimes' and why are they necessary?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Lifetimes are a way for the compiler to ensure that all borrows are valid and that references do not outlive the data they point to, preventing dangling pointers."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "How does Rust prevent data races at compile time?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Through its ownership and borrowing rules: you can have either one mutable reference or multiple immutable references, but never both at the same time. This prevents concurrent unsynchronized access to data."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What is 'Interior Mutability' and when would you use `RefCell`?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Interior mutability is a design pattern that allows you to mutate data even when there are immutable references to that data. `RefCell<T>` enforces borrowing rules at runtime instead of compile time, which is useful when the compiler is too restrictive but you know the code is safe."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "Describe the purpose of the `Deref` trait.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "The `Deref` trait allows you to customize the behavior of the dereference operator `*`. It is commonly used for smart pointers to allow them to be treated like the underlying type (e.g., using `Box<T>` as `T`)."
+        }
+      ]
+    }
+  ]
+}

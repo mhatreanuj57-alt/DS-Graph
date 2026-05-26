@@ -1,0 +1,67 @@
+{
+  "modules": [
+    {
+      "title": "SQL Basics",
+      "order": 1,
+      "lessons": [
+        {
+          "title": "SELECT & FROM",
+          "order": 1,
+          "content": "# SELECT & FROM\n\nThe `SELECT` statement is used to select data from a database. The data returned is stored in a result table, called the result-set.\n\n### Syntax\n```sql\nSELECT column1, column2, ...\nFROM table_name;\n```\n\n### Selecting All Columns\n```sql\nSELECT * FROM Customers;\n```\n\n### SELECT DISTINCT\nUsed to return only distinct (different) values.\n```sql\nSELECT DISTINCT Country FROM Customers;\n```"
+        },
+        {
+          "title": "WHERE Clause",
+          "order": 2,
+          "content": "# WHERE Clause\n\nThe `WHERE` clause is used to filter records.\n\n```sql\nSELECT * FROM Customers\nWHERE Country='Mexico';\n```\n\n### Operators in WHERE\n- `=`: Equal\n- `<>`: Not equal (some versions use `!=`)\n- `>`: Greater than\n- `<`: Less than\n- `BETWEEN`: Between an inclusive range\n- `LIKE`: Search for a pattern\n- `IN`: To specify multiple possible values for a column"
+        },
+        {
+          "title": "ORDER BY",
+          "order": 3,
+          "content": "# ORDER BY\n\nThe `ORDER BY` keyword is used to sort the result-set in ascending or descending order.\n\n```sql\nSELECT * FROM Products\nORDER BY Price ASC; -- Ascending (default)\n\nSELECT * FROM Products\nORDER BY Price DESC; -- Descending\n```\n\n### Sorting by Multiple Columns\n```sql\nSELECT * FROM Customers\nORDER BY Country, CustomerName;\n```"
+        }
+      ]
+    },
+    {
+      "title": "Joins & Aggregations",
+      "order": 2,
+      "lessons": [
+        {
+          "title": "SQL JOINs",
+          "order": 1,
+          "content": "# SQL JOINs\n\nA `JOIN` clause is used to combine rows from two or more tables, based on a related column between them.\n\n### Types of JOINs\n- **(INNER) JOIN**: Returns records that have matching values in both tables.\n- **LEFT (OUTER) JOIN**: Returns all records from the left table, and the matched records from the right table.\n- **RIGHT (OUTER) JOIN**: Returns all records from the right table, and the matched records from the left table.\n- **FULL (OUTER) JOIN**: Returns all records when there is a match in either left or right table.\n\n```sql\nSELECT Orders.OrderID, Customers.CustomerName\nFROM Orders\nINNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;\n```"
+        },
+        {
+          "title": "GROUP BY",
+          "order": 2,
+          "content": "# GROUP BY\n\nThe `GROUP BY` statement groups rows that have the same values into summary rows.\n\n```sql\nSELECT COUNT(CustomerID), Country\nFROM Customers\nGROUP BY Country;\n```\nIt is often used with aggregate functions (`COUNT`, `MAX`, `MIN`, `SUM`, `AVG`) to group the result-set by one or more columns."
+        },
+        {
+          "title": "HAVING Clause",
+          "order": 3,
+          "content": "# HAVING Clause\n\nThe `HAVING` clause was added to SQL because the `WHERE` keyword cannot be used with aggregate functions.\n\n```sql\nSELECT COUNT(CustomerID), Country\nFROM Customers\nGROUP BY Country\nHAVING COUNT(CustomerID) > 5;\n```\nWhile `WHERE` filters rows before grouping, `HAVING` filters groups after the `GROUP BY` clause is applied."
+        }
+      ]
+    },
+    {
+      "title": "Data Manipulation & Schema",
+      "order": 3,
+      "lessons": [
+        {
+          "title": "INSERT, UPDATE, DELETE",
+          "order": 1,
+          "content": "# INSERT, UPDATE, DELETE\n\n### INSERT INTO\n```sql\nINSERT INTO Customers (Name, Contact, Country)\nVALUES ('Cardinal', 'Tom B. Erichsen', 'Norway');\n```\n\n### UPDATE\n```sql\nUPDATE Customers\nSET ContactName = 'Alfred Schmidt', City= 'Frankfurt'\nWHERE CustomerID = 1;\n```\n**Warning**: Be careful when updating records. If you omit the `WHERE` clause, all records will be updated!\n\n### DELETE\n```sql\nDELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';\n```"
+        },
+        {
+          "title": "CREATE & ALTER TABLE",
+          "order": 2,
+          "content": "# CREATE & ALTER TABLE\n\n### CREATE TABLE\n```sql\nCREATE TABLE Persons (\n    PersonID int,\n    LastName varchar(255),\n    FirstName varchar(255),\n    City varchar(255)\n);\n```\n\n### ALTER TABLE\nUsed to add, delete, or modify columns in an existing table.\n```sql\nALTER TABLE Persons\nADD Email varchar(255);\n```"
+        },
+        {
+          "title": "Constraints & Indexes",
+          "order": 3,
+          "content": "# Constraints & Indexes\n\n### Constraints\nUsed to specify rules for the data in a table.\n- `NOT NULL`: Ensures that a column cannot have a NULL value.\n- `UNIQUE`: Ensures that all values in a column are different.\n- `PRIMARY KEY`: A combination of a `NOT NULL` and `UNIQUE`.\n- `FOREIGN KEY`: Uniquely identifies a row/record in another table.\n\n### Indexes\nUsed to retrieve data from the database more quickly than otherwise.\n```sql\nCREATE INDEX idx_lastname\nON Persons (LastName);\n```"
+        }
+      ]
+    }
+  ]
+}

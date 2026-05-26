@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import axios from 'axios';
 import { ExecutionResult } from '@codeforge/types';
 
 const LANGUAGE_MAP: Record<string, number> = {
@@ -21,15 +20,27 @@ export function useExecution() {
     setResult(null);
 
     try {
-      const response = await axios.post('/api/execute', {
-        language_id: LANGUAGE_MAP[languageId] || 93,
-        source_code: sourceCode,
+      const response = await fetch('/api/execute', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          language_id: LANGUAGE_MAP[languageId] || 93,
+          source_code: sourceCode,
+        }),
       });
 
-      setResult(response.data);
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Execution failed');
+      }
+
+      setResult(data);
     } catch (error: any) {
       setResult({
-        stderr: error.response?.data?.error || error.message,
+        stderr: error.message,
         status: { id: 0, description: 'Internal Error' },
       });
     } finally {

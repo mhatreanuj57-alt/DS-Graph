@@ -9,7 +9,7 @@ import {
   signOut, 
   User 
 } from 'firebase/auth';
-import { auth } from '../firebase';
+import { auth, hasFirebaseConfig } from '../firebase';
 
 interface AuthContextType {
   user: User | null;
@@ -26,6 +26,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    if (!auth) {
+      setLoading(false);
+      return;
+    }
+
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
       setLoading(false);
@@ -34,16 +39,23 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const loginWithGoogle = async () => {
+    if (!auth || !hasFirebaseConfig) {
+      throw new Error('Firebase auth is not configured');
+    }
     const provider = new GoogleAuthProvider();
     await signInWithPopup(auth, provider);
   };
 
   const loginWithGithub = async () => {
+    if (!auth || !hasFirebaseConfig) {
+      throw new Error('Firebase auth is not configured');
+    }
     const provider = new GithubAuthProvider();
     await signInWithPopup(auth, provider);
   };
 
   const logout = async () => {
+    if (!auth) return;
     await signOut(auth);
   };
 

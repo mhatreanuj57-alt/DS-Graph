@@ -34,7 +34,7 @@ export default function NotesPage() {
   const relatedSnippets = useMemo(() => {
     if (!selectedNote || !snippets) return [];
 
-    const tokens = Array.from(
+    const tokens = Array.from<string>(
       new Set(
         selectedNote.title
           .toLowerCase()
@@ -49,7 +49,7 @@ export default function NotesPage() {
           .map((tag) => tag.name || tag)
           .join(' ')}`.toLowerCase();
 
-        const score = tokens.reduce((total, token) => total + (haystack.includes(token) ? 1 : 0), 0);
+        const score = tokens.reduce<number>((total, token) => total + (haystack.includes(token) ? 1 : 0), 0);
         return { snippet, score };
       })
       .filter((entry) => entry.score > 0)

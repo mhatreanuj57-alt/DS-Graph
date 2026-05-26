@@ -1,0 +1,123 @@
+{
+  "quizSets": [
+    {
+      "title": "Firebase Essentials MCQ",
+      "setNumber": 1,
+      "type": "MCQ",
+      "questions": [
+        {
+          "type": "MCQ",
+          "text": "What kind of platform is Firebase primarily known as?",
+          "options": ["CSS framework", "Backend-as-a-Service", "Desktop runtime", "Testing library"],
+          "correctOption": 1,
+          "explanation": "Firebase provides managed backend products such as auth, databases, storage, hosting, and functions."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which Firebase database stores data as collections and documents?",
+          "options": ["Realtime Database", "Cloud Firestore", "BigQuery", "Cloud SQL"],
+          "correctOption": 1,
+          "explanation": "Cloud Firestore uses a document model with collections, documents, and optional subcollections."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which function listens for authentication state changes on the client?",
+          "options": ["watchUser()", "onAuthStateChanged()", "getCurrentSession()", "subscribeAuth()"],
+          "correctOption": 1,
+          "explanation": "`onAuthStateChanged` is the standard Firebase Auth listener for login state changes."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is the main purpose of Firebase Security Rules?",
+          "options": ["Speed up queries", "Minify code", "Control data access", "Create backups"],
+          "correctOption": 2,
+          "explanation": "Security rules define who can read or write data in Firebase services like Firestore and Storage."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which Firestore API is used to subscribe to realtime updates?",
+          "options": ["getDocs", "onSnapshot", "setDoc", "writeBatch"],
+          "correctOption": 1,
+          "explanation": "`onSnapshot` keeps a listener open and pushes document or query changes in realtime."
+        },
+        {
+          "type": "MCQ",
+          "text": "Where should privileged server-side logic usually live in a Firebase app?",
+          "options": ["Client components", "Browser localStorage", "Cloud Functions", "CSS modules"],
+          "correctOption": 2,
+          "explanation": "Cloud Functions are appropriate for logic that needs secrets, admin access, or trusted execution."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which Firebase product is designed for file uploads such as images and PDFs?",
+          "options": ["Hosting", "Authentication", "Cloud Storage", "Remote Config"],
+          "correctOption": 2,
+          "explanation": "Cloud Storage stores binary files and works well with uploads and download URLs."
+        },
+        {
+          "type": "MCQ",
+          "text": "Why is it useful to keep Firebase initialization in a shared module?",
+          "options": ["It prevents all runtime errors", "It avoids repeated setup and inconsistent service creation", "It makes rules unnecessary", "It replaces environment variables"],
+          "correctOption": 1,
+          "explanation": "A shared initialization module gives the app one consistent source of initialized Firebase services."
+        },
+        {
+          "type": "MCQ",
+          "text": "What often causes Firestore query failures in production?",
+          "options": ["Missing semicolons", "Unclosed JSX tags", "Missing composite indexes or rejected rules", "Slow internet only"],
+          "correctOption": 2,
+          "explanation": "Firestore commonly fails when a query needs an index or does not satisfy active security rules."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which approach is safest for production environments?",
+          "options": ["Use one Firebase project for everything", "Skip rules during development and forget to restore them", "Separate staging and production projects", "Store secrets directly in public HTML"],
+          "correctOption": 2,
+          "explanation": "Separate environments reduce accidental writes, risky experiments, and deployment mistakes."
+        }
+      ]
+    },
+    {
+      "title": "Firebase Theory & Practical",
+      "setNumber": 2,
+      "type": "Theory/Practical",
+      "questions": [
+        {
+          "type": "Theory/Practical",
+          "text": "Explain the difference between Cloud Firestore and Realtime Database at a high level.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Firestore is a newer document database with richer querying, indexing, and scalability features. Realtime Database uses a large JSON tree and is often chosen for simpler realtime synchronization cases."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "Why should Firebase Security Rules be treated as part of application logic rather than an optional add-on?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Rules are the actual authorization boundary for client access. If they are wrong, authenticated users may read or write data they should not touch."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "Describe a sensible flow for uploading a user avatar with Firebase Storage and Firestore.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Upload the file to a user-scoped storage path, get the download URL, store metadata or the URL in Firestore, and enforce ownership through storage and database rules."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "When would you choose `onSnapshot` over a one-time fetch?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Use `onSnapshot` when the UI must update live as data changes, such as chat, dashboards, collaborative views, or notifications."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What is the first thing you should verify when a Firebase app appears to be reading the wrong data?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Verify the active Firebase project and environment configuration first, because wrong project targeting is a common cause of confusing behavior."
+        }
+      ]
+    }
+  ]
+}

@@ -4,9 +4,10 @@ import { prisma } from '@codeforge/db';
 import { notFound } from 'next/navigation';
 import { Terminal, Calendar, User, Eye, ArrowUpCircle } from 'lucide-react';
 
-export default async function SnippetPage({ params }: { params: { id: string } }) {
+export default async function SnippetPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
   const snippet = await prisma.snippet.findUnique({
-    where: { id: params.id },
+    where: { id },
     include: {
       language: true,
       tags: true,

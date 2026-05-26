@@ -1,0 +1,123 @@
+{
+  "quizSets": [
+    {
+      "title": "C Programming MCQ",
+      "setNumber": 1,
+      "type": "MCQ",
+      "questions": [
+        {
+          "type": "MCQ",
+          "text": "Who is known as the father of C language?",
+          "options": ["Bjarne Stroustrup", "Dennis Ritchie", "James Gosling", "Guido van Rossum"],
+          "correctOption": 1,
+          "explanation": "Dennis Ritchie developed the C programming language at Bell Labs in the early 1970s."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is the size of an `int` data type in C (typically)?",
+          "options": ["1 byte", "2 bytes", "4 bytes", "8 bytes"],
+          "correctOption": 2,
+          "explanation": "On most modern 32-bit and 64-bit systems, an `int` is 4 bytes."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which symbol is used for a single-line comment in C?",
+          "options": ["#", "/*", "--", "//"],
+          "correctOption": 3,
+          "explanation": "// is used for single-line comments in C99 and later."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is the correct way to declare a pointer to an integer?",
+          "options": ["int ptr;", "int &ptr;", "int *ptr;", "ptr int;"],
+          "correctOption": 2,
+          "explanation": "The asterisk `*` is used to declare a pointer variable."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which function is used to allocate memory dynamically?",
+          "options": ["alloc()", "malloc()", "new()", "set()"],
+          "correctOption": 1,
+          "explanation": "malloc() (memory allocation) is the standard function for dynamic memory."
+        },
+        {
+          "type": "MCQ",
+          "text": "What does `scanf(\"%d\", &num);` do?",
+          "options": ["Prints num", "Reads an integer into num", "Compares num to 0", "Clears num"],
+          "correctOption": 1,
+          "explanation": "scanf reads formatted input from the standard input stream."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is the result of `5 % 2`?",
+          "options": ["2.5", "2", "1", "0"],
+          "correctOption": 2,
+          "explanation": "The % (modulus) operator returns the remainder of division. 5 / 2 is 2 with a remainder of 1."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which header file is needed for `printf()`?",
+          "options": ["<conio.h>", "<stdlib.h>", "<math.h>", "<stdio.h>"],
+          "correctOption": 3,
+          "explanation": "stdio.h stands for Standard Input Output."
+        },
+        {
+          "type": "MCQ",
+          "text": "How do you end a statement in C?",
+          "options": [".", ":", ";", "New line"],
+          "correctOption": 2,
+          "explanation": "Statements in C must be terminated with a semicolon."
+        },
+        {
+          "type": "MCQ",
+          "text": "What character constant is used to terminate a string?",
+          "options": ["\\n", "\\t", "\\0", "\\s"],
+          "correctOption": 2,
+          "explanation": "\\0 is the null character that marks the end of a string."
+        }
+      ]
+    },
+    {
+      "title": "C Theory & Practical",
+      "setNumber": 2,
+      "type": "Theory/Practical",
+      "questions": [
+        {
+          "type": "Theory/Practical",
+          "text": "Explain the difference between `malloc()` and `calloc()`.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "malloc() allocates a single block of memory and does not initialize it. calloc() allocates multiple blocks and initializes them to zero."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What is a pointer and why is it useful?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "A pointer is a variable that stores a memory address. It's useful for dynamic memory allocation, efficient array manipulation, and passing parameters by reference."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What happens if you try to access an array index out of bounds?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "C does not perform bounds checking. Accessing an out-of-bounds index leads to undefined behavior, which could result in a crash (segmentation fault) or reading/writing unrelated memory."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "Describe the purpose of the `static` keyword in C.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Inside a function, it preserves the variable's value between calls. Outside a function, it limits the variable's scope to the file it's declared in."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What is the difference between `#include <file>` and `#include \"file\"`?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Angle brackets `< >` search in standard system directories. Double quotes `\" \"` search in the current project directory first, then system directories."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "modules": [
+    {
+      "title": "C++ Fundamentals",
+      "order": 1,
+      "lessons": [
+        {
+          "title": "Getting Started with C++",
+          "order": 1,
+          "content": "# Getting Started with C++\n\nC++ is an extension of C that adds object-oriented features. It is widely used for system/software development, game dev, and performance-critical applications.\n\n### Hello World\n```cpp\n#include <iostream>\n\nint main() {\n    std::cout << \"Hello, C++!\" << std::endl;\n    return 0;\n}\n```\n\n### Key Differences from C\n- **Input/Output**: Uses `cin` and `cout` instead of `scanf` and `printf`.\n- **Namespaces**: `std::` is a namespace used to organize code.\n- **References**: A new way to pass variables by alias."
+        },
+        {
+          "title": "Classes & Objects",
+          "order": 2,
+          "content": "# Classes & Objects\n\nClasses are the blueprint for objects. They encapsulate data and behavior.\n\n### Definition\n```cpp\nclass Dog {\npublic:\n    std::string name;\n    void bark() {\n        std::cout << \"Woof!\" << std::endl;\n    }\n};\n```\n\n### Access Specifiers\n- `public`: Accessible from outside the class.\n- `private`: Accessible only within the class (default).\n- `protected`: Accessible within the class and its subclasses."
+        },
+        {
+          "title": "Constructors & Destructors",
+          "order": 3,
+          "content": "# Constructors & Destructors\n\n### Constructors\nSpecial methods that run when an object is created.\n```cpp\nclass Player {\npublic:\n    Player(std::string name) : name(name) {} // Member initializer list\nprivate:\n    std::string name;\n};\n```\n\n### Destructors\nMethods that run when an object is destroyed. Useful for cleaning up resources (e.g., closing files, freeing memory).\n```cpp\n~Player() {\n    // Cleanup code\n}\n```"
+        }
+      ]
+    },
+    {
+      "title": "Object-Oriented Programming",
+      "order": 2,
+      "lessons": [
+        {
+          "title": "Inheritance",
+          "order": 1,
+          "content": "# Inheritance\n\nInheritance allows a class (child) to inherit properties and methods from another class (parent).\n\n```cpp\nclass Animal {\npublic:\n    void eat() { /* ... */ }\n};\n\nclass Cat : public Animal {\npublic:\n    void meow() { /* ... */ }\n};\n```\n\n### Types of Inheritance\n- Single, Multiple, Multilevel, Hierarchical, and Hybrid."
+        },
+        {
+          "title": "Polymorphism",
+          "order": 2,
+          "content": "# Polymorphism\n\nPolymorphism means \"many forms\". In C++, it allows you to use a single interface for different types.\n\n### Compile-time Polymorphism\n- Function Overloading\n- Operator Overloading\n\n### Runtime Polymorphism\n- Virtual Functions\n```cpp\nclass Shape {\npublic:\n    virtual void draw() = 0; // Pure virtual function\n};\n```"
+        },
+        {
+          "title": "Encapsulation & Abstraction",
+          "order": 3,
+          "content": "# Encapsulation & Abstraction\n\n### Encapsulation\nGrouping data and methods together and restricting access to internal details using access specifiers.\n\n### Abstraction\nShowing only essential features while hiding complex implementation details. Achieved using abstract classes and interfaces."
+        }
+      ]
+    },
+    {
+      "title": "Advanced C++ Concepts",
+      "order": 3,
+      "lessons": [
+        {
+          "title": "Templates",
+          "order": 1,
+          "content": "# Templates\n\nTemplates allow you to write generic code that works with any data type.\n\n### Function Templates\n```cpp\ntemplate <typename T>\nT add(T a, T b) {\n    return a + b;\n}\n```\n\n### Class Templates\n```cpp\ntemplate <class T>\nclass Box {\n    T content;\n};\n```"
+        },
+        {
+          "title": "Standard Template Library (STL)",
+          "order": 2,
+          "content": "# Standard Template Library (STL)\n\nA powerful library of generic classes and functions.\n\n### Components\n- **Containers**: `vector`, `list`, `map`, `set`.\n- **Algorithms**: `sort`, `find`, `reverse`.\n- **Iterators**: Objects that point to elements in containers.\n\n```cpp\nstd::vector<int> vec = {3, 1, 4};\nstd::sort(vec.begin(), vec.end());\n```"
+        },
+        {
+          "title": "Exception Handling",
+          "order": 3,
+          "content": "# Exception Handling\n\nC++ provides a robust way to handle errors using `try`, `catch`, and `throw`.\n\n```cpp\ntry {\n    if (denominator == 0) throw \"Division by zero!\";\n    result = numerator / denominator;\n} catch (const char* msg) {\n    std::cerr << msg << std::endl;\n}\n```"
+        }
+      ]
+    }
+  ]
+}

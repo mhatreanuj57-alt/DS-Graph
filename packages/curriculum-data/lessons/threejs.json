@@ -1,0 +1,67 @@
+{
+  "modules": [
+    {
+      "title": "Three.js Fundamentals",
+      "order": 1,
+      "lessons": [
+        {
+          "title": "Scenes, Cameras, and Renderers",
+          "order": 1,
+          "content": "# Scenes, Cameras, and Renderers\n\nA basic Three.js application needs three core parts: a scene, a camera, and a renderer.\n\n### Responsibilities\n- The `Scene` holds objects, lights, and environment data.\n- The `Camera` defines the viewpoint.\n- The `Renderer` draws the scene to a canvas.\n\n### Mental model\nIf the scene is the stage and objects are actors, the camera is the audience perspective and the renderer is what actually paints the frame."
+        },
+        {
+          "title": "Meshes, Geometry, and Materials",
+          "order": 2,
+          "content": "# Meshes, Geometry, and Materials\n\nVisible 3D objects are usually meshes composed of geometry plus a material.\n\n### Examples\n- Geometry defines shape such as a box, sphere, or plane.\n- Material defines how that shape looks under light.\n- A mesh combines both and can then be positioned, rotated, or scaled.\n\n### Practical rule\nStart with simple primitives while building behavior. Fancy models and shaders should come after interaction and scene structure are stable."
+        },
+        {
+          "title": "Animation Loop Basics",
+          "order": 3,
+          "content": "# Animation Loop Basics\n\nThree.js scenes that move or respond to input usually render inside an animation loop.\n\n### Typical flow\n1. Update object state.\n2. Handle controls or physics.\n3. Render the scene.\n4. Request the next frame.\n\n### Performance note\nOnly do the work needed for each frame. Heavy allocations or repeated scene reconstruction inside the loop will quickly hurt frame rate."
+        }
+      ]
+    },
+    {
+      "title": "Lighting, Assets, and Interaction",
+      "order": 2,
+      "lessons": [
+        {
+          "title": "Lighting and Shadows",
+          "order": 1,
+          "content": "# Lighting and Shadows\n\nLights make materials readable and help convey depth.\n\n### Common light types\n- Ambient light for base visibility\n- Directional light for sun-like lighting\n- Point light for localized sources\n- Hemisphere light for simple sky/ground balance\n\n### Practical tip\nEnable shadows selectively. They improve realism, but they also increase rendering cost."
+        },
+        {
+          "title": "Loading Models and Textures",
+          "order": 2,
+          "content": "# Loading Models and Textures\n\nThree.js supports external assets such as GLTF models, images, and environment maps.\n\n### Key loaders\n- `GLTFLoader` for modern model pipelines\n- `TextureLoader` for image textures\n- `CubeTextureLoader` for skyboxes and environment reflections\n\n### Engineering rule\nTreat asset loading as async work with error states and fallbacks. Production scenes should not assume every file loads instantly or successfully."
+        },
+        {
+          "title": "User Interaction and Raycasting",
+          "order": 3,
+          "content": "# User Interaction and Raycasting\n\nRaycasting lets you detect which object a pointer or click intersects in 3D space.\n\n### Typical uses\n- Selecting objects\n- Hover highlights\n- Triggering labels or tooltips\n- Simple scene editors or configurators\n\n### Design note\nKeep interaction layers clear. Not every mesh should be clickable, and invisible helper objects can simplify hit testing."
+        }
+      ]
+    },
+    {
+      "title": "Optimization and App Integration",
+      "order": 3,
+      "lessons": [
+        {
+          "title": "Responsive Scenes and Resize Handling",
+          "order": 1,
+          "content": "# Responsive Scenes and Resize Handling\n\nA Three.js app should react to viewport changes so the canvas stays sharp and correctly proportioned.\n\n### Resize checklist\n- Update camera aspect ratio.\n- Call `camera.updateProjectionMatrix()`.\n- Resize the renderer.\n- Consider pixel ratio limits for performance.\n\n### Mobile note\nRendering at full device pixel ratio on every device can be expensive. Clamp pixel ratio when performance matters."
+        },
+        {
+          "title": "Performance Profiling",
+          "order": 2,
+          "content": "# Performance Profiling\n\nThree.js performance depends on draw calls, texture sizes, geometry complexity, and per-frame work.\n\n### Common improvements\n- Reuse geometry and materials.\n- Reduce unnecessary lights and shadows.\n- Avoid large transparent layers when possible.\n- Dispose of objects you no longer need.\n\n### Review habit\nMeasure before and after changes. Performance work without measurement often just moves cost around."
+        },
+        {
+          "title": "Integrating Three.js into Web Apps",
+          "order": 3,
+          "content": "# Integrating Three.js into Web Apps\n\nThree.js often lives inside a larger React, Next.js, or vanilla web application.\n\n### Integration concerns\n- Mount and clean up canvas resources correctly.\n- Keep scene setup separate from UI state when possible.\n- Destroy event listeners, controls, and WebGL resources on teardown.\n\n### Engineering rule\nMemory leaks in WebGL apps are easy to miss. Always plan cleanup as part of the first implementation, not as a later fix."
+        }
+      ]
+    }
+  ]
+}

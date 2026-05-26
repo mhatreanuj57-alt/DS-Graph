@@ -1,0 +1,123 @@
+{
+  "quizSets": [
+    {
+      "title": "React Essentials MCQ",
+      "setNumber": 1,
+      "type": "MCQ",
+      "questions": [
+        {
+          "type": "MCQ",
+          "text": "What is the primary purpose of React?",
+          "options": ["Database management", "Building User Interfaces", "Server-side routing", "Styling websites"],
+          "correctOption": 1,
+          "explanation": "React is a JavaScript library specifically designed for building reusable UI components."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is JSX?",
+          "options": ["A CSS framework", "A syntax extension for JavaScript", "A type of database", "A JavaScript bundler"],
+          "correctOption": 1,
+          "explanation": "JSX stands for JavaScript XML and allows writing HTML-like code inside JavaScript."
+        },
+        {
+          "type": "MCQ",
+          "text": "How do you create a state variable in a functional component?",
+          "options": ["this.state = {}", "const [state, setState] = useState()", "var state = state()", "React.createState()"],
+          "correctOption": 1,
+          "explanation": "The `useState` hook is the standard way to add state to functional components."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which hook is used for side effects?",
+          "options": ["useState", "useContext", "useEffect", "useReducer"],
+          "correctOption": 2,
+          "explanation": "`useEffect` handles side effects like API calls, subscriptions, and DOM manual updates."
+        },
+        {
+          "type": "MCQ",
+          "text": "What are 'props' in React?",
+          "options": ["Internal state of a component", "External data passed to a component", "Functions that handle events", "CSS properties"],
+          "correctOption": 1,
+          "explanation": "'Props' (short for properties) are read-only inputs passed from a parent to a child component."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is the Virtual DOM?",
+          "options": ["A direct copy of the browser's DOM", "A lightweight representation of the real DOM in memory", "A plugin for Chrome", "A CSS-in-JS library"],
+          "correctOption": 1,
+          "explanation": "The Virtual DOM is a programming concept where a 'virtual' representation of a UI is kept in memory and synced with the 'real' DOM."
+        },
+        {
+          "type": "MCQ",
+          "text": "Why do we use 'keys' in lists?",
+          "options": ["To style elements", "To help React identify which items changed", "To add unique IDs to the DOM", "To make the list searchable"],
+          "correctOption": 1,
+          "explanation": "Keys provide a stable identity to elements, allowing React to optimize re-rendering of lists."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is 'lifting state up'?",
+          "options": ["Moving state to a global store like Redux", "Moving state to a common ancestor to share it between siblings", "Deleting state from a child component", "Adding state to the root component"],
+          "correctOption": 1,
+          "explanation": "Lifting state up involves moving shared state to the closest common ancestor of components that need it."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which command is used to create a new React app?",
+          "options": ["npm create react-app", "npx create-react-app my-app", "react-new my-app", "npm install react"],
+          "correctOption": 1,
+          "explanation": "`npx create-react-app` is the officially supported way to scaffold a new project."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is the purpose of `React.memo()`?",
+          "options": ["To store data in memory", "To memoize expensive calculations", "To prevent unnecessary re-renders of a component", "To debug components"],
+          "correctOption": 2,
+          "explanation": "`React.memo` is a higher-order component that prevents a component from re-rendering if its props haven't changed."
+        }
+      ]
+    },
+    {
+      "title": "React Theory & Practice",
+      "setNumber": 2,
+      "type": "Theory/Practical",
+      "questions": [
+        {
+          "type": "Theory/Practical",
+          "text": "Explain the difference between Props and State.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Props are external inputs passed into a component and are immutable. State is internal data managed within the component and can be changed over time."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "How does React's reconciliation process work?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "When state changes, React creates a new Virtual DOM tree and compares it with the old one (diffing). It then calculates the minimum number of changes needed to update the real DOM and applies them efficiently."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What is the 'prop drilling' problem and how can it be solved?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Prop drilling occurs when data needs to be passed through many levels of components that don't use it. It can be solved using the Context API or state management libraries like Redux."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "Describe the two rules of Hooks.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Hooks must be called at the top level (not inside loops or conditions) and they must only be called from React function components or custom Hooks."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What are React Fragments and why are they used?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Fragments (`<>...</>` or `<React.Fragment>`) allow you to group multiple elements without adding an extra node to the DOM, which helps keep the HTML structure clean."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "quizSets": [
+    {
+      "title": "HTML Mastery Set 1",
+      "setNumber": 1,
+      "type": "MCQ",
+      "questions": [
+        {
+          "type": "MCQ",
+          "text": "What does HTML stand for?",
+          "options": [
+            "Hyper Text Markup Language",
+            "High Tech Modern Language",
+            "Hyperlinks and Text Markup Language",
+            "Home Tool Markup Language"
+          ],
+          "correctOption": 0,
+          "explanation": "HTML stands for Hyper Text Markup Language, the standard markup language for creating web pages."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which tag is used to create a hyperlink?",
+          "options": ["<link>", "<a>", "<href>", "<url>"],
+          "correctOption": 1,
+          "explanation": "The `<a>` (anchor) tag is used to define a hyperlink."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which element is used to define the title of a document?",
+          "options": ["<head>", "<meta>", "<title>", "<header>"],
+          "correctOption": 2,
+          "explanation": "The `<title>` tag defines the title of the document, shown in the browser tab."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is the purpose of the 'alt' attribute for images?",
+          "options": [
+            "To define the image alignment",
+            "To provide alternative text for screen readers",
+            "To change the image brightness",
+            "To link the image to another page"
+          ],
+          "correctOption": 1,
+          "explanation": "The `alt` attribute provides a text description of an image for accessibility and when the image cannot be loaded."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which tag is used for an unordered list?",
+          "options": ["<ol>", "<ul>", "<li>", "<list>"],
+          "correctOption": 1,
+          "explanation": "The `<ul>` tag defines an unordered (bulleted) list."
+        },
+        {
+          "type": "MCQ",
+          "text": "How do you create a line break in HTML?",
+          "options": ["<break>", "<lb>", "<br>", "<hr>"],
+          "correctOption": 2,
+          "explanation": "The `<br>` tag is used for a single line break."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which tag is used to define a table row?",
+          "options": ["<td>", "<th>", "<tr>", "<table>"],
+          "correctOption": 2,
+          "explanation": "The `<tr>` tag defines a row in an HTML table."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which HTML element is used for the largest heading?",
+          "options": ["<heading>", "<h6>", "<h1>", "<head>"],
+          "correctOption": 2,
+          "explanation": "HTML headings range from `<h1>` (largest/most important) to `<h6>` (smallest)."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is the correct tag for a footer?",
+          "options": ["<bottom>", "<section>", "<footer>", "<aside>"],
+          "correctOption": 2,
+          "explanation": "The `<footer>` tag is a semantic element used for the footer of a document or section."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which attribute is used to uniquely identify an element?",
+          "options": ["class", "id", "name", "type"],
+          "correctOption": 1,
+          "explanation": "The `id` attribute provides a unique identifier for an HTML element within a page."
+        }
+      ]
+    },
+    {
+      "title": "HTML Theory & Practice Set 1",
+      "setNumber": 2,
+      "type": "Theory/Practical",
+      "questions": [
+        {
+          "type": "Theory/Practical",
+          "text": "Explain the difference between `<div>` and `<span>`.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "`<div>` is a block-level element, used for grouping large sections of content and starts on a new line. `<span>` is an inline element, used for grouping small portions of text within a line."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "Why is the `<!DOCTYPE html>` declaration important?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "It tells the browser that the document is an HTML5 document. This ensures that the browser parses the page in 'standards mode' rather than 'quirks mode'."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What are the benefits of using semantic HTML elements?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Semantic elements improve accessibility for screen reader users, make the code more readable for developers, and help search engines (SEO) better understand the content of the page."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "Describe the difference between an absolute and a relative URL in an anchor tag.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "An absolute URL contains the full address (including protocol like https://), pointing to a specific location on the web. A relative URL points to a file relative to the current page (e.g., 'about.html')."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "How do you add a comment in HTML code?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Comments in HTML are written using the syntax `<!-- Comment goes here -->`. They are not visible in the browser but can be seen in the source code."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "quizSets": [
+    {
+      "title": "Python Mastery Set 1",
+      "setNumber": 1,
+      "type": "MCQ",
+      "questions": [
+        {
+          "type": "MCQ",
+          "text": "What is the correct way to create a function in Python?",
+          "options": ["function myFunc():", "def myFunc():", "create myFunc():", "func myFunc():"],
+          "correctOption": 1,
+          "explanation": "In Python, the `def` keyword is used to define a function."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which data type is immutable?",
+          "options": ["List", "Dictionary", "Set", "Tuple"],
+          "correctOption": 3,
+          "explanation": "Tuples are immutable sequences in Python, meaning their contents cannot be changed after creation."
+        },
+        {
+          "type": "MCQ",
+          "text": "How do you start a comment in Python?",
+          "options": ["//", "/*", "#", "--"],
+          "correctOption": 2,
+          "explanation": "The hash symbol `#` is used for single-line comments in Python."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is the result of `3 * '3'`?",
+          "options": ["9", "'333'", "Error", "'9'"],
+          "correctOption": 1,
+          "explanation": "In Python, multiplying a string by an integer repeats the string that many times."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which of these is used to handle exceptions?",
+          "options": ["try/except", "do/catch", "try/catch", "throw/catch"],
+          "correctOption": 0,
+          "explanation": "Python uses `try` and `except` blocks for error handling."
+        },
+        {
+          "type": "MCQ",
+          "text": "What does the `len()` function do?",
+          "options": ["Returns the type of an object", "Returns the length of a sequence", "Converts to a list", "Clears a list"],
+          "correctOption": 1,
+          "explanation": "`len()` returns the number of items in an object like a list, string, or dictionary."
+        },
+        {
+          "type": "MCQ",
+          "text": "Which operator is used for exponentiation?",
+          "options": ["^", "**", "//", "exp"],
+          "correctOption": 1,
+          "explanation": "`**` is the exponentiation operator in Python."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is the output of `bool(0)`?",
+          "options": ["True", "False", "None", "Error"],
+          "correctOption": 1,
+          "explanation": "In Python, 0 is considered falsy, so `bool(0)` returns `False`."
+        },
+        {
+          "type": "MCQ",
+          "text": "How do you add an element to the end of a list?",
+          "options": ["append()", "add()", "insert()", "push()"],
+          "correctOption": 0,
+          "explanation": "The `append()` method adds a single element to the end of a list."
+        },
+        {
+          "type": "MCQ",
+          "text": "What is a lambda function?",
+          "options": ["A function that calls itself", "An anonymous, one-line function", "A function with multiple return values", "A built-in function for math"],
+          "correctOption": 1,
+          "explanation": "Lambda functions are small, anonymous functions defined with the `lambda` keyword."
+        }
+      ]
+    },
+    {
+      "title": "Python Theory & Practice Set 1",
+      "setNumber": 2,
+      "type": "Theory/Practical",
+      "questions": [
+        {
+          "type": "Theory/Practical",
+          "text": "Explain the difference between `is` and `==`.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "`==` checks for equality (if values are the same), while `is` checks for identity (if both variables point to the same object in memory)."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What are Python generators and why would you use them?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "Generators are functions that yield values one at a time. They are memory efficient because they don't store the entire sequence in memory, making them ideal for large datasets."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "How does the Global Interpreter Lock (GIL) affect multi-threading?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "The GIL prevents multiple native threads from executing Python bytecodes simultaneously. This means multi-threading doesn't provide a speedup for CPU-bound tasks in Python, though it works well for I/O-bound tasks."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "Describe the use of `*args` and `**kwargs` in function definitions.",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "`*args` allows a function to accept any number of positional arguments as a tuple, and `**kwargs` allows it to accept any number of keyword arguments as a dictionary."
+        },
+        {
+          "type": "Theory/Practical",
+          "text": "What is the purpose of the `__init__` method in a class?",
+          "options": [],
+          "correctOption": 0,
+          "explanation": "It is the constructor method that is automatically called when a new instance of a class is created, allowing for initialization of the object's attributes."
+        }
+      ]
+    }
+  ]
+}
