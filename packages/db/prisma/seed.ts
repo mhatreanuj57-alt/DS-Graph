@@ -1,18 +1,28 @@
 import { PrismaClient } from '@prisma/client';
 import fs from 'fs';
 import path from 'path';
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { LANGUAGES } = require('../scripts/content-config');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { readJson, validateLanguageContent } = require('../scripts/content-validator');
 
 const prisma = new PrismaClient();
 
-const languages = [
-  'javascript', 'python', 'typescript', 'rust', 'go', 
-  'java', 'html', 'css', 'sql', 'shell',
-  'c', 'cpp', 'react', 'nextjs', 'node',
-  'php', 'firebase', 'supabase', 'threejs', 'wordpress'
-];
-
 async function main() {
   console.log('Starting seeding...');
+
+  // Clear existing curriculum data to ensure clean seed
+  await prisma.userProgress.deleteMany({});
+  await prisma.userQuizResult.deleteMany({});
+  await prisma.question.deleteMany({});
+  await prisma.quizSet.deleteMany({});
+  await prisma.lesson.deleteMany({});
+  await prisma.module.deleteMany({});
+  await prisma.note.deleteMany({});
+  
+  // Clear snippets and tags to avoid duplication
+  await prisma.snippet.deleteMany({});
+  await prisma.tag.deleteMany({});
 
   // Create a default user for seeding
   const user = await prisma.user.upsert({
@@ -24,8 +34,9 @@ async function main() {
     },
   });
 
-  for (const langSlug of languages) {
+  for (const langSlug of LANGUAGES) {
     const langName = langSlug.charAt(0).toUpperCase() + langSlug.slice(1);
+    validateLanguageContent(path.join(__dirname, '../../..'), langSlug);
     
     // Upsert language
     const language = await prisma.language.upsert({
@@ -40,7 +51,7 @@ async function main() {
     const snippetsPath = path.join(__dirname, `../../snippets-data/${langSlug}/snippets.json`);
     
     if (fs.existsSync(snippetsPath)) {
-      const snippetsData = JSON.parse(fs.readFileSync(snippetsPath, 'utf-8'));
+      const snippetsData = readJson(snippetsPath);
       
       for (const s of snippetsData) {
         await prisma.snippet.create({
@@ -69,7 +80,7 @@ async function main() {
     // Seed Lessons & Modules
     const lessonsPath = path.join(__dirname, `../../curriculum-data/lessons/${langSlug}.json`);
     if (fs.existsSync(lessonsPath)) {
-      const { modules } = JSON.parse(fs.readFileSync(lessonsPath, 'utf-8'));
+      const { modules } = readJson(lessonsPath);
       for (const m of modules) {
         const module = await prisma.module.create({
           data: {
@@ -95,7 +106,7 @@ async function main() {
     // Seed Notes
     const notesPath = path.join(__dirname, `../../curriculum-data/notes/${langSlug}.json`);
     if (fs.existsSync(notesPath)) {
-      const notesData = JSON.parse(fs.readFileSync(notesPath, 'utf-8'));
+      const notesData = readJson(notesPath);
       for (const n of notesData) {
         await prisma.note.create({
           data: {
@@ -111,7 +122,7 @@ async function main() {
     // Seed Quizzes
     const quizzesPath = path.join(__dirname, `../../curriculum-data/quizzes/${langSlug}.json`);
     if (fs.existsSync(quizzesPath)) {
-      const { quizSets } = JSON.parse(fs.readFileSync(quizzesPath, 'utf-8'));
+      const { quizSets } = readJson(quizzesPath);
       for (const qs of quizSets) {
         const quizSet = await prisma.quizSet.create({
           data: {

@@ -1,16 +1,11 @@
 const fs = require('fs');
 const path = require('path');
+const { LANGUAGES } = require('./content-config');
+const { validateLanguageContent } = require('./content-validator');
 
 const OUTPUT_COUNT = 105;
 const SNIPPET_VARIANTS_PER_SEED = 20;
 const NOTE_VARIANTS_PER_SEED = 20;
-
-const languages = [
-  'javascript', 'python', 'typescript', 'rust', 'go',
-  'java', 'html', 'css', 'sql', 'shell',
-  'c', 'cpp', 'react', 'nextjs', 'node',
-  'php', 'firebase', 'supabase', 'threejs', 'wordpress',
-];
 
 const variantSpecs = [
   { label: 'Quick Start', focus: 'the smallest useful version', tag: 'quick-start', difficulty: 1, number: 3, text: 'starter' },
@@ -232,8 +227,9 @@ function buildDatasetForLanguage(lang) {
 
 function main() {
   console.log('Generating local snippet and note datasets...');
-  for (const lang of languages) {
+  for (const lang of LANGUAGES) {
     const counts = buildDatasetForLanguage(lang);
+    validateLanguageContent(path.resolve(__dirname, '..', '..', '..'), lang);
     console.log(`${lang}: ${counts.snippets} snippets, ${counts.notes} notes`);
   }
   console.log('Generation complete.');
