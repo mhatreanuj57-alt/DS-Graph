@@ -1,6 +1,10 @@
 {
   "name": "codeforge",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "build": "turbo run build",
     "check:content": "node packages/db/scripts/validate-content.js",
