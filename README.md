@@ -1,6 +1,6 @@
 # DS Graph
 
-Interactive graph data structures and algorithms course with 22 lessons, rotatable WebGL diagrams, step traces, C++ sketches, quizzes, and page-linked PDF references.
+Interactive graph data structures and algorithms course with 22 lessons, rotatable WebGL diagrams, step traces, C++ sketches, quizzes, and source page references.
 
 ## Run locally
 
@@ -9,4 +9,4 @@ npm install
 npm run dev
 ```
 
-The original study guide is served from `public/Graph_Data_Structures_Professional_Guide.pdf`.
+The source guide is not bundled; lessons retain its page numbers for reference.
