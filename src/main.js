@@ -113,7 +113,7 @@ function bindEvents(){
 
 document.addEventListener('keydown',event=>{
   if((event.metaKey||event.ctrlKey)&&event.key.toLowerCase()==='k'){event.preventDefault();document.querySelector('#lesson-search').focus();}
-  if(event.target.matches('input,textarea,button,[contenteditable=true]'))return;
+  if(event.target.matches('input,textarea,button,canvas,[contenteditable=true]'))return;
   if(event.key==='ArrowRight')jump(frameIndex+1);if(event.key==='ArrowLeft')jump(frameIndex-1);if(event.key===' '){event.preventDefault();startPlayback();}
 });
 
