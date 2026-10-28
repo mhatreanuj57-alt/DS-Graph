@@ -125,6 +125,8 @@ function bindEvents(){
   document.querySelector('#open-nav').addEventListener('click',openNav);document.querySelector('#close-nav').addEventListener('click',closeNav);document.querySelector('#scrim').addEventListener('click',closeNav);
 }
 
+window.addEventListener('popstate',()=>{current=getLesson(new URLSearchParams(location.search).get('lesson'));render();});
+
 document.addEventListener('keydown',event=>{
   if((event.metaKey||event.ctrlKey)&&event.key.toLowerCase()==='k'){event.preventDefault();document.querySelector('#lesson-search').focus();}
   if(event.target.matches('input,textarea,button,canvas,[contenteditable=true]'))return;
