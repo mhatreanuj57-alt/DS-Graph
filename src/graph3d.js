@@ -28,14 +28,14 @@ function cylinderBetween(a,b,r,material,segments=12) {
   mesh.position.copy(a).add(b).multiplyScalar(.5); mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),delta.normalize()); return mesh;
 }
 
-export function createGraphScene(host, lesson, onSelectNode) {
+export function createGraphScene(host, lesson, onSelectPart) {
   const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const scene=new THREE.Scene(); scene.background=new THREE.Color(colors.ink); scene.fog=new THREE.Fog(colors.ink,14,32);
   const camera=new THREE.PerspectiveCamera(35,1,.1,100); camera.position.set(8,8,10);
   const renderer=new THREE.WebGLRenderer({antialias:true,alpha:false,powerPreference:'high-performance'});
   renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,1.5)); renderer.shadowMap.enabled=true; renderer.shadowMap.type=THREE.PCFSoftShadowMap;
   renderer.outputColorSpace=THREE.SRGBColorSpace; renderer.toneMapping=THREE.ACESFilmicToneMapping; renderer.toneMappingExposure=.9;
-  renderer.domElement.className='graph-canvas'; renderer.domElement.tabIndex=0; renderer.domElement.setAttribute('role','application'); renderer.domElement.setAttribute('aria-label',`${lesson.title} interactive graph model. Drag to orbit, scroll to zoom, click a node to inspect it. Use the arrow keys to inspect nodes.`); renderer.domElement.setAttribute('aria-describedby','graph-description'); host.append(renderer.domElement);
+  renderer.domElement.className='graph-canvas'; renderer.domElement.tabIndex=0; renderer.domElement.setAttribute('role','application'); renderer.domElement.setAttribute('aria-label',`${lesson.title} interactive graph model. Drag to orbit, scroll to zoom, click a node or edge to inspect it. Arrow keys inspect nodes; E toggles apart, L labels, W edge weights, and Escape clears selection.`); renderer.domElement.setAttribute('aria-describedby','graph-description'); host.append(renderer.domElement);
   const controls=new OrbitControls(camera,renderer.domElement); controls.target.set(0,0,0); controls.enableDamping=true; controls.dampingFactor=.075; controls.minDistance=5.4; controls.maxDistance=20; controls.maxPolarAngle=Math.PI*.47; controls.minPolarAngle=.24;
   scene.add(new THREE.HemisphereLight(0xffffff,0xd0d0cc,1.2));
   const keyLight=new THREE.DirectionalLight(0xffffff,1.6); keyLight.position.set(-5,10,7); keyLight.castShadow=true; keyLight.shadow.radius=5; scene.add(keyLight);
@@ -44,6 +44,8 @@ export function createGraphScene(host, lesson, onSelectNode) {
   const mat=(color,roughness=.68,metalness=.08,emissive=0)=>new THREE.MeshStandardMaterial({color,roughness,metalness,emissive,emissiveIntensity:emissive?.28:0});
   const deck=mat(colors.deck,.82,.02), rail=mat(0xbcbcb8,.72,.08), screw=mat(0xa9a9a4,.6,.12), nodeMat=mat(colors.pale,.48,.04), socketMat=mat(0xb8b9b4,.68,.08), frontierMat=mat(colors.teal,.55,.03,colors.teal), edgeBase=mat(0xc9c9c5,.78,.02), edgeMat=mat(0x77777a,.72,.03), currentMat=mat(colors.orange,.58,.02,colors.orange);
   const root=new THREE.Group(); scene.add(root);
+  const network=new THREE.Group();root.add(network);
+  let apartTarget=0,showLabels=true,showWeights=true;
   const plate=new THREE.Mesh(new RoundedBoxGeometry(10.6,.26,7.2,5,.22),deck); plate.position.y=-.64; plate.receiveShadow=true; plate.castShadow=true; root.add(plate);
   const under=new THREE.Mesh(new RoundedBoxGeometry(10.1,.24,6.75,5,.16),mat(0xd2d2ce,.75,.02)); under.position.y=-.88; root.add(under);
   const feet=[];
@@ -65,9 +67,9 @@ export function createGraphScene(host, lesson, onSelectNode) {
 
   const nodeMeshes=new Map(), edgeMeshes=new Map();
   const nodePositions=new Map(lesson.graph.nodes.map(([id,x,y,z])=>[id,new THREE.Vector3(x*1.03,y*1.02,z*1.03)]));
-  const isGrid=['flood','islands','rot'].includes(lesson.kind);
+  const isGrid=['flood','islands','rot'].includes(lesson.kind),weightsAvailable=lesson.graph.edges.some(edge=>edge[2]!==undefined);
   for(const [id,x,y,z] of lesson.graph.nodes){
-    const p=nodePositions.get(id), group=new THREE.Group();group.position.copy(p);group.userData.id=id;root.add(group);
+    const p=nodePositions.get(id), group=new THREE.Group();group.position.copy(p);group.userData.id=id;network.add(group);
     let body, lamp, selection;
     if(isGrid){
       const tileColor=lesson.graph.marks?.[id]==='land'?0xd7dfd2:lesson.graph.marks?.[id]==='water'?0xd8e3e0:lesson.graph.marks?.[id]==='rotten'?0xe8d3cc:lesson.graph.marks?.[id]==='empty'?0xe4e4e1:0xe2e2de;
@@ -86,12 +88,12 @@ export function createGraphScene(host, lesson, onSelectNode) {
     const label=labelSprite(id,.8,{large:true});label.position.set(0,isGrid?.72:.82,0);group.add(label);
     const value=labelSprite('',.96,{color:'#ffffff',accent:true});value.position.set(0,isGrid?1.1:1.27,0);value.visible=false;group.add(value);
     group.traverse(obj=>{if(obj.isMesh){obj.userData.nodeId=id;}});
-    nodeMeshes.set(id,{group,body,lamp,selection,value,targetScale:1,targetBody:body.material.color.clone(),targetLamp:lamp.material.color.clone(),targetGlow:lamp.material.emissive.clone(),targetSelection:0});
+    nodeMeshes.set(id,{group,body,lamp,selection,value,label,targetScale:1,targetBody:body.material.color.clone(),targetLamp:lamp.material.color.clone(),targetGlow:lamp.material.emissive.clone(),targetSelection:0});
   }
 
   for(const raw of lesson.graph.edges){
     const edge={from:raw[0],to:raw[1],weight:raw[2]??1}; const a=nodePositions.get(edge.from),b=nodePositions.get(edge.to),delta=new THREE.Vector3().subVectors(b,a),mid=new THREE.Vector3().addVectors(a,b).multiplyScalar(.5);
-    const group=new THREE.Group();root.add(group);
+    const group=new THREE.Group();network.add(group);
     const start=a.clone().lerp(b,.14),end=a.clone().lerp(b,.86);
     const sleeve=cylinderBetween(start,end,.068,edgeBase.clone(),12);sleeve.castShadow=true;group.add(sleeve);
     const line=cylinderBetween(start.clone().add(new THREE.Vector3(0,.015,0)),end.clone().add(new THREE.Vector3(0,.015,0)),.027,edgeMat.clone(),10);group.add(line);
@@ -99,31 +101,37 @@ export function createGraphScene(host, lesson, onSelectNode) {
     let arrow;
     if(lesson.graph.directed){arrow=new THREE.Mesh(new THREE.ConeGeometry(.14,.34,14),edgeMat.clone());arrow.position.copy(a.clone().lerp(b,.81));arrow.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),delta.clone().normalize());arrow.castShadow=true;group.add(arrow);}
     const tag=labelSprite(edge.weight===1?'':edge.weight,.55,{color:'#57575a'});tag.position.copy(mid);tag.position.y+=.34;tag.visible=edge.weight!==1;group.add(tag);
-    edgeMeshes.set(edgeKey(lesson,edge),{group,line,sleeve,arrow,tag,edge,targetColor:edgeMat.color.clone(),targetGlow:new THREE.Color(),targetSleeve:edgeBase.color.clone(),targetAlpha:1});
+    const key=edgeKey(lesson,edge);group.userData.edgeKey=key;group.traverse(obj=>{if(obj.isMesh)obj.userData.edgeKey=key;});
+    edgeMeshes.set(key,{group,line,sleeve,arrow,tag,edge,targetColor:edgeMat.color.clone(),targetGlow:new THREE.Color(),targetSleeve:edgeBase.color.clone(),targetAlpha:1});
   }
 
   // A slim, physical readout block anchors each graph to a device instead of floating in space.
   const readout=new THREE.Mesh(new RoundedBoxGeometry(2.9,.34,.54,4,.1),mat(0xdadad6,.72,.03));readout.position.set(0,-.25,-3.02);readout.castShadow=true;root.add(readout);
   const led=new THREE.Mesh(new THREE.BoxGeometry(2.36,.022,.025),mat(colors.orange,.55,.02,colors.orange));led.position.set(0,-.075,-3.02);root.add(led);
 
-  const raycaster=new THREE.Raycaster(), pointer=new THREE.Vector2();let downAt=null,selectedNode=null,hoveredNode=null,lastFrame={};
-  const hitNode=event=>{const rect=renderer.domElement.getBoundingClientRect();pointer.x=((event.clientX-rect.left)/rect.width)*2-1;pointer.y=-((event.clientY-rect.top)/rect.height)*2+1;raycaster.setFromCamera(pointer,camera);const hit=raycaster.intersectObjects([...nodeMeshes.values()].map(v=>v.group),true)[0];if(!hit)return null;let target=hit.object;while(target&&!target.userData.nodeId&&!target.userData.id)target=target.parent;return target?.userData.nodeId??target?.userData.id??null;};
-  const selectNode=id=>{selectedNode=id;update(lastFrame);onSelectNode?.(id);};
+  const raycaster=new THREE.Raycaster(), pointer=new THREE.Vector2();let downAt=null,selectedNode=null,selectedEdge=null,hoveredPart=null,lastFrame={};
+  const hitPart=event=>{const rect=renderer.domElement.getBoundingClientRect();pointer.x=((event.clientX-rect.left)/rect.width)*2-1;pointer.y=-((event.clientY-rect.top)/rect.height)*2+1;raycaster.setFromCamera(pointer,camera);const hit=raycaster.intersectObjects([...nodeMeshes.values()].map(v=>v.group).concat([...edgeMeshes.values()].map(v=>v.group)),true)[0];if(!hit)return null;let target=hit.object;while(target&&!target.userData.nodeId&&!target.userData.edgeKey&&!target.userData.id)target=target.parent;if(target?.userData.edgeKey)return {type:'edge',key:target.userData.edgeKey};const id=target?.userData.nodeId??target?.userData.id;return id?{type:'node',id}:null;};
+  const selectPart=part=>{selectedNode=part?.type==='node'?part.id:null;selectedEdge=part?.type==='edge'?part.key:null;update(lastFrame);onSelectPart?.(part);};
+  const announceControls=()=>renderer.domElement.dispatchEvent(new CustomEvent('graph-controls',{bubbles:true,detail:{apart:Boolean(apartTarget),labels:showLabels,weights:showWeights,spin:controls.autoRotate}}));
+  const toggleLabels=()=>{showLabels=!showLabels;for(const node of nodeMeshes.values())node.label.visible=showLabels;announceControls();return showLabels;};
+  const toggleWeights=()=>{if(!weightsAvailable)return showWeights;showWeights=!showWeights;for(const view of edgeMeshes.values())view.tag.visible=showWeights&&view.edge.weight!==1;announceControls();return showWeights;};
+  const toggleApart=()=>{apartTarget=apartTarget?0:1;announceControls();return Boolean(apartTarget);};
+  const toggleSpin=()=>{controls.autoRotate=!controls.autoRotate;announceControls();return controls.autoRotate;};
   renderer.domElement.addEventListener('pointerdown',event=>{downAt=[event.clientX,event.clientY];});
-  renderer.domElement.addEventListener('pointermove',event=>{const id=hitNode(event);if(id!==hoveredNode){hoveredNode=id;renderer.domElement.style.cursor=id?'pointer':'grab';update(lastFrame);}});
-  renderer.domElement.addEventListener('pointerleave',()=>{hoveredNode=null;renderer.domElement.style.cursor='grab';update(lastFrame);});
+  renderer.domElement.addEventListener('pointermove',event=>{const part=hitPart(event),key=part?`${part.type}:${part.type==='node'?part.id:part.key}`:null;if(key!==hoveredPart){hoveredPart=key;renderer.domElement.style.cursor=part?'pointer':'grab';update(lastFrame);}});
+  renderer.domElement.addEventListener('pointerleave',()=>{hoveredPart=null;renderer.domElement.style.cursor='grab';update(lastFrame);});
   renderer.domElement.addEventListener('pointerup',event=>{
     if(!downAt||Math.hypot(event.clientX-downAt[0],event.clientY-downAt[1])>5){downAt=null;return;}downAt=null;
-    const id=hitNode(event);if(id)selectNode(id);else selectNode(null);
+    selectPart(hitPart(event));
   });
-  renderer.domElement.addEventListener('keydown',event=>{const ids=[...nodeMeshes.keys()];if(event.key==='Escape'){selectNode(null);return;}if(!['ArrowRight','ArrowDown','ArrowLeft','ArrowUp'].includes(event.key))return;event.preventDefault();const step=event.key==='ArrowRight'||event.key==='ArrowDown'?1:-1,here=ids.indexOf(selectedNode),next=here<0?(step>0?0:ids.length-1):(here+step+ids.length)%ids.length;selectNode(ids[next]);});
+  renderer.domElement.addEventListener('keydown',event=>{const ids=[...nodeMeshes.keys()],key=event.key.toLowerCase();if(key==='escape'){selectPart(null);return;}if(key==='e'){toggleApart();return;}if(key==='l'){toggleLabels();return;}if(key==='w'&&weightsAvailable){toggleWeights();return;}if(!['arrowright','arrowdown','arrowleft','arrowup'].includes(key))return;event.preventDefault();const step=key==='arrowright'||key==='arrowdown'?1:-1,here=ids.indexOf(selectedNode),next=here<0?(step>0?0:ids.length-1):(here+step+ids.length)%ids.length;selectPart({type:'node',id:ids[next]});});
 
   function update(frame={}){
     lastFrame=frame;
     const visited=new Set(frame.visited??[]), frontier=new Set(frame.frontier??[]), accepted=new Set((frame.accepted??[]).filter(key=>edgeMeshes.has(key))), criticalNodes=new Set((frame.accepted??[]).filter(key=>key.startsWith('node:')).map(key=>key.slice(5))), rejected=new Set(frame.rejected??[]), values=frame.dist??{}, components=frame.components??[];
     for(const [id,node] of nodeMeshes){
       const current=frame.current===id, isVisited=visited.has(id), isFrontier=frontier.has(id);
-      const focused=id===selectedNode,hovered=id===hoveredNode&&!focused;
+      const focused=id===selectedNode,hovered=hoveredPart===`node:${id}`&&!focused;
       node.targetScale=current?1.12:focused?1.18:isFrontier?1.045:1;
       node.selection.material.color.copy(current||focused?currentMat.color:frontierMat.color);node.targetSelection=current?.88:focused?1:hovered?.55:isFrontier?.62:0;
       const mark=lesson.graph.marks?.[id];
@@ -137,8 +145,8 @@ export function createGraphScene(host, lesson, onSelectNode) {
       node.group.userData.nodeId=id;
     }
     for(const [key,view] of edgeMeshes){
-      const active=frame.edge===key,isAccepted=accepted.has(key),isRejected=rejected.has(key),touchesSelection=selectedNode&&(view.edge.from===selectedNode||view.edge.to===selectedNode);
-      const color=active?colors.orange:touchesSelection?colors.teal:isAccepted?colors.green:isRejected?colors.muted:colors.edge;
+      const active=frame.edge===key,isAccepted=accepted.has(key),isRejected=rejected.has(key),touchesSelection=selectedNode&&(view.edge.from===selectedNode||view.edge.to===selectedNode),focused=key===selectedEdge,hovered=hoveredPart===`edge:${key}`;
+      const color=active||focused?colors.orange:touchesSelection||hovered?colors.teal:isAccepted?colors.green:isRejected?colors.muted:colors.edge;
       view.targetColor.set(color);view.targetGlow.set(active?colors.orange:isAccepted?colors.green:0x000000);view.targetSleeve.set(isAccepted?0xb7c4ae:0xd1d1cd);view.targetAlpha=isRejected?.42:1;
     }
   }
@@ -146,7 +154,7 @@ export function createGraphScene(host, lesson, onSelectNode) {
 
   const observer=new ResizeObserver(()=>{const w=Math.max(1,host.clientWidth),h=Math.max(1,host.clientHeight);renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();});observer.observe(host);
   let raf=0,alive=true;
-  const render=()=>{if(!alive)return;controls.update();const ease=reduceMotion?1:.16;for(const node of nodeMeshes.values()){node.group.scale.lerp(new THREE.Vector3(node.targetScale,node.targetScale,node.targetScale),ease);node.body.material.color.lerp(node.targetBody,ease);node.lamp.material.color.lerp(node.targetLamp,ease);node.lamp.material.emissive.lerp(node.targetGlow,ease);node.selection.material.opacity+=(node.targetSelection-node.selection.material.opacity)*ease;node.selection.visible=node.selection.material.opacity>.01;}for(const view of edgeMeshes.values()){view.line.material.color.lerp(view.targetColor,ease);view.line.material.emissive.lerp(view.targetGlow,ease);view.sleeve.material.color.lerp(view.targetSleeve,ease);view.sleeve.material.emissive.lerp(view.targetGlow,ease);view.line.material.opacity+=(view.targetAlpha-view.line.material.opacity)*ease;if(view.arrow)view.arrow.material.color.lerp(view.targetColor,ease);}renderer.render(scene,camera);raf=requestAnimationFrame(render);};render();
+  const render=()=>{if(!alive)return;controls.update();const ease=reduceMotion?1:.16;network.position.y+=(apartTarget*1.5-network.position.y)*ease;for(const node of nodeMeshes.values()){node.group.scale.lerp(new THREE.Vector3(node.targetScale,node.targetScale,node.targetScale),ease);node.body.material.color.lerp(node.targetBody,ease);node.lamp.material.color.lerp(node.targetLamp,ease);node.lamp.material.emissive.lerp(node.targetGlow,ease);node.selection.material.opacity+=(node.targetSelection-node.selection.material.opacity)*ease;node.selection.visible=node.selection.material.opacity>.01;}for(const view of edgeMeshes.values()){view.line.material.color.lerp(view.targetColor,ease);view.line.material.emissive.lerp(view.targetGlow,ease);view.sleeve.material.color.lerp(view.targetSleeve,ease);view.sleeve.material.emissive.lerp(view.targetGlow,ease);view.line.material.opacity+=(view.targetAlpha-view.line.material.opacity)*ease;if(view.arrow)view.arrow.material.color.lerp(view.targetColor,ease);}renderer.render(scene,camera);raf=requestAnimationFrame(render);};render();
   const destroy=()=>{alive=false;cancelAnimationFrame(raf);observer.disconnect();controls.dispose();renderer.dispose();scene.traverse(obj=>{obj.geometry?.dispose?.();if(obj.material){const materials=Array.isArray(obj.material)?obj.material:[obj.material];materials.forEach(m=>{m.map?.dispose?.();m.dispose?.();});}});renderer.domElement.remove();};
-  return {update,destroy,reset:()=>{controls.reset();camera.position.set(8,8,10);controls.target.set(0,0,0);},selectNode};
+  return {update,destroy,reset:()=>{controls.reset();camera.position.set(8,8,10);controls.target.set(0,0,0);},selectPart,toggleLabels,toggleWeights,toggleApart,toggleSpin};
 }
